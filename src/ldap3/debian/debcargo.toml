@@ -1,0 +1,2 @@
+overlay = "."
+uploaders = ["Lukas Wagner <l.wagner@proxmox.com>"]
