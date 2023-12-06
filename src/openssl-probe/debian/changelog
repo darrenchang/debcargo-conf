@@ -1,3 +1,14 @@
+rust-openssl-probe (0.1.5-1~bpo12+pve1) proxmox-rust; urgency=medium
+
+  * Rebuild for Debian Bookworm / Proxmox
+
+  * Package openssl-probe 0.1.5 from crates.io using debcargo 2.6.0
+
+  * Include patch to not set environment variables to the same identical
+    contents
+
+ -- Proxmox Support Team <support@proxmox.com>  Wed, 06 Dec 2023 10:25:35 +0100
+
 rust-openssl-probe (0.1.2-1) unstable; urgency=medium
 
   * Package openssl-probe 0.1.2 from crates.io using debcargo 2.2.1

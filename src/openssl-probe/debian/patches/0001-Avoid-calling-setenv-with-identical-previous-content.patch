@@ -1,0 +1,58 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Wolfgang Bumiller <w.bumiller@proxmox.com>
+Date: Fri, 6 Oct 2023 13:58:45 +0200
+Subject: [PATCH openssl-probe] Avoid calling setenv with identical previous
+ contents.
+
+As also stated in the stdlib documentation, setenv() is a bit of a
+dangerous interface and can cause a lot of headaches. For instance,
+perl before version 5.38 (at the time of writing, debian stable
+(bookworm) uses version 5.36) manipulates the `environ` pointer
+directly. When calling rust (or any other language) code from perl via
+bindings, calling `setenv` easily leads to crashes[2].
+
+In perl 5.38 this was fixed [1] and perl should itself also stick to using
+`setenv`. This improves the situation a lot and leaves only the
+threading issue we cannot solve here.
+
+This commit allows the perl code to preset the environment variables
+to avoid at least this instance of setenv causing crashes.
+
+See-also: https://github.com/perl/perl5/issues/339
+See-also: https://github.com/perl/perl5/issues/859
+See-also: [1] https://github.com/Perl/perl5/pull/19514/commits/916a0387c5e9073acbb449f9ba081dfa05c77007
+See-also: [2] https://bugzilla.proxmox.com/show_bug.cgi?id=4979
+Signed-off-by: Wolfgang Bumiller <w.bumiller@proxmox.com>
+---
+ src/lib.rs | 13 +++++++++++--
+ 1 file changed, 11 insertions(+), 2 deletions(-)
+
+diff --git a/src/lib.rs b/src/lib.rs
+index 0db12a7..440617d 100644
+--- a/src/lib.rs
++++ b/src/lib.rs
+@@ -67,10 +67,19 @@ pub fn try_init_ssl_cert_env_vars() -> bool {
+     // we won't be overwriting existing env variables because if they're valid probe() will have
+     // returned them unchanged
+     if let Some(path) = &cert_file {
+-        env::set_var(ENV_CERT_FILE, path);
++        put(ENV_CERT_FILE, path);
+     }
+     if let Some(path) = &cert_dir {
+-        env::set_var(ENV_CERT_DIR, path);
++        put(ENV_CERT_DIR, path);
++    }
++
++    fn put(var: &str, path: &Path) {
++        // Avoid calling `setenv` if the variable already has the same contents. This avoids a
++        // crash when called from out of perl <5.38 (Debian Bookworm is at 5.36), as old versions
++        // of perl tend to manipulate the `environ` pointer directly.
++        if env::var_os(var).as_deref() != Some(path.as_os_str()) {
++            env::set_var(var, path);
++        }
+     }
+ 
+     cert_file.is_some() || cert_dir.is_some()
+-- 
+2.39.2
+
