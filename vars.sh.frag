@@ -18,6 +18,7 @@ cat <<'eof' >"$HOOK_COMMIT"
 if git rev-parse -q --verify MERGE_HEAD; then exit; fi
 case $(git rev-parse --abbrev-ref HEAD) in
 pending-*) true;;
+proxmox/*) true;;
 *)	if git diff --cached --name-only | \
 	   grep '^src/.*/debian/changelog$' | \
 	   while read x; do if ! [ -f "$x" ]; then continue; fi; echo "$x: $(head -n1 $x)"; done | \
