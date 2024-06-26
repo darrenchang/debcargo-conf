@@ -1,3 +1,9 @@
+rust-tracing-journald (0.3.0-1~bpo12+pve1) proxmox-rust; urgency=medium
+
+  * Rebuild for Debian Bookworm / Proxmox
+
+ -- Proxmox Support Team <support@proxmox.com>  Wed, 26 Jun 2024 09:46:25 +0200
+
 rust-tracing-journald (0.3.0-1) unstable; urgency=medium
 
   * Team upload.
