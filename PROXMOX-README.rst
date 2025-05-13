@@ -43,10 +43,27 @@ extract it into the `build` directory, generate the three default files in
 `src/$CRATE/debian`, and print some hints on what to do next, such as filling
 out `d/copyright` based on the generated hint file.
 
+A specific version of a crate
+-----------------------------
+
+`REALVER=x.y.z ./update.sh $CRATE`
+
+This invocation will download the specified version of the crate (or the latest
+semver-compatible version matching a partial version like `x.y`) from crates.io,
+and otherwise work just like `./update.sh $CRATE`.
+
+**Note**: this does not check whether the version passed is higher or lower
+than a currently packaged one, and is not the right invocation for creating a
+semver-suffixed package that can be co-installed with a different version of
+the same crate!
+
 An old version of an existing crate
 -----------------------------------
 
-`./update.sh $CRATE $OLDVER`
+`[REALVER=x.y.z] ./update.sh $CRATE  x[.y]`
+
+This invocation will create a semver-suffixed package for version `x` (or
+`x.y`, if `x == 0`).
 
 Should be avoided if at all possible, e.g. by patching reverse dependencies to
 become compatible with the current version. If really needed, passing the
@@ -57,11 +74,12 @@ will only work if the current upstream version is already packaged.
 Updating an existing crate
 --------------------------
 
-`./update.sh $CRATE`
+`[REALVER=x.y.z] ./update.sh $CRATE`
 
-`update.sh` will download the current upstream version from crates.io, update
-`d/changelog` and `d/copyright.debcargo.hint` and provide hints about the next
-steps (such as updating `d/copyright` with changed information).
+`update.sh` will download the current upstream version from crates.io (or the
+version specified with `REALVER`), update `d/changelog` and
+`d/copyright.debcargo.hint` and provide hints about the next steps (such as
+updating `d/copyright` with changed information).
 
 Next steps
 ----------
