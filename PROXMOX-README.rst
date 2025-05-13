@@ -94,7 +94,7 @@ Changelog handling
 The following dch command will amend the changelog for backporting to Debian
 Buster based Proxmox products:
 
-`DEBFULLNAME="Proxmox Support Team" DEBEMAIL="support@proxmox.com" dch -l ~bpo12+pve --distribution proxmox-rust --force-distribution "Backport to Debian Bookworm / Proxmox" --changelog src/$CRATE/debian/changelog`
+`DEBFULLNAME="Proxmox Support Team" DEBEMAIL="support@proxmox.com" dch -l ~bpo13+pve --distribution proxmox-rust --force-distribution "Backport to Debian Trixie / Proxmox" --changelog src/$CRATE/debian/changelog`
 
 Run `./repackage.sh $CRATE` or `./repackage.sh $CRATE $OLDVER` to regenerate
 the files in `build` (you may have to delete the `build/$CRATE` directory first).
@@ -102,8 +102,8 @@ the files in `build` (you may have to delete the `build/$CRATE` directory first)
 Building
 ========
 
-After running `update.sh`, `new.sh` or `repackage.sh`, a copy of the crate
-source code and the generated packaging files are available in `build`::
+After running `update.sh` or `repackage.sh`, a copy of the crate source code
+and the generated packaging files are available in `build`::
 
   $ ls src/proc-macro2/debian
   changelog
@@ -134,10 +134,10 @@ Using build.sh / sbuild
 
 Running `./build.sh $CRATE` inside the `build` directory will build the crate
 using `sbuild` with the default schroot `debcargo-unstable-amd64-sbuild`. To
-build for another distribution, like Proxmox products based on Debian Buster,
-the CHROOT and DISTRIBUTION environment variables can be set::
+build for another distribution, like Proxmox products based on Debian stable,
+the CHROOT and DISTRO environment variables can be set::
 
-  CHROOT=debcargo-bookworm-amd64-sbuild DISTRIBUTION=bookworm ./build.sh $CRATE
+  CHROOT=debcargo-trixie-amd64-sbuild DISTRO=trixie ./build.sh $CRATE
 
 The `IGNORE_MISSING_BUILD_DEPS` environment variable can be set to `1` to skip
 checks for installed build dependencies on the host (sbuild of course still
@@ -146,7 +146,7 @@ needs them inside the build environment).
 Binary packages needed for building which are not yet uploaded to the
 repositories can be passed to the build environment as extra arguments::
 
-  CHROOT=debcargo-bookworm-amd64-sbuild DISTRIBUTION=bookworm ./build.sh $CRATE $DEB1 $DEB2 $DEB3
+  CHROOT=debcargo-trixie-amd64-sbuild DISTRO=trixie ./build.sh $CRATE $DEB1 $DEB2 $DEB3
 
 By default, `build.sh` will run autopkgtests with additional dependencies as a
 post-build step. This extra step can be disabled by setting the
