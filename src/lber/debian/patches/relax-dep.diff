@@ -1,0 +1,13 @@
+Index: lber/Cargo.toml
+===================================================================
+--- lber.orig/Cargo.toml
++++ lber/Cargo.toml
+@@ -33,7 +33,7 @@ repository = "https://github.com/inejge/
+ resolver = "2"
+ 
+ [dependencies.bytes]
+-version = "1.3.0"
++version = "1.0.0"
+ 
+ [dependencies.nom]
+ version = "7.1.1"
