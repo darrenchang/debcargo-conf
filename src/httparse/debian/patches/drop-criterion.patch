@@ -1,0 +1,19 @@
+Index: httparse/Cargo.toml
+===================================================================
+--- httparse.orig/Cargo.toml
++++ httparse/Cargo.toml
+@@ -50,14 +50,6 @@ bench = false
+ name = "uri"
+ path = "tests/uri.rs"
+ 
+-[[bench]]
+-name = "parse"
+-path = "benches/parse.rs"
+-harness = false
+-
+-[dev-dependencies.criterion]
+-version = "0.3.5"
+-
+ [dev-dependencies.rand]
+ version = "0.8.5"
+ 
