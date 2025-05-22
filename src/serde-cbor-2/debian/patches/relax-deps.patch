@@ -1,0 +1,13 @@
+Index: serde-cbor-2/Cargo.toml
+===================================================================
+--- serde-cbor-2.orig/Cargo.toml
++++ serde-cbor-2/Cargo.toml
+@@ -31,7 +31,7 @@ license = "MIT/Apache-2.0"
+ repository = "https://github.com/kanidm/cbor"
+ 
+ [dependencies.half]
+-version = "1.2.0"
++version = "2"
+ 
+ [dependencies.serde]
+ version = "1.0.14"

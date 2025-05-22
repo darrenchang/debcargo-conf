@@ -1,0 +1,34 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test serde_cbor_2 0.12.0-dev --all-targets --all-features
+Features: test-name=rust-serde-cbor-2:@
+Depends: dh-cargo (>= 31), rustc, librust-serde-derive-1-dev (>= 1.0.14-~~), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test serde_cbor_2 0.12.0-dev --all-targets --no-default-features --features tags
+Features: test-name=librust-serde-cbor-2-dev:tags
+Depends: dh-cargo (>= 31), rustc, librust-serde-derive-1-dev (>= 1.0.14-~~), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test serde_cbor_2 0.12.0-dev --all-targets --no-default-features --features unsealed_read_write
+Features: test-name=librust-serde-cbor-2-dev:unsealed_read_write
+Depends: dh-cargo (>= 31), rustc, librust-serde-derive-1-dev (>= 1.0.14-~~), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test serde_cbor_2 0.12.0-dev --all-targets --no-default-features
+Features: test-name=librust-serde-cbor-2-dev:
+Depends: dh-cargo (>= 31), rustc, librust-serde-derive-1-dev (>= 1.0.14-~~), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test serde_cbor_2 0.12.0-dev --all-targets --no-default-features --features alloc
+Features: test-name=librust-serde-cbor-2+alloc-dev:alloc
+Depends: dh-cargo (>= 31), rustc, librust-serde-derive-1-dev (>= 1.0.14-~~), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test serde_cbor_2 0.12.0-dev --all-targets
+Features: test-name=librust-serde-cbor-2+std-dev:default
+Depends: dh-cargo (>= 31), rustc, librust-serde-derive-1-dev (>= 1.0.14-~~), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test serde_cbor_2 0.12.0-dev --all-targets --no-default-features --features std
+Features: test-name=librust-serde-cbor-2+std-dev:std
+Depends: dh-cargo (>= 31), rustc, librust-serde-derive-1-dev (>= 1.0.14-~~), @
+Restrictions: allow-stderr, skip-not-installable
