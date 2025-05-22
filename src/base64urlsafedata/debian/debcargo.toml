@@ -1,0 +1,4 @@
+overlay = "."
+uploaders = ["Fabian Grünbichler <debian@fabian.gruenbichler.email>"]
+# serde_cbor_2
+allow_prerelease_deps = true

@@ -1,0 +1,13 @@
+Index: base64urlsafedata/Cargo.toml
+===================================================================
+--- base64urlsafedata.orig/Cargo.toml
++++ base64urlsafedata/Cargo.toml
+@@ -40,7 +40,7 @@ name = "base64urlsafedata"
+ path = "src/lib.rs"
+ 
+ [dependencies.base64]
+-version = "0.21"
++version = "0.22"
+ 
+ [dependencies.paste]
+ version = "1.0.14"
