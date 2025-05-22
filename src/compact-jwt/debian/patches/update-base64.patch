@@ -1,0 +1,13 @@
+Index: compact-jwt/Cargo.toml
+===================================================================
+--- compact-jwt.orig/Cargo.toml
++++ compact-jwt/Cargo.toml
+@@ -31,7 +31,7 @@ repository = "https://github.com/kanidm/
+ all-features = true
+ 
+ [dependencies.base64]
+-version = "^0.21.5"
++version = "0.22"
+ 
+ [dependencies.base64urlsafedata]
+ version = "0.5.0"
