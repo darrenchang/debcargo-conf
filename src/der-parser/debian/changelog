@@ -1,3 +1,9 @@
+rust-der-parser (10.0.0-1~bpo13+pve1) proxmox-rust; urgency=medium
+
+  * Rebuild for Debian Trixie / Proxmox
+
+ -- Proxmox Support Team <support@proxmox.com>  Thu, 22 May 2025 13:08:36 +0200
+
 rust-der-parser (10.0.0-1) unstable; urgency=medium
 
   * Team upload.
