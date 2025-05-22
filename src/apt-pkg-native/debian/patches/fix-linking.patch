@@ -10,7 +10,16 @@ Index: apt-pkg-native/build.rs
  const SRC: &str = "apt-pkg-c/lib.cpp";
  
  fn main() {
-@@ -17,5 +19,6 @@ fn main() {
+@@ -10,7 +12,7 @@ fn main() {
+     let mut build = cc::Build::new();
+     build.file(SRC);
+     build.cpp(true);
+-    build.flag("-std=gnu++11");
++    build.flag("-std=gnu++17");
+ 
+     #[cfg(feature = "ye-olde-apt")]
+     {
+@@ -17,5 +20,6 @@ fn main() {
  
      build.compile("libapt-pkg-c.a");
  
