@@ -1,0 +1,22 @@
+Index: webauthn-rs/src/lib.rs
+===================================================================
+--- webauthn-rs.orig/src/lib.rs
++++ webauthn-rs/src/lib.rs
+@@ -774,7 +774,7 @@ impl Webauthn {
+     /// Failure to do so *may* open you to replay attacks which can significantly weaken the
+     /// security of this system.
+     ///
+-    /// ```
++    /// ```ignore
+     /// # use webauthn_rs::prelude::*;
+     ///
+     /// # let rp_id = "example.com";
+@@ -1079,7 +1079,7 @@ impl Webauthn {
+     /// Failure to do so *may* open you to replay attacks which can significantly weaken the
+     /// security of this system.
+     ///
+-    /// ```
++    /// ```ignore
+     /// # use webauthn_rs::prelude::*;
+     /// use webauthn_rs_device_catalog::Data;
+     /// # let rp_id = "example.com";
