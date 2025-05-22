@@ -1,0 +1,66 @@
+Description: these assets are not published on crates.io..
+
+Index: x509-parser/tests/readcrl.rs
+===================================================================
+--- x509-parser.orig/tests/readcrl.rs
++++ x509-parser/tests/readcrl.rs
+@@ -24,9 +24,9 @@ fn crl_idp<'a>(crl: &'a CertificateRevoc
+     }
+ }
+ 
+-#[test]
++#[allow(dead_code)]
+ fn read_minimal_crl_idp() {
+-    const CRL_DATA: &[u8] = include_bytes!("../assets/crl-idp/minimal.der");
++    const CRL_DATA: &[u8] = &[];
+     let (_, crl) = parse_x509_crl(CRL_DATA).expect("could not parse revocation list");
+     let crl_idp = crl_idp(&crl);
+ 
+@@ -53,9 +53,9 @@ fn read_minimal_crl_idp() {
+     assert!(!crl_idp.only_contains_attribute_certs);
+ }
+ 
+-#[test]
++#[allow(dead_code)]
+ fn test_only_user_crl_idp() {
+-    const CRL_DATA: &[u8] = include_bytes!("../assets/crl-idp/only_user_certs.der");
++    const CRL_DATA: &[u8] = &[];
+     let (_, crl) = parse_x509_crl(CRL_DATA).expect("could not parse revocation list");
+     let crl_idp = crl_idp(&crl);
+ 
+@@ -65,9 +65,9 @@ fn test_only_user_crl_idp() {
+     assert!(!crl_idp.only_contains_attribute_certs);
+ }
+ 
+-#[test]
++#[allow(dead_code)]
+ fn test_only_ca_crl_idp() {
+-    const CRL_DATA: &[u8] = include_bytes!("../assets/crl-idp/only_ca_certs.der");
++    const CRL_DATA: &[u8] = &[];
+     let (_, crl) = parse_x509_crl(CRL_DATA).expect("could not parse revocation list");
+     let crl_idp = crl_idp(&crl);
+ 
+@@ -77,9 +77,9 @@ fn test_only_ca_crl_idp() {
+     assert!(!crl_idp.only_contains_attribute_certs);
+ }
+ 
+-#[test]
++#[allow(dead_code)]
+ fn test_only_some_reasons_crl_idp() {
+-    const CRL_DATA: &[u8] = include_bytes!("../assets/crl-idp/only_some_reasons.der");
++    const CRL_DATA: &[u8] = &[];
+     let (_, crl) = parse_x509_crl(CRL_DATA).expect("could not parse revocation list");
+     let crl_idp = crl_idp(&crl);
+ 
+@@ -95,9 +95,9 @@ fn test_only_some_reasons_crl_idp() {
+     assert!(reasons.affilation_changed());
+ }
+ 
+-#[test]
++#[allow(dead_code)]
+ fn test_only_attribute_cers_crl_idp() {
+-    const CRL_DATA: &[u8] = include_bytes!("../assets/crl-idp/only_attribute_certs.der");
++    const CRL_DATA: &[u8] = &[];
+     let (_, crl) = parse_x509_crl(CRL_DATA).expect("could not parse revocation list");
+     let crl_idp = crl_idp(&crl);
+ 
