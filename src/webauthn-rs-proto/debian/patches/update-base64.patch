@@ -1,0 +1,13 @@
+Index: webauthn-rs-proto/Cargo.toml
+===================================================================
+--- webauthn-rs-proto.orig/Cargo.toml
++++ webauthn-rs-proto/Cargo.toml
+@@ -49,7 +49,7 @@ name = "webauthn_rs_proto"
+ path = "src/lib.rs"
+ 
+ [dependencies.base64]
+-version = "0.21"
++version = "0.22"
+ 
+ [dependencies.base64urlsafedata]
+ version = "=0.5.1"
