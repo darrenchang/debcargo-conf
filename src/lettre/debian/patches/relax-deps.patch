@@ -2,12 +2,12 @@ Index: lettre/Cargo.toml
 ===================================================================
 --- lettre.orig/Cargo.toml
 +++ lettre/Cargo.toml
-@@ -127,7 +127,7 @@ version = "0.1"
+@@ -260,7 +260,7 @@ optional = true
+ default-features = false
+ 
+ [dependencies.hostname]
+-version = "0.4"
++version = "0.3"
  optional = true
  
- [dependencies.base64]
--version = "0.21"
-+version = ">= 0.21, <0.23"
- optional = true
- 
- [dependencies.chumsky]
+ [dependencies.httpdate]
