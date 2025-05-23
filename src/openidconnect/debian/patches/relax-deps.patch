@@ -2,8 +2,17 @@ Index: openidconnect/Cargo.toml
 ===================================================================
 --- openidconnect.orig/Cargo.toml
 +++ openidconnect/Cargo.toml
-@@ -37,7 +37,7 @@ default-features = false
- version = "0.2"
+@@ -43,7 +43,7 @@ name = "okta_device_grant"
+ required-features = ["reqwest-blocking"]
+ 
+ [dependencies.base64]
+-version = "0.21"
++version = "0.22"
+ 
+ [dependencies.chrono]
+ version = "0.4"
+@@ -68,7 +68,7 @@ version = "0.12.1"
+ version = "1.0"
  
  [dependencies.itertools]
 -version = "0.10"
@@ -11,58 +20,3 @@ Index: openidconnect/Cargo.toml
  
  [dependencies.log]
  version = "0.4"
-@@ -53,7 +53,7 @@ default-features = false
- version = "0.8"
- 
- [dependencies.ring]
--version = "0.16"
-+version = "0.17"
- 
- [dependencies.serde]
- version = "1.0"
-@@ -74,7 +74,7 @@ version = "0.1"
- version = "1.0"
- 
- [dependencies.serde_with]
--version = "1.13"
-+version = "3"
- 
- [dependencies.subtle]
- version = "2.4"
-Index: openidconnect/src/core/jwk.rs
-===================================================================
---- openidconnect.orig/src/core/jwk.rs
-+++ openidconnect/src/core/jwk.rs
-@@ -1,5 +1,6 @@
- use ring::hmac;
- use ring::rand;
-+use ring::rsa::PublicKeyComponents;
- use ring::signature as ring_signature;
- use ring::signature::KeyPair;
- 
-@@ -419,22 +420,16 @@ impl
-     }
- 
-     fn as_verification_key(&self) -> CoreJsonWebKey {
--        let public_key = self.key_pair.public_key();
-+        let public_key: PublicKeyComponents<Vec<u8>> = self.key_pair.public_key().into();
-         CoreJsonWebKey {
-             kty: CoreJsonWebKeyType::RSA,
-             use_: Some(CoreJsonWebKeyUse::Signature),
-             kid: self.kid.clone(),
-             n: Some(Base64UrlEncodedBytes::new(
--                public_key
--                    .modulus()
--                    .big_endian_without_leading_zero()
--                    .into(),
-+                public_key.n.into(),
-             )),
-             e: Some(Base64UrlEncodedBytes::new(
--                public_key
--                    .exponent()
--                    .big_endian_without_leading_zero()
--                    .into(),
-+                public_key.e.into(),
-             )),
-             k: None,
-             crv: None,
