@@ -1,3 +1,9 @@
+rust-getrandom (0.2.15-1+pmx1) proxmox-rust; urgency=medium
+
+  * enable js feature again
+
+ -- Proxmox Support Team <support@proxmox.com>  Fri, 23 May 2025 09:05:28 +0200
+
 rust-getrandom (0.2.15-1) unstable; urgency=medium
 
   * Package getrandom 0.2.15 from crates.io using debcargo 2.7.5
