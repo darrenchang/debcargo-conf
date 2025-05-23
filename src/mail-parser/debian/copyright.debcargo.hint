@@ -13,7 +13,28 @@ Comment:
  the archive.
 
 Files: README.md
-Copyright: 2020-2022, Stalwart Labs Ltd.
+Copyright: 2020, Stalwart Labs LLC
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: resources/eml/legacy/COPYING
+Copyright: 2010 Hunny Software, Inc.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: resources/eml/malformed/COPYING
+Copyright: 2003-2018 Dovecot authors, licensed under MIT.
+License: UNKNOWN-LICENSE; FIXME (overlay)
+Comment:
+ FIXME (overlay): These notices are extracted from files. Please review them
+ before uploading to the archive.
+
+Files: resources/eml/thirdparty/COPYING
+Copyright: 2003-2018 Dovecot authors, licensed under MIT.
 License: UNKNOWN-LICENSE; FIXME (overlay)
 Comment:
  FIXME (overlay): These notices are extracted from files. Please review them
@@ -26,31 +47,10 @@ Comment:
  FIXME (overlay): These notices are extracted from files. Please review them
  before uploading to the archive.
 
-Files: tests/legacy/COPYING
-Copyright: 2010 Hunny Software, Inc.
-License: UNKNOWN-LICENSE; FIXME (overlay)
-Comment:
- FIXME (overlay): These notices are extracted from files. Please review them
- before uploading to the archive.
-
-Files: tests/malformed/COPYING
-Copyright: 2003-2018 Dovecot authors, licensed under MIT.
-License: UNKNOWN-LICENSE; FIXME (overlay)
-Comment:
- FIXME (overlay): These notices are extracted from files. Please review them
- before uploading to the archive.
-
-Files: tests/thirdparty/COPYING
-Copyright: 2003-2018 Dovecot authors, licensed under MIT.
-License: UNKNOWN-LICENSE; FIXME (overlay)
-Comment:
- FIXME (overlay): These notices are extracted from files. Please review them
- before uploading to the archive.
-
 Files: debian/*
 Copyright:
- 2023 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
- 2023 Lukas Wagner <l.wagner@proxmox.com>
+ 2023-2025 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2023-2025 Lukas Wagner <l.wagner@proxmox.com>
 License: Apache-2.0 or MIT
 
 License: Apache-2.0

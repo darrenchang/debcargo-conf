@@ -4,25 +4,25 @@ Upstream-Contact: Stalwart Labs <hello@stalw.art>
 Source: https://github.com/stalwartlabs/mail-parser
 
 Files: *
-Copyright: 2020-2022 Stalwart Labs <hello@stalw.art>
+Copyright: 2020-2025 Stalwart Labs <hello@stalw.art>
 License: Apache-2.0 or MIT
 
-Files: tests/legacy/*
+Files: resources/eml/legacy/*
 Copyright: 2010 Hunny Software, Inc.
 License: UNKNOWN-LICENSE;
 
-Files: tests/malformed/*
+Files: resources/eml/malformed/*
 Copyright: 2003-2018 Dovecot authors, licensed under MIT.
 License: MIT
 
-Files: tests/thirdparty/*
+Files: resources/eml/thirdparty/*
 Copyright: 2003-2018 Dovecot authors, licensed under MIT.
 License: MIT
 
 Files: debian/*
 Copyright:
- 2023 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
- 2023 Lukas Wagner <l.wagner@proxmox.com>
+ 2023-2025 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2023-2025 Lukas Wagner <l.wagner@proxmox.com>
 License: Apache-2.0 or MIT
 
 License: Apache-2.0
