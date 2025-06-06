@@ -1,0 +1,23 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: oci-spec
+Upstream-Contact:
+ Sascha Grunert <sgrunert@redhat.com>
+ Toru Komatsu <k0ma@utam0k.jp>
+Source: https://github.com/youki-dev/oci-spec-rs
+
+Files: *
+Copyright:
+ 2021-2025 Furisto
+ 2021-2025 Sascha Grunert <sgrunert@redhat.com>
+ 2021-2025 Toru Komatsu <k0ma@utam0k.jp>
+License: Apache-2.0
+
+Files: debian/*
+Copyright:
+ 2025 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+ 2025 Christoph Heiss <c.heiss@proxmox.com>
+License: Apache-2.0
+
+License: Apache-2.0
+ Debian systems provide the Apache 2.0 license in
+ /usr/share/common-licenses/Apache-2.0

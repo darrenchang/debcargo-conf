@@ -1,0 +1,26 @@
+Index: oci-spec/Cargo.toml
+===================================================================
+--- oci-spec.orig/Cargo.toml
++++ oci-spec/Cargo.toml
+@@ -61,7 +61,7 @@ version = "0.2"
+ version = "0.20.0"
+ 
+ [dependencies.getset]
+-version = "0.1.3"
++version = "0.1"
+ 
+ [dependencies.quickcheck]
+ version = "1.0.3"
+@@ -78,10 +78,10 @@ features = ["derive"]
+ version = "1.0.66"
+ 
+ [dependencies.strum]
+-version = "0.27.0"
++version = "0.26"
+ 
+ [dependencies.strum_macros]
+-version = "0.27.0"
++version = "0.26"
+ 
+ [dependencies.thiserror]
+ version = "2.0.0"
