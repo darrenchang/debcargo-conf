@@ -1,0 +1,13 @@
+Index: walrus-macro/Cargo.toml
+===================================================================
+--- walrus-macro.orig/Cargo.toml
++++ walrus-macro/Cargo.toml
+@@ -35,7 +35,7 @@ path = "src/lib.rs"
+ proc-macro = true
+ 
+ [dependencies.heck]
+-version = "0.5.0"
++version = "0.4.0"
+ 
+ [dependencies.proc-macro2]
+ version = "1.0.86"
