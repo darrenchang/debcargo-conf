@@ -1,0 +1,14 @@
+Index: deepsize/Cargo.toml
+===================================================================
+--- deepsize.orig/Cargo.toml
++++ deepsize/Cargo.toml
+@@ -22,9 +22,6 @@ keywords = ["size", "stack", "heap"]
+ categories = ["development-tools::profiling", "memory-management"]
+ license = "MIT"
+ repository = "https://github.com/Aeledfyr/deepsize/"
+-[dependencies.arrayvec]
+-version = "^0.5"
+-optional = true
+ 
+ [dependencies.chrono]
+ version = "^0.4"

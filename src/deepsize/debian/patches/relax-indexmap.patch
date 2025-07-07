@@ -1,0 +1,13 @@
+Index: deepsize/Cargo.toml
+===================================================================
+--- deepsize.orig/Cargo.toml
++++ deepsize/Cargo.toml
+@@ -36,7 +36,7 @@ version = "^0.14"
+ optional = true
+ 
+ [dependencies.indexmap]
+-version = "^1"
++version = "^2"
+ optional = true
+ 
+ [dependencies.slab]
