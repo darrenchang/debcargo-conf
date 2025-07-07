@@ -1,0 +1,13 @@
+Index: prokio/Cargo.toml
+===================================================================
+--- prokio.orig/Cargo.toml
++++ prokio/Cargo.toml
+@@ -73,7 +73,7 @@ version = "1.19"
+ features = ["full"]
+ 
+ [target."cfg(target_arch = \"wasm32\")".dependencies.gloo]
+-version = "0.8"
++version = "0.10"
+ 
+ [target."cfg(target_arch = \"wasm32\")".dependencies.wasm-bindgen-futures]
+ version = "0.4"
