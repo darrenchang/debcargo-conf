@@ -1,0 +1,22 @@
+Index: grass/Cargo.toml
+===================================================================
+--- grass.orig/Cargo.toml
++++ grass/Cargo.toml
+@@ -23,7 +23,7 @@ include = [
+     "Cargo.lock",
+     "LICENSE",
+ ]
+-default-run = "grass"
++default-run = "rust-grass"
+ description = "A Sass compiler written purely in Rust"
+ readme = "README.md"
+ keywords = [
+@@ -57,7 +57,7 @@ path = "src/lib.rs"
+ bench = false
+ 
+ [[bin]]
+-name = "grass"
++name = "rust-grass"
+ path = "src/main.rs"
+ required-features = ["commandline"]
+ 

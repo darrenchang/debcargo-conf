@@ -1,0 +1,11 @@
+overlay = "."
+uploaders = ["Fabian Grünbichler <f.gruenbichler@proxmox.com>"]
+
+collapse_features = true
+summary = "SASS compiler and compiler-library written in Rust."
+
+bin_name = "rust-grass"
+
+[packages.bin]
+section = "web"
+summary = "This package contains the CLI SASS compiler 'grass'."
