@@ -22,7 +22,7 @@ Comment:
 Files: debian/*
 Copyright:
  2025 Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
- 2025  <Proxmox Support Team <support@proxmox.com>>
+ 2025 Proxmox Support Team <support@proxmox.com>
 License: MIT
 
 License: MIT
