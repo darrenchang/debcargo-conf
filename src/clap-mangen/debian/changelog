@@ -1,3 +1,9 @@
+rust-clap-mangen (0.2.29-1~bpo13+pve1) proxmox-rust; urgency=medium
+
+  * Rebuild for Debian Trixie / Proxmox
+
+ -- Proxmox Support Team <support@proxmox.com>  Thu, 02 Oct 2025 13:28:43 +0200
+
 rust-clap-mangen (0.2.29-1) unstable; urgency=medium
 
   * Team upload.
