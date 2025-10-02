@@ -1,3 +1,9 @@
+rust-debcargo (2.7.11-1~bpo13+pve1) proxmox-rust; urgency=medium
+
+  * Rebuild for Debian Trixie / Proxmox
+
+ -- Proxmox Support Team <support@proxmox.com>  Thu, 02 Oct 2025 13:39:39 +0200
+
 rust-debcargo (2.7.11-1) unstable; urgency=medium
 
   * Package debcargo 2.7.11 from crates.io using debcargo 2.7.11
