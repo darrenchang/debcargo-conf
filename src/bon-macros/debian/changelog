@@ -1,3 +1,9 @@
+rust-bon-macros (3.7.1-1~bpo13+pve1) proxmox-rust; urgency=medium
+
+  * Rebuild for Debian Trixie / Proxmox
+
+ -- Proxmox Support Team <support@proxmox.com>  Fri, 16 Jan 2026 16:34:03 +0100
+
 rust-bon-macros (3.7.1-1) unstable; urgency=medium
 
   * Package bon-macros 3.7.1 from crates.io using debcargo 2.7.10
