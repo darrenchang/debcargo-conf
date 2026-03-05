@@ -1,1 +1,2 @@
 relax-deps.diff
+add-method-for-getting-the-vGPU-type-id.patch

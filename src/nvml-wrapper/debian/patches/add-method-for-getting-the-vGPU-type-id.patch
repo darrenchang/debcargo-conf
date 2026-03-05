@@ -1,0 +1,32 @@
+From 09ce7912eb233dd9f577a858250e95e5f95eac16 Mon Sep 17 00:00:00 2001
+From: flumm <dominik.csapak@gmail.com>
+Date: Thu, 5 Mar 2026 00:31:43 +0100
+Subject: [PATCH] add method for getting the vGPU type id (#124)
+
+This is useful for example on linux, where this id is the same as the
+one that needs to be written into sysfs for creating a vGPU instance.
+
+Signed-off-by: Dominik Csapak <d.csapak@proxmox.com>
+---
+ nvml-wrapper/src/vgpu.rs | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/nvml-wrapper/src/vgpu.rs b/nvml-wrapper/src/vgpu.rs
+index 548e7eb..25d1624 100644
+--- a/src/vgpu.rs
++++ b/src/vgpu.rs
+@@ -33,6 +33,11 @@ impl<'dev> VgpuType<'dev> {
+         self.device
+     }
+ 
++    /// Get the underlying vGPU type id.
++    pub fn id(&self) -> nvmlVgpuTypeId_t {
++        self.id
++    }
++
+     /// Retrieve the class of the vGPU type.
+     ///
+     /// # Errors
+-- 
+2.47.3
+
