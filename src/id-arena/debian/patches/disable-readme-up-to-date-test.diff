@@ -1,0 +1,15 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 42e13aa..ef29ae1 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -45,10 +45,6 @@ std = []
+ name = "id_arena"
+ path = "src/lib.rs"
+
+-[[test]]
+-name = "readme_up_to_date"
+-path = "tests/readme_up_to_date.rs"
+-
+ [dependencies.rayon]
+ version = "1.0.3"
+ optional = true

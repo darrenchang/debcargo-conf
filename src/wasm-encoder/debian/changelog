@@ -1,3 +1,9 @@
+rust-wasm-encoder (0.245.1-1) unstable; urgency=medium
+
+  * Package wasm-encoder 0.245.1 from crates.io using debcargo 2.8.2
+
+ -- Darren Chang <darrenchang951@gmail.com>  Fri, 20 Mar 2026 00:00:00 +0800
+
 rust-wasm-encoder (0.217.0-1) unstable; urgency=medium
 
   * Package wasm-encoder 0.217.0 from crates.io using debcargo 2.7.0

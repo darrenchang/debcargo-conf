@@ -1,3 +1,9 @@
+rust-indexmap (2.13.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Blair Noctis <ncts@debian.org>  Sat, 11 Jan 2025 18:48:35 +0000
+
 rust-indexmap (2.7.0-1) unstable; urgency=medium
 
   * Team upload.

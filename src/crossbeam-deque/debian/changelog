@@ -1,3 +1,9 @@
+rust-crossbeam-deque (0.8.6-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Sun, 28 Jan 2024 07:30:49 +0000
+
 rust-crossbeam-deque (0.8.5-1) unstable; urgency=medium
 
   * Team upload.

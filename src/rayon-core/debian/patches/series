@@ -1,3 +1,0 @@
-constrain-thread-count.patch
-use-crossbeam-channel-for-broadcast-tests.patch
-remove-wasm-sync.patch

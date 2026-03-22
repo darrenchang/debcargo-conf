@@ -1,5 +1,0 @@
---- a/Cargo.toml
-+++ b/Cargo.toml
-@@ -92 +92 @@
--[target."cfg(windows)".dependencies.windows-sys]
-+[disabled.target."cfg(windows)".dependencies.windows-sys]

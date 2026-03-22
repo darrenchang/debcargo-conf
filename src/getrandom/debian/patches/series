@@ -1,2 +1,0 @@
-drop-wasi.patch
-disable-rdrand-test.patch

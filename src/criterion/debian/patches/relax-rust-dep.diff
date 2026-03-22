@@ -1,0 +1,8 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -12,5 +12,4 @@
+ [package]
+ edition = "2021"
+-rust-version = "1.86"
+ name = "criterion"
+ version = "0.8.2"

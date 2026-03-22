@@ -1,28 +1,30 @@
-Index: hashbrown/Cargo.toml
-===================================================================
---- hashbrown.orig/Cargo.toml
-+++ hashbrown/Cargo.toml
-@@ -36,7 +36,6 @@ repository = "https://github.com/rust-la
- 
+diff --git a/Cargo.toml b/Cargo.toml
+index 5244399..d4c0bcc 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -42,7 +42,6 @@ repository = "https://github.com/rust-lang/hashbrown"
+
  [package.metadata.docs.rs]
  features = [
 -    "nightly",
      "rayon",
      "serde",
-     "raw",
-@@ -117,15 +116,5 @@ default = [
-     "allocator-api2",
+     "raw-entry",
+@@ -59,17 +58,7 @@ default = [
  ]
+ default-hasher = ["dep:foldhash"]
  inline-more = []
 -nightly = [
--    "allocator-api2?/nightly",
+-    "foldhash?/nightly",
 -    "bumpalo/allocator_api",
 -]
- raw = []
+ raw-entry = []
 -rustc-dep-of-std = [
 -    "nightly",
 -    "core",
--    "compiler_builtins",
+-    "alloc",
 -    "rustc-internal-api",
 -]
  rustc-internal-api = []
+ serde = [
+     "dep:serde_core",

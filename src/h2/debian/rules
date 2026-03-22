@@ -3,7 +3,7 @@
 execute_before_dh_auto_configure:
 	rm -rf legacy
 	cp -a src legacy
-	grep -v legacy legacy/lib.rs | sponge legacy/lib.rs
+	grep -v legacy legacy/lib.rs > legacy/lib.rs.tmp && mv legacy/lib.rs.tmp legacy/lib.rs
 	for FILE in `find legacy -name '*.rs'` ; do sed -i s/crate::/crate::legacy::/ $$FILE ; done
 	for FILE in `find legacy -name '*.rs'` ; do sed -i s/http::/http_02::/ $$FILE ; done
 
