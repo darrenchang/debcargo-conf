@@ -1,5 +1,1 @@
-disable-hyphenation.diff
-remove-leftovers.patch
-remove-unic-emoji-char.patch
-remove-version-sync.patch
-relax-dep.patch
+01-disable-optional-dep.diff

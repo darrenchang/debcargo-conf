@@ -1,0 +1,29 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 04594a1..e21d66d 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -52,13 +52,13 @@ name = "webauthn_rs_core"
+ path = "src/lib.rs"
+
+ [dependencies.base64]
+-version = "0.21"
++version = "0.22"
+
+ [dependencies.base64urlsafedata]
+ version = "=0.5.4"
+
+ [dependencies.der-parser]
+-version = "9.0"
++version = "10.0"
+
+ [dependencies.hex]
+ version = "0.4.3"
+@@ -109,7 +109,7 @@ version = "=0.5.4"
+ version = "=0.5.4"
+
+ [dependencies.x509-parser]
+-version = "0.16"
++version = "0.18"
+
+ [dev-dependencies.hex-literal]
+ version = "0.4"

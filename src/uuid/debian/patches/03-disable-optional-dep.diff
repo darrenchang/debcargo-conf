@@ -1,0 +1,66 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 4e85d47..892a225 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -105,10 +105,10 @@ fast-rng = [
+ #    "rng",
+     "dep:rand",
+ ]
+-js = [
+-    "dep:wasm-bindgen",
+-    "dep:js-sys",
+-]
++#js = [
++#    "dep:wasm-bindgen",
++#    "dep:js-sys",
++#]
+ macro-diagnostics = []
+ #md5 = ["dep:md-5"]
+ rng = ["dep:getrandom"]
+@@ -126,10 +126,10 @@ rng-rand = [
+ ]
+ serde = ["dep:serde_core"]
+ sha1 = ["dep:sha1_smol"]
+-std = [
+-    "wasm-bindgen?/std",
+-    "js-sys?/std",
+-]
++#std = [
++#    "wasm-bindgen?/std",
++#    "js-sys?/std",
++#]
+ v1 = ["atomic"]
+ #v3 = ["md5"]
+ v4 = ["rng"]
+@@ -213,11 +213,11 @@ version = "1.23.0"
+ optional = true
+ package = "uuid-rng-internal"
+
+-[target.'cfg(all(target_arch = "wasm32", any(target_os = "unknown", target_os = "none")))'.dependencies.wasm-bindgen]
+-version = "0.2"
+-features = ["msrv"]
+-optional = true
+-default-features = false
++#[target.'cfg(all(target_arch = "wasm32", any(target_os = "unknown", target_os = "none")))'.dependencies.wasm-bindgen]
++#version = "0.2"
++#features = ["msrv"]
++#optional = true
++#default-features = false
+
+ [target.'cfg(all(target_arch = "wasm32", any(target_os = "unknown", target_os = "none")))'.dev-dependencies.wasm-bindgen]
+ version = "0.2"
+@@ -225,10 +225,10 @@ version = "0.2"
+ [target.'cfg(all(target_arch = "wasm32", any(target_os = "unknown", target_os = "none")))'.dev-dependencies.wasm-bindgen-test]
+ version = "0.3"
+
+-[target.'cfg(all(target_arch = "wasm32", any(target_os = "unknown", target_os = "none"), target_feature = "atomics"))'.dependencies.js-sys]
+-version = "0.3"
+-optional = true
+-default-features = false
++#[target.'cfg(all(target_arch = "wasm32", any(target_os = "unknown", target_os = "none"), target_feature = "atomics"))'.dependencies.js-sys]
++#version = "0.3"
++#optional = true
++#default-features = false
+
+ [target.'cfg(not(all(target_arch = "wasm32", any(target_os = "unknown", target_os = "none"))))'.dependencies.getrandom]
+ version = "0.3"

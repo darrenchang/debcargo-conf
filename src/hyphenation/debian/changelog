@@ -1,3 +1,9 @@
+rust-hyphenation (0.8.4-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Matthias Geiger <werdahias@debian.org>  Wed, 07 May 2025 16:55:52 +0200
+
 rust-hyphenation (0.7.1-2) unstable; urgency=medium
 
   * Team upload.

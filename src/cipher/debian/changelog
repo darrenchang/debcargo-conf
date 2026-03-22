@@ -1,3 +1,9 @@
+rust-cipher (0.5.1-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Thu, 13 Jul 2023 00:29:55 +0000
+
 rust-cipher (0.4.4-3) unstable; urgency=medium
 
   * Team upload.

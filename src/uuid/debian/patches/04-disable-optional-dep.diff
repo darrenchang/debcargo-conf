@@ -1,0 +1,13 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 892a225..0bb4f9b 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -100,7 +100,7 @@ borsh = [
+     "dep:borsh",
+     "dep:borsh-derive",
+ ]
+-default = ["std"]
++default = []
+ fast-rng = [
+ #    "rng",
+     "dep:rand",

@@ -1,0 +1,57 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index ab5edbf..ab23ea9 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -72,11 +72,9 @@ default-code-coverage = [
+ f16 = []
+ fork = [
+     "std",
+-    "rusty-fork",
+-    "tempfile",
+ ]
+ handle-panics = ["std"]
+-hardware-rng = ["x86"]
++hardware-rng = []
+ no_std = ["num-traits/libm"]
+ std = [
+     "rand/std",
+@@ -86,7 +84,7 @@ std = [
+ ]
+ timeout = [
+     "fork",
+-    "rusty-fork/timeout",
++    #"rusty-fork/timeout",
+ ]
+ unstable = ["f16"]
+
+@@ -131,7 +129,7 @@ version = "0.8.0"
+ optional = true
+
+ [dependencies.bitflags]
+-version = "2.10"
++version = "2.11"
+
+ [dependencies.num-traits]
+ version = "0.2.15"
+@@ -157,19 +155,19 @@ version = "0.4"
+ version = "0.8"
+ optional = true
+
+-[dependencies.rusty-fork]
++[disabled.dependencies.rusty-fork]
+ version = "0.3.0"
+ optional = true
+ default-features = false
+
+-[dependencies.tempfile]
++[disabled.dependencies.tempfile]
+ version = "3.0"
+ optional = true
+
+ [dependencies.unarray]
+ version = "0.1.4"
+
+-[dependencies.x86]
++[disabled.dependencies.x86]
+ version = "0.52.0"
+ optional = true

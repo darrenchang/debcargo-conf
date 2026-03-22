@@ -1,3 +1,9 @@
+rust-hyper-util (0.1.20-1~bpo13+pve1) proxmox-rust; urgency=medium
+
+  * Rebuild for Debian Trixie / Proxmox
+
+ -- Proxmox Support Team <support@proxmox.com>  Thu, 22 May 2025 14:10:11 +0200
+
 rust-hyper-util (0.1.12-1~bpo13+pve1) proxmox-rust; urgency=medium
 
   * Rebuild for Debian Trixie / Proxmox

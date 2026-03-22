@@ -1,0 +1,11 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 0137442..b079127 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -12,5 +12,5 @@
+ [package]
+ edition = "2024"
+-rust-version = "1.87.0"
++#rust-version = "1.87.0"
+ name = "nalgebra"
+ version = "0.34.1"

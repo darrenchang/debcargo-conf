@@ -1,0 +1,30 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 71f7601..f7c4093 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -37,7 +37,6 @@ keywords = [
+     "formatting",
+     "wrap",
+     "typesetting",
+-    "hyphenation",
+ ]
+ categories = [
+     "text-processing",
+@@ -68,7 +67,7 @@ path = "tests/indent.rs"
+ name = "version-numbers"
+ path = "tests/version-numbers.rs"
+
+-[dependencies.hyphenation]
++[disabled.dependencies.hyphenation]
+ version = "0.8.4"
+ features = ["embed_en-us"]
+ optional = true
+@@ -77,7 +76,7 @@ optional = true
+ version = "0.3.2"
+ optional = true
+
+-[dependencies.terminal_size]
++[disabled.dependencies.terminal_size]
+ version = "0.4.0"
+ optional = true
+

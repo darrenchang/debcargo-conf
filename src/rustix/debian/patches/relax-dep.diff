@@ -1,7 +1,0 @@
---- a/Cargo.toml
-+++ b/Cargo.toml
-@@ -114,3 +114,3 @@
- [dev-dependencies.memoffset]
--version = "0.9.0"
-+version = "0.8"
- 

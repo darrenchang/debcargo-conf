@@ -1,3 +1,0 @@
-disable-tests-missing-testdata.patch
-remove-regex-test.patch
-relax-dep.diff

@@ -1,7 +1,0 @@
-Index: openssl/Cargo.toml
-===================================================================
---- openssl.orig/Cargo.toml
-+++ openssl/Cargo.toml
-@@ -63,1 +63,1 @@
--vendored = ["ffi/vendored"]
-+vendored = []

@@ -1,6 +1,1 @@
-remove-skim.patch
-remove-clipboard-win.patch
-no-bundled.patch
-relax-deps.patch
-relax-sizeof-test.patch
-remove-windows-sys.patch
+01-remove-opt-deps.diff

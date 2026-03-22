@@ -1,3 +1,9 @@
+rust-gimli (0.33.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Wed, 25 Dec 2024 17:25:15 +0000
+
 rust-gimli (0.31.1-2) unstable; urgency=medium
 
   * Team upload.

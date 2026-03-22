@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+# bssl-sys is a placeholder crate with a compile_error!() in lib.rs.
+# It cannot be compiled; skip build and test entirely.
+%:
+	dh $@ --buildsystem cargo
+
+override_dh_auto_build:
+	# placeholder, nothing to build
+
+override_dh_auto_test:
+	# placeholder, nothing to test

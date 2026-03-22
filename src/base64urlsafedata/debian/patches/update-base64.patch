@@ -1,13 +1,13 @@
-Index: base64urlsafedata/Cargo.toml
-===================================================================
---- base64urlsafedata.orig/Cargo.toml
-+++ base64urlsafedata/Cargo.toml
+diff --git a/Cargo.toml b/Cargo.toml
+index 1a4a92f..cdc378e 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
 @@ -40,7 +40,7 @@ name = "base64urlsafedata"
  path = "src/lib.rs"
- 
+
  [dependencies.base64]
 -version = "0.21"
 +version = "0.22"
- 
- [dependencies.paste]
- version = "1.0.14"
+
+ [dependencies.pastey]
+ version = "0.1.1"

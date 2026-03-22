@@ -1,3 +1,9 @@
+rust-trybuild (1.0.116-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Tue, 08 Apr 2025 15:56:32 -0400
+
 rust-trybuild (1.0.104-1) unstable; urgency=medium
 
   * Team upload.

@@ -1,3 +1,9 @@
+rust-errno (0.3.14-1) unstable; urgency=medium
+
+  * Update no-windows.patch for new upstream.
+
+ -- Peter Michael Green <plugwash@debian.org>  Sun, 14 Jan 2024 21:54:23 +0000
+
 rust-errno (0.3.8-1) unstable; urgency=medium
 
   * Package errno 0.3.8 from crates.io using debcargo 2.6.1

@@ -1,0 +1,13 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 5017556..9a59ce5 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -11,7 +11,7 @@
+
+ [package]
+ edition = "2021"
+-rust-version = "1.87"
++rust-version = "1.85"
+ name = "heapless"
+ version = "0.9.2"
+ authors = [

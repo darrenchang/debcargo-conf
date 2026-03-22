@@ -1,5 +1,11 @@
+rust-num-conv (0.2.1-1) unstable; urgency=medium
+
+  * package num-conv 0.2.1 from crates.io using debcargo 2.8.2
+
+ -- blair noctis <ncts@debian.org>  wed, 11 sep 2024 09:00:50 +0000
+
 rust-num-conv (0.1.0-1) unstable; urgency=medium
 
-  * Package num-conv 0.1.0 from crates.io using debcargo 2.6.1
+  * package num-conv 0.1.0 from crates.io using debcargo 2.6.1
 
- -- Blair Noctis <ncts@debian.org>  Wed, 11 Sep 2024 09:00:50 +0000
+ -- blair noctis <ncts@debian.org>  wed, 11 sep 2024 09:00:50 +0000

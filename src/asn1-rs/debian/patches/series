@@ -1,2 +1,1 @@
-relax-deps.patch
-fix-no-std-test.patch
+01-disable-colored.diff

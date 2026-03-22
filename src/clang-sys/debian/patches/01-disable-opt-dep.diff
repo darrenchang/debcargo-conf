@@ -1,0 +1,33 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index ae9a804..a082b4e 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -25,7 +25,7 @@ repository = "https://github.com/KyleMayes/clang-sys"
+ [package.metadata.docs.rs]
+ features = [
+     "clang_18_0",
+-    "runtime",
++    "runtime",
+ ]
+
+ [dependencies.glob]
+@@ -35,9 +35,9 @@ version = "0.3"
+ version = "0.2.39"
+ default-features = false
+
+-[dependencies.libloading]
+-version = "0.8"
+-optional = true
++[dependencies.libloading]
++version = "0.9"
++optional = true
+
+ [dev-dependencies.glob]
+ version = "0.3"
+@@ -73,5 +73,5 @@ clang_7_0 = ["clang_6_0"]
+ clang_8_0 = ["clang_7_0"]
+ clang_9_0 = ["clang_8_0"]
+ libcpp = []
+-runtime = ["libloading"]
++runtime = ["libloading"]
+ static = []

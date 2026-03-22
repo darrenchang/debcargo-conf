@@ -1,3 +1,9 @@
+rust-libc (0.2.183-1) unstable; urgency=medium
+
+  * Fix defintion of struct stat on i386.
+
+ -- Peter Michael Green <plugwash@debian.org>  Sat, 28 Dec 2024 20:35:00 +0000
+
 rust-libc (0.2.169-1) unstable; urgency=medium
 
   * Team upload.

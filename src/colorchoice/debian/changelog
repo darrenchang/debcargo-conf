@@ -1,3 +1,9 @@
+rust-colorchoice (1.0.5-1) unstable; urgency=medium
+
+  * Package colorchoice 1.0.5 from crates.io using debcargo 2.8.2
+
+ -- Fabian Grünbichler <debian@fabian.gruenbichler.email>  Sun, 20 Aug 2023 13:00:34 +0200
+
 rust-colorchoice (1.0.0-1) unstable; urgency=medium
 
   * Package colorchoice 1.0.0 from crates.io using debcargo 2.6.0

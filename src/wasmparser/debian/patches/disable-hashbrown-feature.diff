@@ -1,0 +1,51 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 60dc8ea..d875876 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -41,27 +41,23 @@ all-features = true
+ [features]
+ component-model = ["dep:semver"]
+ default = [
+-    "std",
++    "std",
+     "validate",
+     "serde",
+     "features",
+     "component-model",
+-    "hash-collections",
++    "prefer-btree-collections",
+     "simd",
+ ]
+ features = []
+ hash-collections = [
+-    "dep:hashbrown",
+-    "dep:indexmap",
+ ]
+ prefer-btree-collections = []
+ serde = [
+     "dep:serde",
+-    "indexmap?/serde",
+-    "hashbrown?/serde",
+ ]
+ simd = []
+-std = ["indexmap?/std"]
++std = []
+ try-op = []
+ validate = []
+
+@@ -85,13 +78,13 @@ harness = false
+ [dependencies.bitflags]
+ version = "2.4.1"
+
+-[dependencies.hashbrown]
++[disabled.dependencies.hashbrown]
+ version = "0.16.1"
+ features = ["default-hasher"]
+ optional = true
+ default-features = false
+
+-[dependencies.indexmap]
++[disabled.dependencies.indexmap]
+ version = "2.13.0"
+ optional = true
+ default-features = false

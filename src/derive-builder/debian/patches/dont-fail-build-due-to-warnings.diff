@@ -1,6 +1,0 @@
-Index: derive-builder/src/lib.rs
-===================================================================
---- derive-builder.orig/src/lib.rs
-+++ derive-builder/src/lib.rs
-@@ -556,1 +556,0 @@
--#![deny(warnings)]

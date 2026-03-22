@@ -1,7 +1,1 @@
-disable-benches-missing-testdata.patch
-fix-build-error-in-example.patch
-drop-non-linux.patch
-relax-dep.diff
-fix-tests-no-default-features.patch
-remove-is-terminal-polyfill.patch
-remove-divan.patch
+disable-windows.diff

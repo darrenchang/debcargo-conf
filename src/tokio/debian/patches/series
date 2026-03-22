@@ -1,8 +1,2 @@
-remove-windows.patch
-remove-freebsd.patch
-disable-broken-tests.diff
-remove-mockall.patch
-remove-wasm-dev-depends.patch
-fix-test-feature-requirements.patch
-remove-loom.patch
-remove-tracing-mock.patch
+01-disable-opt-deps.diff
+02-disable-windows-sys.diff

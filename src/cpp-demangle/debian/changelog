@@ -1,3 +1,9 @@
+rust-cpp-demangle (0.5.1-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Mon, 02 Jan 2023 18:10:17 +0000
+
 rust-cpp-demangle (0.4.0-1) unstable; urgency=medium
 
   * Team upload.

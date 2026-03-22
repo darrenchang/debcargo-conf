@@ -1,3 +1,9 @@
+rust-unicode-xid (0.2.6-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Wed, 18 Jan 2023 04:43:19 +0000
+
 rust-unicode-xid (0.2.4-1) unstable; urgency=medium
 
   * Team upload.

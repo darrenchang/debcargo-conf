@@ -1,3 +1,9 @@
+rust-tracing-attributes (0.1.31-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Sat, 13 Jan 2024 14:43:19 +0000
+
 rust-tracing-attributes (0.1.27-1) unstable; urgency=medium
 
   * Team upload.

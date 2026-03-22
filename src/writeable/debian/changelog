@@ -1,3 +1,9 @@
+rust-writeable (0.6.2-1) unstable; urgency=medium
+
+  * Package writeable 0.6.2 from crates.io using debcargo 2.8.2
+
+ -- Alexander Kjäll <alexander.kjall@gmail.com>  Sun, 24 Nov 2024 21:54:26 +0100
+
 rust-writeable (0.6.0-1) unstable; urgency=medium
 
   * Package writeable 0.6.0 from crates.io using debcargo 2.7.4

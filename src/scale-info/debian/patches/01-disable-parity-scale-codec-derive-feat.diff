@@ -1,0 +1,45 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 108c587..c1a045f 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -58,7 +58,7 @@ version = "1.0.0"
+ features = ["from"]
+ default-features = false
+
+-[dependencies.scale]
++[dependencies.scale]
+ version = "3"
+ features = ["derive"]
+ default-features = false
+@@ -69,7 +69,7 @@ version = "2.11.6"
+ optional = true
+ default-features = false
+
+-[dependencies.schemars]
++[disabled.dependencies.schemars]
+ version = "0.8"
+ optional = true
+
+@@ -87,7 +87,7 @@ version = "2.11.6"
+
+ [features]
+ bit-vec = ["bitvec"]
+-decode = ["scale/full"]
++decode = ["scale/full"]
+ default = ["std"]
+ derive = ["scale-info-derive"]
+ docs = ["scale-info-derive/docs"]
+@@ -93,7 +93,6 @@ derive = ["scale-info-derive"]
+ docs = ["scale-info-derive/docs"]
+ schema = [
+     "std",
+-    "schemars",
+ ]
+ std = [
+     "bitvec?/std",
+@@ -97,5 +97,4 @@ schema = [
+ ]
+ std = [
+     "bitvec?/std",
+-    "scale/std",
+ ]

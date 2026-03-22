@@ -1,0 +1,67 @@
+Source: rust-zerovec
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.82) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-zerofrom-0.1-dev (>= 0.1.3) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Sylvestre Ledru <sylvestre@debian.org>
+Standards-Version: 4.7.3
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/zerovec]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/zerovec
+Homepage: https://github.com/unicode-org/icu4x
+X-Cargo-Crate: zerovec
+X-Cargo-Crate-Version: 0.11.2
+
+Package: librust-zerovec-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-databake-0.2+derive-dev,
+ librust-serde-1+alloc-dev (>= 1.0.110),
+ librust-serde-1+derive-dev (>= 1.0.110),
+ librust-twox-hash-2+xxhash64-dev,
+ librust-zerofrom-0.1-dev (>= 0.1.3),
+ librust-zerovec-derive-0.11-dev (>= 0.11.1)
+Provides:
+ librust-zerovec+alloc-dev (= ${binary:Version}),
+ librust-zerovec+databake-dev (= ${binary:Version}),
+ librust-zerovec+default-dev (= ${binary:Version}),
+ librust-zerovec+derive-dev (= ${binary:Version}),
+ librust-zerovec+hashmap-dev (= ${binary:Version}),
+ librust-zerovec+serde-dev (= ${binary:Version}),
+ librust-zerovec+std-dev (= ${binary:Version}),
+ librust-zerovec+yoke-dev (= ${binary:Version}),
+ librust-zerovec-0-dev (= ${binary:Version}),
+ librust-zerovec-0+alloc-dev (= ${binary:Version}),
+ librust-zerovec-0+databake-dev (= ${binary:Version}),
+ librust-zerovec-0+default-dev (= ${binary:Version}),
+ librust-zerovec-0+derive-dev (= ${binary:Version}),
+ librust-zerovec-0+hashmap-dev (= ${binary:Version}),
+ librust-zerovec-0+serde-dev (= ${binary:Version}),
+ librust-zerovec-0+std-dev (= ${binary:Version}),
+ librust-zerovec-0+yoke-dev (= ${binary:Version}),
+ librust-zerovec-0.11-dev (= ${binary:Version}),
+ librust-zerovec-0.11+alloc-dev (= ${binary:Version}),
+ librust-zerovec-0.11+databake-dev (= ${binary:Version}),
+ librust-zerovec-0.11+default-dev (= ${binary:Version}),
+ librust-zerovec-0.11+derive-dev (= ${binary:Version}),
+ librust-zerovec-0.11+hashmap-dev (= ${binary:Version}),
+ librust-zerovec-0.11+serde-dev (= ${binary:Version}),
+ librust-zerovec-0.11+std-dev (= ${binary:Version}),
+ librust-zerovec-0.11+yoke-dev (= ${binary:Version}),
+ librust-zerovec-0.11.2-dev (= ${binary:Version}),
+ librust-zerovec-0.11.2+alloc-dev (= ${binary:Version}),
+ librust-zerovec-0.11.2+databake-dev (= ${binary:Version}),
+ librust-zerovec-0.11.2+default-dev (= ${binary:Version}),
+ librust-zerovec-0.11.2+derive-dev (= ${binary:Version}),
+ librust-zerovec-0.11.2+hashmap-dev (= ${binary:Version}),
+ librust-zerovec-0.11.2+serde-dev (= ${binary:Version}),
+ librust-zerovec-0.11.2+std-dev (= ${binary:Version}),
+ librust-zerovec-0.11.2+yoke-dev (= ${binary:Version})
+Description: Zero-copy vector backed by a byte array - Rust source code
+ Source code for Debianized Rust crate "zerovec"

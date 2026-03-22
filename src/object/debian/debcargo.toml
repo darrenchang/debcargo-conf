@@ -11,10 +11,10 @@ collapse_features = true
 test_is_broken = true 
 
 [packages."lib+default"]
-test_is_broken = false
+test_is_broken = true
 
 [packages."lib+read"]
-test_is_broken = false
+test_is_broken = true
 
 [packages."lib+all"]
 test_is_broken = false

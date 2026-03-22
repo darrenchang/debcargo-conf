@@ -1,0 +1,10 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -12,6 +12,6 @@
+ [package]
+ edition = "2024"
+-rust-version = "1.87.0"
++rust-version = "1.85.0"
+ name = "wit-bindgen"
+ version = "0.54.0"
+ authors = ["Alex Crichton <alex@alexcrichton.com>"]

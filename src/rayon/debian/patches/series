@@ -1,1 +1,1 @@
-remove-wasm-sync.patch
+disable-wasm-sync.diff

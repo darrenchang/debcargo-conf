@@ -1,6 +1,18 @@
 rust-bitflags (2.8.0-1) unstable; urgency=medium
 
   * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Thu, 06 Feb 2025 18:31:16 +0000
+
+rust-bitflags (2.11.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Thu, 06 Feb 2025 18:31:16 +0000
+
+rust-bitflags (2.8.0-1) unstable; urgency=medium
+
+  * Team upload.
   * Package bitflags 2.8.0 from crates.io using debcargo 2.7.6 (Closes: #1093606)
   * Remove dev-dependency on zerocopy and disable example that depends on it.
 

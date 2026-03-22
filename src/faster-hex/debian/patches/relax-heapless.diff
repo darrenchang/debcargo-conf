@@ -1,0 +1,10 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index cfbf1d0..34421c0 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -83,4 +83,4 @@ std = [
+ ]
+
+ [target.'cfg(not(feature = "alloc"))'.dependencies.heapless]
+-version = "0.8"
++version = "0.9"

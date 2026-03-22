@@ -1,0 +1,33 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 6ac50db..788cf52 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -93,10 +93,8 @@ ascii = ["parser"]
+ binary = ["parser"]
+ debug = [
+     "std",
+-    "dep:anstream",
+     "dep:anstyle",
+     "dep:is_terminal_polyfill",
+-    "dep:terminal_size",
+ ]
+ default = [
+     "std",
+@@ -267,7 +265,7 @@ required-features = [
+     "ascii",
+ ]
+
+-[dependencies.anstream]
++[disabled.dependencies.anstream]
+ version = "0.6.15"
+ optional = true
+
+@@ -284,7 +282,7 @@ version = "2.7"
+ optional = true
+ default-features = false
+
+-[dependencies.terminal_size]
++[disabled.dependencies.terminal_size]
+ version = "0.4.3"
+ optional = true
+

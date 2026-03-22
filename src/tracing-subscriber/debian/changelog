@@ -1,3 +1,9 @@
+rust-tracing-subscriber (0.3.23-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Tue, 02 Jul 2024 20:28:58 +0000
+
 rust-tracing-subscriber (0.3.18-4) unstable; urgency=medium
 
   * Team upload.

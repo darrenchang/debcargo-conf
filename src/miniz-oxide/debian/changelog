@@ -1,3 +1,9 @@
+rust-miniz-oxide (0.9.1-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Matthias Geiger <werdahias@debian.org>  Tue, 22 Apr 2025 10:15:34 +0200
+
 rust-miniz-oxide (0.7.1-2) unstable; urgency=medium
 
   * Team upload.

@@ -1,0 +1,26 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index d86b028..66a4c7e 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -26,7 +26,7 @@ license = "MPL-2.0+"
+ repository = "https://github.com/bodil/smartstring"
+ resolver = "2"
+ [package.metadata.docs.rs]
+-features = ["arbitrary", "proptest", "serde"]
++features = ["arbitrary", "serde"]
+
+ [[bench]]
+ name = "smartstring"
+@@ -35,9 +35,9 @@ harness = false
+ version = "1"
+ optional = true
+
+-[dependencies.proptest]
+-version = "1"
+-optional = true
++#[dependencies.proptest]
++#version = "1"
++#optional = true
+
+ [dependencies.serde]
+ version = "1"

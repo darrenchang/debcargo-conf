@@ -1,2 +1,1 @@
-disable-tests-benches.patch
-fix-tests-parsing-feature-only.patch
+01-relax-rustc.diff

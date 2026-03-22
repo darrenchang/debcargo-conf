@@ -1,9 +1,0 @@
---- a/tests/decimal_tests.rs
-+++ b/tests/decimal_tests.rs
-@@ -4369,5 +4369,5 @@
-     macro_rules! gen_test {
-         ($name:ident, $csv:expr, $method:tt) => {
--            #[test]
-+            #[cfg(feature = "with-test-data")]
-             fn $name() {
-                 let path = std::env::current_dir().unwrap();

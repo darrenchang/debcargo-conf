@@ -1,0 +1,13 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 7e00597..b70a8fb 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -71,7 +71,7 @@ path = "examples/simple.rs"
+ required-features = ["std"]
+
+ [dependencies.afl]
+-version = "0.16"
++version = "0.17"
+ optional = true
+
+ [dependencies.cfg-if]

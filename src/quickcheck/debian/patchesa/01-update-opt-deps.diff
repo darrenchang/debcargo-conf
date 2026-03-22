@@ -1,0 +1,34 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index aa4ad58..5ff707e 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -27,21 +27,21 @@ repository = "https://github.com/BurntSushi/quickcheck"
+
+ [lib]
+ name = "quickcheck"
+-[dependencies.env_logger]
+-version = "0.8.2"
+-optional = true
+-default-features = false
++#[dependencies.env_logger]
++#version = "0.8.2"
++#optional = true
++#default-features = false
+
+ [dependencies.log]
+ version = "0.4"
+ optional = true
+
+ [dependencies.rand]
+-version = "0.8"
++version = "0.9"
+ features = ["getrandom", "small_rng"]
+ default-features = false
+
+ [features]
+-default = ["regex", "use_logging"]
+-regex = ["env_logger/regex"]
+-use_logging = ["log", "env_logger"]
++default = ["use_logging"]
++#regex = ["env_logger/regex"]
++use_logging = ["log"]

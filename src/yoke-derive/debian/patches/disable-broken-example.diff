@@ -1,0 +1,15 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index d670a2b..55e4518 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -46,10 +46,6 @@ name = "yoke_derive"
+ path = "src/lib.rs"
+ proc-macro = true
+
+-[[example]]
+-name = "yoke_derive"
+-path = "examples/yoke_derive.rs"
+-
+ [dependencies.proc-macro2]
+ version = "1.0.61"
+

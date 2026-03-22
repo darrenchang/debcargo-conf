@@ -1,0 +1,64 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index ad9797d..c69bd32 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -45,21 +45,15 @@ fancy = [
+     "dep:backtrace-ext",
+ ]
+ fancy-base = [
+-    "dep:owo-colors",
+     "dep:textwrap",
+ ]
+ fancy-no-backtrace = [
+     "fancy-base",
+-    "dep:terminal_size",
+-    "dep:supports-hyperlinks",
+-    "dep:supports-color",
+-    "dep:supports-unicode",
+ ]
+ fancy-no-syscall = ["fancy-base"]
+ no-format-args-capture = []
+ syntect-highlighter = [
+     "fancy-no-backtrace",
+-    "dep:syntect",
+ ]
+
+ [lib]
+@@ -86,7 +80,7 @@ version = "1.0.0"
+ version = "=7.6.0"
+ optional = true
+
+-[dependencies.owo-colors]
++[disabled.dependencies.owo-colors]
+ version = "4.0.0"
+ optional = true
+
+@@ -95,23 +89,23 @@ version = "1.0.196"
+ features = ["derive"]
+ optional = true
+
+-[dependencies.supports-color]
++[disabled.dependencies.supports-color]
+ version = "3.0.0"
+ optional = true
+
+-[dependencies.supports-hyperlinks]
++[disabled.dependencies.supports-hyperlinks]
+ version = "3.0.0"
+ optional = true
+
+-[dependencies.supports-unicode]
++[disabled.dependencies.supports-unicode]
+ version = "3.0.0"
+ optional = true
+
+-[dependencies.syntect]
++[disabled.dependencies.syntect]
+ version = "5.1.0"
+ optional = true
+
+-[dependencies.terminal_size]
++[disabled.dependencies.terminal_size]
+ version = "0.4.0"
+ optional = true
+

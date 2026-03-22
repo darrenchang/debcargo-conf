@@ -1,0 +1,38 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index bbec2c4..1cdfa5f 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -117,7 +117,7 @@ optional = true
+ default-features = false
+ package = "arrayvec"
+
+-[dependencies.bigdecimal04]
++[disabled.dependencies.bigdecimal04]
+ version = "0.4"
+ optional = true
+ default-features = false
+@@ -129,7 +129,7 @@ optional = true
+ default-features = false
+ package = "bytes"
+
+-[dependencies.chrono04]
++[disabled.dependencies.chrono04]
+ version = "0.4.39"
+ optional = true
+ default-features = false
+@@ -191,13 +191,13 @@ optional = true
+ default-features = false
+ package = "smallvec"
+
+-[dependencies.smol_str02]
++[disabled.dependencies.smol_str02]
+ version = "0.2.1"
+ optional = true
+ default-features = false
+ package = "smol_str"
+
+-[dependencies.smol_str03]
++[disabled.dependencies.smol_str03]
+ version = "0.3.2"
+ optional = true
+ default-features = false

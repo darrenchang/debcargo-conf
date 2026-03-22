@@ -1,0 +1,13 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index e637c60..13fb5ce 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -11,7 +11,7 @@
+
+ [package]
+ edition = "2024"
+-rust-version = "1.88.0"
++#rust-version = "1.88.0"
+ name = "time-core"
+ version = "0.1.8"
+ authors = [

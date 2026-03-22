@@ -1,0 +1,76 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 159cc70..ff1f9c1 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -67,7 +67,7 @@ bin-features = [
+     "metadata",
+     "serde",
+     "debugging",
+-    "rustyline",
++#    "rustyline",
+ ]
+ debugging = ["internals"]
+ decimal = ["rust_decimal"]
+@@ -98,7 +98,7 @@ no_object = []
+ no_optimize = []
+ no_position = []
+ no_std = [
+-    "no-std-compat",
++#    "no-std-compat",
+     "num-traits/libm",
+     "core-error",
+     "libm",
+@@ -121,7 +121,7 @@ std = [
+     "smartstring/std",
+ ]
+ sync = [
+-    "no-std-compat?/compat_sync",
++#    "no-std-compat?/compat_sync",
+     "rhai_codegen/sync",
+ ]
+ testing-environ = []
+@@ -139,10 +139,10 @@ name = "rhai-dbg"
+ path = "src/bin/rhai-dbg.rs"
+ required-features = ["debugging"]
+
+-[[bin]]
+-name = "rhai-repl"
+-path = "src/bin/rhai-repl.rs"
+-required-features = ["rustyline"]
++#[[bin]]
++#name = "rhai-repl"
++#path = "src/bin/rhai-repl.rs"
++#required-features = ["rustyline"]
+
+ [[bin]]
+ name = "rhai-run"
+@@ -185,11 +185,11 @@ version = "0.2.0"
+ optional = true
+ default-features = false
+
+-[dependencies.no-std-compat]
+-version = "0.4.1"
+-features = ["alloc"]
+-optional = true
+-default-features = false
++#[dependencies.no-std-compat]
++#version = "0.4.1"
++#features = ["alloc"]
++#optional = true
++#default-features = false
+
+ [dependencies.num-traits]
+ version = "0.2.14"
+@@ -213,9 +213,9 @@ features = ["maths"]
+ optional = true
+ default-features = false
+
+-[dependencies.rustyline]
+-version = "15.0.0"
+-optional = true
++#[dependencies.rustyline]
++#version = "15.0.0"
++#optional = true
+
+ [dependencies.serde]
+ version = "1.0.136"

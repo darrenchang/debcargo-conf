@@ -1,4 +1,1 @@
-no-benches.patch
-disable-zerocopy.patch
-skip-test-on-armel.patch
-upgrade-rkyv-0.8.patch
+01-disable-optional-dep.diff

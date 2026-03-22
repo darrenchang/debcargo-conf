@@ -1,1 +1,2 @@
-test-files.patch
+01-disable-ascii-and-bson.diff
+02-relax-hashbrown-dep-version.diff

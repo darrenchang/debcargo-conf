@@ -1,3 +1,9 @@
+rust-clap (4.6.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Fri, 27 Dec 2024 12:01:36 +0000
+
 rust-clap (4.5.23-1) unstable; urgency=medium
 
   * Team upload.

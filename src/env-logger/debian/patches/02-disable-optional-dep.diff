@@ -1,0 +1,41 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 57adf82..e187eb3 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -83,16 +83,16 @@ replace = """
+ exactly = 1
+
+ [features]
+-auto-color = [
+-    "color",
++#auto-color = [
++#    "color",
+ #    "anstream/auto",
+-]
+-color = [
++#]
++#color = [
+ #    "dep:anstream",
+-    "dep:anstyle",
+-]
++#    "dep:anstyle",
++#]
+ default = [
+-    "auto-color",
++#    "auto-color",
+     "humantime",
+     "regex",
+ ]
+@@ -139,9 +139,9 @@ path = "examples/syslog_friendly_format.rs"
+ #optional = true
+ #default-features = false
+
+-[dependencies.anstyle]
+-version = "1.0.13"
+-optional = true
++#[dependencies.anstyle]
++#version = "1.0.13"
++#optional = true
+
+ [dependencies.env_filter]
+ version = "1.0.0"

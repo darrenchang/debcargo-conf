@@ -1,0 +1,18 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 1268520..012d9be 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -93,13 +93,6 @@ path = "src/lib.rs"
+ name = "query"
+ path = "examples/query.rs"
+
+-[target."cfg(windows)".dependencies.windows-sys]
+-version = ">=0.60.2, <0.62"
+-features = [
+-    "Win32_System_Console",
+-    "Win32_Foundation",
+-]
+-
+ [lints.clippy]
+ bool_assert_comparison = "allow"
+ branches_sharing_code = "allow"

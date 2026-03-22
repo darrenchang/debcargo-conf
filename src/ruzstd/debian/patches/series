@@ -1,3 +1,0 @@
-disable-tests-missing-testdata.patch
-disable-rustc-dep-of-std.patch
-upgrade-twox-hash-to-2.patch

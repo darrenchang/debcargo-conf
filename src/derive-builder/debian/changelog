@@ -1,4 +1,4 @@
-rust-derive-builder (0.20.1-2) unstable; urgency=medium
+rust-derive-builder (0.20.2-2) unstable; urgency=medium
 
   * Team upload.
   * Package derive_builder 0.20.1 from crates.io using debcargo 2.6.1

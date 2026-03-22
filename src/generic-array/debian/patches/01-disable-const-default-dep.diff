@@ -1,0 +1,21 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index bc5f3df..4157c16 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -48,7 +48,6 @@ repository = "https://github.com/fizyk20/generic-array.git"
+ features = [
+     "serde",
+     "zeroize",
+-    "const-default",
+     "alloc",
+     "hybrid-array-0_4",
+ ]
+@@ -70,7 +69,7 @@ serde = ["dep:serde_core"]
+ name = "generic_array"
+ path = "src/lib.rs"
+
+-[dependencies.const-default]
++[disabled.dependencies.const-default]
+ version = "1"
+ optional = true
+ default-features = false

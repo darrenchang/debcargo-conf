@@ -1,0 +1,32 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 0a68bfd..7b26840 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -85,8 +85,8 @@ maths-nopanic = ["maths"]
+ ndarray = ["dep:ndarray"]
+ proptest = ["dep:proptest"]
+ rand = []
+-rkyv = ["dep:rkyv"]
+-rkyv-safe = ["rkyv/validation"]
++rkyv = []
++rkyv-safe = []
+ rocket-traits = [
+     "std",
+ ]
+@@ -108,7 +108,6 @@ std = [
+     "arrayvec/std",
+     "borsh?/std",
+     "bytes?/std",
+-    "rkyv?/std",
+     "serde?/std",
+     "serde_json?/std",
+ ]
+@@ -193,7 +192,7 @@ features = ["std"]
+ optional = true
+ default-features = false
+
+-[dependencies.rkyv]
++[disabled.dependencies.rkyv]
+ version = "0.7.46"
+ features = [
+     "size_32",

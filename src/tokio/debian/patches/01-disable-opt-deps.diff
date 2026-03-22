@@ -1,0 +1,100 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 988f5b3..c2b92bc 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -87,17 +87,17 @@ io-std = []
+ io-uring = [
+     "dep:io-uring",
+     "libc",
+-    "mio/os-poll",
+-    "mio/os-ext",
++#    "mio/os-poll",
++#    "mio/os-ext",
+     "dep:slab",
+ ]
+ io-util = ["bytes"]
+ macros = ["tokio-macros"]
+ net = [
+     "libc",
+-    "mio/os-poll",
+-    "mio/os-ext",
+-    "mio/net",
++#    "mio/os-poll",
++#    "mio/os-ext",
++#    "mio/net",
+     "socket2",
+     "windows-sys/Win32_Foundation",
+     "windows-sys/Win32_Security",
+@@ -108,9 +108,9 @@ net = [
+ process = [
+     "bytes",
+     "libc",
+-    "mio/os-poll",
+-    "mio/os-ext",
+-    "mio/net",
++#    "mio/os-poll",
++#    "mio/os-ext",
++#    "mio/net",
+     "signal-hook-registry",
+     "windows-sys/Win32_Foundation",
+     "windows-sys/Win32_System_Threading",
+@@ -120,9 +120,9 @@ rt = []
+ rt-multi-thread = ["rt"]
+ signal = [
+     "libc",
+-    "mio/os-poll",
+-    "mio/net",
+-    "mio/os-ext",
++#    "mio/os-poll",
++#    "mio/net",
++#    "mio/os-ext",
+     "signal-hook-registry",
+     "windows-sys/Win32_Foundation",
+     "windows-sys/Win32_System_Console",
+@@ -792,10 +792,10 @@ path = "tests/unwindsafe.rs"
+ version = "1.2.1"
+ optional = true
+
+-[dependencies.mio]
+-version = "1.0.1"
+-optional = true
+-default-features = false
++#[dependencies.mio]
++#version = "1.0.1"
++#optional = true
++#default-features = false
+
+ [dependencies.parking_lot]
+ version = "0.12.0"
+@@ -838,7 +838,7 @@ features = ["rt"]
+ version = "0.3.0"
+
+ [target.'cfg(all(tokio_unstable, target_has_atomic = "64"))'.dev-dependencies.tracing-mock]
+-version = "= 0.1.0-beta.1"
++version = "= 0.1.0"
+
+ [target.'cfg(all(tokio_unstable, target_os = "linux"))'.dependencies.backtrace]
+ version = "0.3.58"
+@@ -853,14 +853,14 @@ default-features = false
+ version = "0.2.168"
+ optional = true
+
+-[target.'cfg(all(tokio_unstable, target_os = "linux"))'.dependencies.mio]
+-version = "1.0.1"
+-features = [
+-    "os-poll",
+-    "os-ext",
+-]
+-optional = true
+-default-features = false
++#[target.'cfg(all(tokio_unstable, target_os = "linux"))'.dependencies.mio]
++#version = "1.0.1"
++#features = [
++#    "os-poll",
++#    "os-ext",
++#]
++#optional = true
++#default-features = false
+
+ [target.'cfg(all(tokio_unstable, target_os = "linux"))'.dependencies.slab]
+ version = "0.4.9"

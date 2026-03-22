@@ -1,9 +1,0 @@
---- a/Cargo.toml
-+++ b/Cargo.toml
-@@ -204,4 +204,4 @@
- 
--[dev-dependencies.spmc]
--version = "0.3"
-+#[dev-dependencies.spmc]
-+#version = "0.3"
- 

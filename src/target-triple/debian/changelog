@@ -1,3 +1,9 @@
+rust-target-triple (1.0.0-1) unstable; urgency=medium
+
+  * Package target-triple 1.0.0 from crates.io using debcargo 2.8.2
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Tue, 08 Apr 2025 15:49:11 -0400
+
 rust-target-triple (0.1.4-1) unstable; urgency=medium
 
   * Package target-triple 0.1.4 from crates.io using debcargo 2.7.8

@@ -1,0 +1,21 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index c629a80..75f0391 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -64,7 +64,6 @@ const-generics = []
+ force_unix_path_separator = []
+ i128 = []
+ no_std = []
+-scale_info = ["scale-info/derive"]
+ strict = []
+
+ [lib]
+@@ -75,7 +74,7 @@ path = "src/lib.rs"
+ name = "test"
+ path = "tests/test.rs"
+
+-[dependencies.scale-info]
++[disabled.dependencies.scale-info]
+ version = "1.0"
+ optional = true
+ default-features = false

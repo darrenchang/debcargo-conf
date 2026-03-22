@@ -1,6 +1,1 @@
-bump-flate2.patch
-remove-wasm-feature.patch
-remove-rustc-dep-of-std.patch
-disable-tests-missing-testdata.patch
-bump-old-deps.patch
-hashbrown-0.14.patch
+01-upgrade-wasmparser.diff

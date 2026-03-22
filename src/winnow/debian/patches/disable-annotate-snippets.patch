@@ -1,7 +1,0 @@
-Description: disable annotate-snippets, used only in src/_tutorial (docs?)
-Forwarded: not-needed
---- a/Cargo.toml
-+++ b/Cargo.toml
-@@ -239 +239 @@
--[dev-dependencies.annotate-snippets]
-+[disabled.dev-dependencies.annotate-snippets]

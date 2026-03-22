@@ -1,6 +1,6 @@
-rust-schemars-derive (0.8.21-1) unstable; urgency=medium
+rust-schemars-derive (1.2.1-1) unstable; urgency=medium
 
-  * Package schemars_derive 0.8.21 from crates.io using debcargo 2.7.1
+  * Package schemars_derive 1.2.1 from crates.io using debcargo 2.8.2
 
  -- Alexander Kjäll <alexander.kjall@gmail.com>  Mon, 21 Oct 2024 17:36:40 +0200
 

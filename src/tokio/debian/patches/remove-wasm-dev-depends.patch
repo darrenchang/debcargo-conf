@@ -1,6 +1,0 @@
---- tokio.orig/Cargo.toml
-+++ tokio/Cargo.toml
-@@ -152,3 +152,0 @@
--[target.'cfg(all(target_family = "wasm", not(target_os = "wasi")))'.dev-dependencies.wasm-bindgen-test]
--version = "0.3.0"
--

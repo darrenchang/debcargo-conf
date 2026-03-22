@@ -1,0 +1,22 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 7465e28..4cbd82f 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -237,7 +237,7 @@ optional = true
+ default-features = false
+
+ [dependencies.miniz_oxide]
+-version = "0.8.5"
++version = "0.9"
+ features = [
+     "with-alloc",
+     "simd",
+@@ -266,7 +266,7 @@ default-features = false
+ version = "0.9"
+
+ [target.'cfg(all(target_arch = "wasm32", not(target_os = "emscripten")))'.dependencies.miniz_oxide]
+-version = "0.8.5"
++version = "0.9"
+ features = [
+     "with-alloc",
+     "simd",

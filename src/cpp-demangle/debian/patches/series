@@ -1,2 +1,1 @@
-no-fuzzing.patch
-relax-dep.patch
+01-update-afl-dep.diff

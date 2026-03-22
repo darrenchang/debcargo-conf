@@ -1,3 +1,9 @@
+rust-unicode-width (0.2.2-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Fri, 27 Dec 2024 12:11:51 +0000
+
 rust-unicode-width (0.2.0-1) unstable; urgency=medium
 
   * Team upload.

@@ -1,0 +1,13 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 9928089..66e5b61 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -11,7 +11,7 @@
+
+ [package]
+ edition = "2024"
+-rust-version = "1.88.0"
++#rust-version = "1.88.0"
+ name = "time-macros"
+ version = "0.2.27"
+ authors = [

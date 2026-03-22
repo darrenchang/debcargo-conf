@@ -1,0 +1,26 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 0a1cefe..4667119 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -75,7 +75,7 @@ bits = ["bitvec"]
+ datetime = ["time"]
+ debug = [
+     "std",
+-    "colored",
++#    "colored",
+ ]
+ default = ["std"]
+ serialize = ["cookie-factory"]
+@@ -152,9 +152,9 @@ version = "0.2"
+ version = "1.0"
+ optional = true
+
+-[dependencies.colored]
+-version = "3.0"
+-optional = true
++#[dependencies.colored]
++#version = "3.0"
++#optional = true
+
+ [dependencies.cookie-factory]
+ version = "0.3.0"

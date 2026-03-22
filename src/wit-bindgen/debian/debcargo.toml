@@ -1,0 +1,11 @@
+overlay = "."
+uploaders = [
+  "Darren <darrenchang951@gmail.com>",
+]
+excludes = [
+  "src/rt/libwit_bindgen_cabi.a",
+  "src/rt/wit_bindgen_cabi_realloc.c",
+  "src/rt/wit_bindgen_cabi_realloc.o",
+  "src/rt/wit_bindgen_cabi_wasip3.c",
+  "src/rt/wit_bindgen_cabi_wasip3.o",
+]

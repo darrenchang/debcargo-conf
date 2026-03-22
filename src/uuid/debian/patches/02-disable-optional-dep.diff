@@ -1,0 +1,73 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 5d64e89..4e85d47 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -102,7 +102,7 @@ borsh = [
+ ]
+ default = ["std"]
+ fast-rng = [
+-    "rng",
++#    "rng",
+     "dep:rand",
+ ]
+ js = [
+@@ -110,19 +110,19 @@ js = [
+     "dep:js-sys",
+ ]
+ macro-diagnostics = []
+-md5 = ["dep:md-5"]
++#md5 = ["dep:md-5"]
+ rng = ["dep:getrandom"]
+ rng-getrandom = [
+-    "rng",
++#    "rng",
+     "dep:getrandom",
+-    "uuid-rng-internal-lib",
+-    "uuid-rng-internal-lib/getrandom",
++#    "uuid-rng-internal-lib",
++#    "uuid-rng-internal-lib/getrandom",
+ ]
+ rng-rand = [
+-    "rng",
++#    "rng",
+     "dep:rand",
+-    "uuid-rng-internal-lib",
+-    "uuid-rng-internal-lib/rand",
++#    "uuid-rng-internal-lib",
++#    "uuid-rng-internal-lib/rand",
+ ]
+ serde = ["dep:serde_core"]
+ sha1 = ["dep:sha1_smol"]
+@@ -131,7 +131,7 @@ std = [
+     "js-sys?/std",
+ ]
+ v1 = ["atomic"]
+-v3 = ["md5"]
++#v3 = ["md5"]
+ v4 = ["rng"]
+ v5 = ["sha1"]
+ v6 = ["atomic"]
+@@ -166,10 +166,10 @@ version = "1.22"
+ features = ["derive"]
+ optional = true
+
+-[dependencies.md-5]
+-version = "0.10"
+-optional = true
+-default-features = false
++#[dependencies.md-5]
++#version = "0.10"
++#optional = true
++#default-features = false
+
+ [dependencies.serde_core]
+ version = "1.0.221"
+@@ -231,7 +231,7 @@ optional = true
+ default-features = false
+
+ [target.'cfg(not(all(target_arch = "wasm32", any(target_os = "unknown", target_os = "none"))))'.dependencies.getrandom]
+-version = "0.4"
++version = "0.3"
+ optional = true
+
+ [target.'cfg(not(all(target_arch = "wasm32", any(target_os = "unknown", target_os = "none"))))'.dependencies.rand]

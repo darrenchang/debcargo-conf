@@ -1,0 +1,28 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 032f8d9..2a5b059 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -100,7 +100,6 @@ std = [
+ tz-fat = ["jiff-static?/tz-fat"]
+ tz-system = [
+     "std",
+-    "dep:windows-sys",
+ ]
+ tzdb-bundle-always = [
+     "dep:jiff-tzdb",
+@@ -218,15 +217,6 @@ default-features = false
+ version = "0.2.4"
+ default-features = false
+
+-[target."cfg(windows)".dependencies.windows-sys]
+-version = ">=0.52.0, <=0.61.*"
+-features = [
+-    "Win32_Foundation",
+-    "Win32_System_Time",
+-]
+-optional = true
+-default-features = false
+-
+ [lints.rust.unexpected_cfgs]
+ level = "allow"
+ priority = 0

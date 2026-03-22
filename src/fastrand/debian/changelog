@@ -1,3 +1,9 @@
+rust-fastrand (2.3.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Blair Noctis <ncts@debian.org>  Sun, 13 Oct 2024 16:35:07 +0000
+
 rust-fastrand (2.1.1-1) unstable; urgency=medium
 
   * Team upload.

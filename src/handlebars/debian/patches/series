@@ -1,5 +1,2 @@
-disable-flamegraph.patch
-disable-bench.patch
-downgrade-rustc-version.patch
-downgrade-heck.patch
-relax-env-logger.patch
+01-disable-opt-dep.diff
+02-disable-opt-dep.diff

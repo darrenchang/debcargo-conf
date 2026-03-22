@@ -1,4 +1,4 @@
-rust-derive-builder-macro (0.20.1-1) unstable; urgency=medium
+rust-derive-builder-macro (0.20.2-1) unstable; urgency=medium
 
   * Team upload.
   * Package derive_builder_macro 0.20.1 from crates.io using debcargo 2.6.1

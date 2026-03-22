@@ -1,0 +1,39 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 11bb1ec..39022fe 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -37,7 +37,7 @@ all-features = true
+ [features]
+ async = [
+     "std",
+-    "wit-bindgen-rust-macro?/async",
++    #"wit-bindgen-rust-macro?/async",
+ ]
+ async-spawn = [
+     "async",
+@@ -45,14 +45,14 @@ async-spawn = [
+ ]
+ bitflags = ["dep:bitflags"]
+ default = [
+-    "macros",
++    #"macros",
+     "realloc",
+     "async",
+     "std",
+     "bitflags",
+ ]
+ inter-task-wakeup = ["async"]
+-macros = ["dep:wit-bindgen-rust-macro"]
++#macros = ["dep:wit-bindgen-rust-macro"]
+ realloc = []
+ rustc-dep-of-std = [
+     "dep:core",
+@@ -82,7 +82,7 @@ package = "rustc-std-workspace-core"
+ version = "0.3.30"
+ optional = true
+
+-[dependencies.wit-bindgen-rust-macro]
++[disabled.dependencies.wit-bindgen-rust-macro]
+ version = "0.54.0"
+ optional = true
+

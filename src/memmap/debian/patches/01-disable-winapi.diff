@@ -1,0 +1,17 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index fef331e..deb4af1 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -23,9 +23,9 @@ repository = "https://github.com/danburkert/memmap-rs"
+ version = "0.3"
+ [target."cfg(unix)".dependencies.libc]
+ version = "0.2"
+-[target."cfg(windows)".dependencies.winapi]
+-version = "0.3"
+-features = ["basetsd", "handleapi", "memoryapi", "minwindef", "std", "sysinfoapi"]
++#[target."cfg(windows)".dependencies.winapi]
++#version = "0.3"
++#features = ["basetsd", "handleapi", "memoryapi", "minwindef", "std", "sysinfoapi"]
+ [badges.appveyor]
+ repository = "danburkert/mmap"
+

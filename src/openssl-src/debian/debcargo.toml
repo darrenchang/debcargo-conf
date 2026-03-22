@@ -1,0 +1,11 @@
+overlay = "."
+uploaders = ["Darren Chang <darrenchang951@gmail.com>"]
+collapse_features = true
+whitelist = [
+  "openssl/providers/*",
+  "openssl/ms/*",
+  "openssl/ssl/*",
+  "openssl/engines/*",
+  "openssl/crypto/*",
+  "openssl/apps/*",
+]

@@ -1,0 +1,332 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 56d9722..5bb2e34 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -11,7 +11,7 @@
+
+ [package]
+ edition = "2021"
+-rust-version = "1.88"
++#rust-version = "1.88"
+ name = "serde_with"
+ version = "3.18.0"
+ authors = [
+@@ -90,34 +90,21 @@ status = "actively-developed"
+ alloc = [
+     "serde_core/alloc",
+     "base64?/alloc",
+-    "chrono_0_4?/alloc",
+     "hex?/alloc",
+     "serde_json?/alloc",
+-    "time_0_3?/alloc",
+ ]
+ base64 = [
+     "dep:base64",
+     "alloc",
+ ]
+-chrono = ["chrono_0_4"]
+-chrono_0_4 = ["dep:chrono_0_4"]
+ default = [
+     "std",
+     "macros",
+ ]
+ guide = [
+-    "dep:document-features",
+     "macros",
+     "std",
+ ]
+-hashbrown_0_14 = [
+-    "dep:hashbrown_0_14",
+-    "alloc",
+-]
+-hashbrown_0_15 = [
+-    "dep:hashbrown_0_15",
+-    "alloc",
+-]
+ hashbrown_0_16 = [
+     "dep:hashbrown_0_16",
+     "alloc",
+@@ -126,51 +113,16 @@ hex = [
+     "dep:hex",
+     "alloc",
+ ]
+-indexmap = ["indexmap_1"]
+-indexmap_1 = [
+-    "dep:indexmap_1",
+-    "alloc",
+-]
+-indexmap_2 = [
+-    "dep:indexmap_2",
+-    "alloc",
+-]
+ json = [
+     "dep:serde_json",
+     "alloc",
+ ]
+ macros = ["dep:serde_with_macros"]
+-schemars_0_8 = [
+-    "dep:schemars_0_8",
+-    "std",
+-    "serde_with_macros?/schemars_0_8",
+-]
+-schemars_0_9 = [
+-    "dep:schemars_0_9",
+-    "alloc",
+-    "serde_with_macros?/schemars_0_9",
+-    "dep:serde_json",
+-]
+-schemars_1 = [
+-    "dep:schemars_1",
+-    "alloc",
+-    "serde_with_macros?/schemars_1",
+-    "dep:serde_json",
+-]
+ smallvec_1 = ["dep:smallvec_1"]
+ std = [
+     "alloc",
+     "serde_core/std",
+-    "chrono_0_4?/clock",
+-    "chrono_0_4?/std",
+-    "indexmap_1?/std",
+-    "indexmap_2?/std",
+-    "time_0_3?/serde-well-known",
+-    "time_0_3?/std",
+-    "schemars_0_9?/std",
+-    "schemars_1?/std",
+ ]
+-time_0_3 = ["dep:time_0_3"]
+
+ [lib]
+ name = "serde_with"
+@@ -184,35 +136,11 @@ required-features = [
+     "macros",
+ ]
+
+-[[test]]
+-name = "chrono_0_4"
+-path = "tests/chrono_0_4.rs"
+-required-features = [
+-    "chrono_0_4",
+-    "macros",
+-]
+-
+ [[test]]
+ name = "derives"
+ path = "tests/derives/lib.rs"
+ required-features = ["macros"]
+
+-[[test]]
+-name = "hashbrown_0_14"
+-path = "tests/hashbrown_0_14.rs"
+-required-features = [
+-    "hashbrown_0_14",
+-    "macros",
+-]
+-
+-[[test]]
+-name = "hashbrown_0_15"
+-path = "tests/hashbrown_0_15.rs"
+-required-features = [
+-    "hashbrown_0_15",
+-    "macros",
+-]
+-
+ [[test]]
+ name = "hashbrown_0_16"
+ path = "tests/hashbrown_0_16.rs"
+@@ -229,21 +157,6 @@ required-features = [
+     "macros",
+ ]
+
+-[[test]]
+-name = "indexmap_1"
+-path = "tests/indexmap_1.rs"
+-required-features = [
+-    "indexmap_1",
+-    "macros",
+-]
+-
+-[[test]]
+-name = "indexmap_2"
+-path = "tests/indexmap_2.rs"
+-required-features = [
+-    "indexmap_2",
+-    "macros",
+-]
+
+ [[test]]
+ name = "json"
+@@ -258,32 +171,6 @@ name = "rust"
+ path = "tests/rust.rs"
+ required-features = ["alloc"]
+
+-[[test]]
+-name = "schemars_0_8"
+-path = "tests/schemars_0_8/main.rs"
+-required-features = [
+-    "schemars_0_8",
+-    "hex",
+-]
+-
+-[[test]]
+-name = "schemars_0_9"
+-path = "tests/schemars_0_9/main.rs"
+-required-features = [
+-    "schemars_0_9",
+-    "std",
+-    "hex",
+-]
+-
+-[[test]]
+-name = "schemars_1"
+-path = "tests/schemars_1/main.rs"
+-required-features = [
+-    "schemars_1",
+-    "std",
+-    "hex",
+-]
+-
+ [[test]]
+ name = "serde_as"
+ path = "tests/serde_as/lib.rs"
+@@ -297,14 +184,6 @@ required-features = [
+     "macros",
+ ]
+
+-[[test]]
+-name = "time_0_3"
+-path = "tests/time_0_3.rs"
+-required-features = [
+-    "macros",
+-    "time_0_3",
+-]
+-
+ [[test]]
+ name = "utils"
+ path = "tests/utils.rs"
+@@ -327,30 +206,30 @@ version = "0.22.1"
+ optional = true
+ default-features = false
+
+-[dependencies.chrono_0_4]
+-version = "0.4.20"
+-features = ["serde"]
+-optional = true
+-default-features = false
+-package = "chrono"
+-
+-[dependencies.document-features]
+-version = "0.2.7"
+-optional = true
+-
+-[dependencies.hashbrown_0_14]
+-version = "0.14.0"
+-features = ["serde"]
+-optional = true
+-default-features = false
+-package = "hashbrown"
+-
+-[dependencies.hashbrown_0_15]
+-version = "0.15.0"
+-features = ["serde"]
+-optional = true
+-default-features = false
+-package = "hashbrown"
++#[dependencies.chrono_0_4]
++#version = "0.4.20"
++#features = ["serde"]
++#optional = true
++#default-features = false
++#package = "chrono"
++
++#[dependencies.document-features]
++#version = "0.2.7"
++#optional = true
++
++#[dependencies.hashbrown_0_14]
++#version = "0.14.0"
++#features = ["serde"]
++#optional = true
++#default-features = false
++#package = "hashbrown"
++
++#[dependencies.hashbrown_0_15]
++#version = "0.15.0"
++#features = ["serde"]
++#optional = true
++#default-features = false
++#package = "hashbrown"
+
+ [dependencies.hashbrown_0_16]
+ version = "0.16.0"
+@@ -364,38 +243,6 @@ version = "0.4.3"
+ optional = true
+ default-features = false
+
+-[dependencies.indexmap_1]
+-version = "1.8"
+-features = ["serde-1"]
+-optional = true
+-default-features = false
+-package = "indexmap"
+-
+-[dependencies.indexmap_2]
+-version = "2.0"
+-features = ["serde"]
+-optional = true
+-default-features = false
+-package = "indexmap"
+-
+-[dependencies.schemars_0_8]
+-version = "0.8.16"
+-optional = true
+-default-features = false
+-package = "schemars"
+-
+-[dependencies.schemars_0_9]
+-version = "0.9.0"
+-optional = true
+-default-features = false
+-package = "schemars"
+-
+-[dependencies.schemars_1]
+-version = "1.0.2"
+-optional = true
+-default-features = false
+-package = "schemars"
+-
+ [dependencies.serde_core]
+ version = "1.0.225"
+ features = ["result"]
+@@ -416,12 +263,6 @@ optional = true
+ default-features = false
+ package = "smallvec"
+
+-[dependencies.time_0_3]
+-version = "~0.3.47"
+-optional = true
+-default-features = false
+-package = "time"
+-
+ [dev-dependencies.expect-test]
+ version = "1.5.1"
+
+@@ -456,18 +297,6 @@ version = "0.12"
+ [dev-dependencies.rustversion]
+ version = "1.0.22"
+
+-[dev-dependencies.schemars_0_8]
+-version = "0.8.16"
+-package = "schemars"
+-
+-[dev-dependencies.schemars_0_9]
+-version = "0.9.0"
+-package = "schemars"
+-
+-[dev-dependencies.schemars_1]
+-version = "1.0.2"
+-package = "schemars"
+-
+ [dev-dependencies.serde]
+ version = "1.0.152"
+ features = ["derive"]

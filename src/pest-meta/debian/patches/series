@@ -1,2 +1,2 @@
-disable-tests-missing-testdata.patch
-remove-cargo-dep.patch
+01-upgrade-sha2.diff
+02-disable-cargo.diff

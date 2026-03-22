@@ -1,9 +1,0 @@
-Index: derive-builder/Cargo.toml
-===================================================================
---- derive-builder.orig/Cargo.toml
-+++ derive-builder/Cargo.toml
-@@ -52,3 +52,3 @@ version = "1.0"
- [dev-dependencies.pretty_assertions]
--version = "0.6.1"
-+version = "1.0"
- 

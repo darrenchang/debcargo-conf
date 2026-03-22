@@ -3,3 +3,7 @@ uploaders = ["kpcyrd <git@rxv.cc>"]
 
 # The auto-generated summary is too long.
 summary = "Find native dependencies in a vcpkg tree at build time"
+excludes = [
+  "test-data/normalized/installed/arm64-ios/lib/*",
+  "test-data/normalized/installed/x64-osx/lib/*",
+]

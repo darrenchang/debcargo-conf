@@ -1,0 +1,25 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 7465e28..27b6335 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -84,11 +84,6 @@ zlib-default = [
+     "libz-sys/default",
+     "dep:crc32fast",
+ ]
+-zlib-ng = [
+-    "any_c_zlib",
+-    "libz-ng-sys",
+-    "dep:crc32fast",
+-]
+ zlib-ng-compat = [
+     "zlib",
+     "libz-sys/zlib-ng",
+@@ -227,7 +222,7 @@ optional = true
+ version = "0.2"
+ optional = true
+
+-[dependencies.libz-ng-sys]
++[disabled.dependencies.libz-ng-sys]
+ version = "1.1.16"
+ optional = true
+

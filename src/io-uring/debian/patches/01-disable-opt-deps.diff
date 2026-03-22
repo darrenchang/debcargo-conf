@@ -1,0 +1,23 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index d25ba21..2658084 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -36,7 +36,7 @@ repository = "https://github.com/tokio-rs/io-uring"
+ [features]
+ direct-syscall = ["sc"]
+ io_safety = []
+-overwrite = ["bindgen"]
++#overwrite = ["bindgen"]
+
+ [lib]
+ name = "io_uring"
+@@ -73,6 +73,6 @@ version = "0.4"
+ [dev-dependencies.socket2]
+ version = "0.5"
+
+-[build-dependencies.bindgen]
+-version = "0.69"
+-optional = true
++#[build-dependencies.bindgen]
++#version = "0.69"
++#optional = true

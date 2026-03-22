@@ -1,4 +1,1 @@
-disable-test-that-fails-with-file-not-found.diff
-relax-dep.diff
-remove-windows.diff
-skip-current-exe-mismatch-on-i386.patch
+01-upgrade-deps.diff

@@ -1,13 +1,11 @@
-Description: these assets are not published on crates.io..
-
-Index: x509-parser/tests/readcrl.rs
-===================================================================
---- x509-parser.orig/tests/readcrl.rs
-+++ x509-parser/tests/readcrl.rs
-@@ -24,9 +24,9 @@ fn crl_idp<'a>(crl: &'a CertificateRevoc
+diff --git a/tests/readcrl.rs b/tests/readcrl.rs
+index 18a30a5..5f43ea3 100644
+--- a/tests/readcrl.rs
++++ b/tests/readcrl.rs
+@@ -27,9 +27,9 @@ fn crl_idp<'a>(crl: &'a CertificateRevocationList) -> &'a IssuingDistributionPoi
      }
  }
- 
+
 -#[test]
 +#[allow(dead_code)]
  fn read_minimal_crl_idp() {
@@ -15,11 +13,11 @@ Index: x509-parser/tests/readcrl.rs
 +    const CRL_DATA: &[u8] = &[];
      let (_, crl) = parse_x509_crl(CRL_DATA).expect("could not parse revocation list");
      let crl_idp = crl_idp(&crl);
- 
-@@ -53,9 +53,9 @@ fn read_minimal_crl_idp() {
+
+@@ -56,9 +56,9 @@ fn read_minimal_crl_idp() {
      assert!(!crl_idp.only_contains_attribute_certs);
  }
- 
+
 -#[test]
 +#[allow(dead_code)]
  fn test_only_user_crl_idp() {
@@ -27,11 +25,11 @@ Index: x509-parser/tests/readcrl.rs
 +    const CRL_DATA: &[u8] = &[];
      let (_, crl) = parse_x509_crl(CRL_DATA).expect("could not parse revocation list");
      let crl_idp = crl_idp(&crl);
- 
-@@ -65,9 +65,9 @@ fn test_only_user_crl_idp() {
+
+@@ -68,9 +68,9 @@ fn test_only_user_crl_idp() {
      assert!(!crl_idp.only_contains_attribute_certs);
  }
- 
+
 -#[test]
 +#[allow(dead_code)]
  fn test_only_ca_crl_idp() {
@@ -39,11 +37,11 @@ Index: x509-parser/tests/readcrl.rs
 +    const CRL_DATA: &[u8] = &[];
      let (_, crl) = parse_x509_crl(CRL_DATA).expect("could not parse revocation list");
      let crl_idp = crl_idp(&crl);
- 
-@@ -77,9 +77,9 @@ fn test_only_ca_crl_idp() {
+
+@@ -80,9 +80,9 @@ fn test_only_ca_crl_idp() {
      assert!(!crl_idp.only_contains_attribute_certs);
  }
- 
+
 -#[test]
 +#[allow(dead_code)]
  fn test_only_some_reasons_crl_idp() {
@@ -51,11 +49,11 @@ Index: x509-parser/tests/readcrl.rs
 +    const CRL_DATA: &[u8] = &[];
      let (_, crl) = parse_x509_crl(CRL_DATA).expect("could not parse revocation list");
      let crl_idp = crl_idp(&crl);
- 
-@@ -95,9 +95,9 @@ fn test_only_some_reasons_crl_idp() {
+
+@@ -98,9 +98,9 @@ fn test_only_some_reasons_crl_idp() {
      assert!(reasons.affilation_changed());
  }
- 
+
 -#[test]
 +#[allow(dead_code)]
  fn test_only_attribute_cers_crl_idp() {
@@ -63,4 +61,3 @@ Index: x509-parser/tests/readcrl.rs
 +    const CRL_DATA: &[u8] = &[];
      let (_, crl) = parse_x509_crl(CRL_DATA).expect("could not parse revocation list");
      let crl_idp = crl_idp(&crl);
- 

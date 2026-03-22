@@ -1,0 +1,60 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 466be34..f4cb5b1 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -104,13 +104,13 @@ path = "benches/benchmarks.rs"
+ version = "1.0"
+
+ [dependencies.cpp_demangle]
+-version = "0.5.0"
++version = "0.5.1"
+ features = ["alloc"]
+ optional = true
+ default-features = false
+
+ [dependencies.rustc-demangle]
+-version = "0.1.24"
++version = "0.1.27"
+
+ [dependencies.serde]
+ version = "1.0"
+@@ -118,25 +118,22 @@ features = ["derive"]
+ optional = true
+
+ [dev-dependencies.libloading]
+-version = "0.8"
+-
+-[target.'cfg(any(windows, target_os = "cygwin"))'.dependencies.windows-link]
+-version = "0.2"
++version = "0.9"
+
+ [target.'cfg(not(all(windows, target_env = "msvc", not(target_vendor = "uwp"))))'.dependencies.addr2line]
+-version = "0.25.0"
++version = "0.26.0"
+ default-features = false
+
+ [target.'cfg(not(all(windows, target_env = "msvc", not(target_vendor = "uwp"))))'.dependencies.libc]
+-version = "0.2.156"
++version = "0.2.183"
+ default-features = false
+
+ [target.'cfg(not(all(windows, target_env = "msvc", not(target_vendor = "uwp"))))'.dependencies.miniz_oxide]
+-version = "0.8"
++version = "0.9"
+ default-features = false
+
+ [target.'cfg(not(all(windows, target_env = "msvc", not(target_vendor = "uwp"))))'.dependencies.object]
+-version = "0.37.0"
++version = "0.38.0"
+ features = [
+     "read_core",
+     "elf",
+@@ -149,7 +146,7 @@ features = [
+ default-features = false
+
+ [target.'cfg(not(all(windows, target_env = "msvc", not(target_vendor = "uwp"))))'.dependencies.ruzstd]
+-version = "0.8.1"
++version = "0.8"
+ optional = true
+ default-features = false
+

@@ -1,0 +1,24 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index b724d12..a1a67a8 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -31,15 +31,15 @@ all-features = true
+
+ [features]
+ default = []
+-schema = ["schemars"]
++#schema = ["schemars"]
+
+ [lib]
+ name = "auditable_serde"
+ path = "src/lib.rs"
+
+-[dependencies.schemars]
+-version = "0.8.10"
+-optional = true
++#[dependencies.schemars]
++#version = "0.8.10"
++#optional = true
+
+ [dependencies.semver]
+ version = "1.0"

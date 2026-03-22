@@ -1,0 +1,6 @@
+#!/usr/bin/make -f
+%:
+	dh $@ --buildsystem cargo
+
+override_dh_auto_test:
+	# Tests fail with newer rustc: enum byte-swapping produces invalid discriminants

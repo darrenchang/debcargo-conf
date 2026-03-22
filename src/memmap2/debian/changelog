@@ -1,3 +1,9 @@
+rust-memmap2 (0.9.10-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Tue, 17 Dec 2024 16:52:27 +0000
+
 rust-memmap2 (0.9.5-1) unstable; urgency=medium
 
   * Team upload.

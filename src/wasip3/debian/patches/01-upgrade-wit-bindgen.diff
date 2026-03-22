@@ -1,0 +1,22 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 618ba2d..84a8c20 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -11,7 +11,7 @@
+
+ [package]
+ edition = "2021"
+-rust-version = "1.87.0"
++rust-version = "1.85.0"
+ name = "wasip3"
+ version = "0.4.0+wasi-0.3.0-rc-2026-01-06"
+ build = false
+@@ -80,7 +80,7 @@ version = "2.0.17"
+ optional = true
+
+ [dependencies.wit-bindgen]
+-version = "0.51.0"
++version = "0.54.0"
+ features = ["async"]
+ default-features = false
+

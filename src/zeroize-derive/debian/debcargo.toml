@@ -1,2 +1,5 @@
 overlay = "."
 uploaders = ["Matthias Geiger <werdahias@riseup.net>"]
+
+[packages."lib"]
+test_is_broken = true

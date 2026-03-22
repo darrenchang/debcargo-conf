@@ -1,0 +1,11 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 378be68..1dcd5f1 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -93,5 +93,5 @@ optional = true
+ package = "rustc-std-workspace-core"
+
+ [dependencies.wit-bindgen]
+-version = "0.51.0"
++version = "0.54.0"
+ default-features = false

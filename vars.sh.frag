@@ -48,6 +48,7 @@ case $dcver in
 2.5.*)	true;;
 2.6.*)	true;;
 2.7.*)	true;;
+2.8.*)	true;;
 *)	abort 1 "unsupported debcargo version: $dcver";;
 esac
 

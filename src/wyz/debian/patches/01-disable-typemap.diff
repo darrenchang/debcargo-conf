@@ -1,0 +1,20 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 58e7b88..64e01cf 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -36,7 +36,7 @@ optional = true
+ [dependencies.tap]
+ version = "1"
+
+-[dependencies.typemap]
++[disabled.dependencies.typemap]
+ version = "0.3"
+ optional = true
+
+@@ -45,6 +45,5 @@ alloc = []
+ default = ["std"]
+ garbage = [
+     "once_cell",
+-    "typemap",
+ ]
+ std = ["alloc"]

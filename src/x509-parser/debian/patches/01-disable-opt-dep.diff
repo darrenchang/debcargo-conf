@@ -1,0 +1,52 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 71bbb4b..1848337 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -66,8 +66,8 @@ rustdoc-args = [
+ [features]
+ default = []
+ validate = []
+-verify = ["ring"]
+-verify-aws = ["aws-lc-rs"]
++verify = []
++verify-aws = []
+
+ [lib]
+ name = "x509_parser"
+@@ -105,17 +105,17 @@ path = "tests/run_all_fuzz_files.rs"
+ name = "test01"
+ path = "tests/test01.rs"
+
+-[[test]]
+-name = "verify"
+-path = "tests/verify.rs"
++#[[test]]
++#name = "verify"
++#path = "tests/verify.rs"
+
+ [dependencies.asn1-rs]
+ version = "0.7.0"
+ features = ["datetime"]
+
+-[dependencies.aws-lc-rs]
+-version = "1.0"
+-optional = true
++#[dependencies.aws-lc-rs]
++#version = "1.0"
++#optional = true
+
+ [dependencies.data-encoding]
+ version = "2.2.1"
+@@ -138,9 +138,9 @@ features = [
+     "x962",
+ ]
+
+-[dependencies.ring]
+-version = "0.17.12"
+-optional = true
++#[dependencies.ring]
++#version = "0.17.12"
++#optional = true
+
+ [dependencies.rusticata-macros]
+ version = "4.0"

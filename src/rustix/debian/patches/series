@@ -1,6 +1,2 @@
-no-windows.diff
-drop-alloc.diff
-disable-benches.diff
-relax-dep.diff
-vdso-check-for-missing-dt-hash.patch
-fix-arm64-vdso.patch
+01-upgrade-bitflags.diff
+02-disable-windows-sys.diff

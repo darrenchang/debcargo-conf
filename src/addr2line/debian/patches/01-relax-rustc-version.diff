@@ -1,0 +1,13 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 3524cf6..e3a52f3 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -11,7 +11,7 @@
+
+ [package]
+ edition = "2018"
+-rust-version = "1.88"
++rust-version = "1.85"
+ name = "addr2line"
+ version = "0.26.0"
+ build = false

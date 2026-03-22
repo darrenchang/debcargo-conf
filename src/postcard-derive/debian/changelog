@@ -1,0 +1,18 @@
+rust-postcard-derive (0.2.2-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Ananthu C V <weepingclown@disroot.org>  Wed, 20 Nov 2024 23:24:28 +0530
+
+rust-postcard (1.0.10-2) unstable; urgency=medium
+
+  * Team upload.
+  * Package postcard 1.0.10 from crates.io using debcargo 2.7.4
+
+ -- Ananthu C V <weepingclown@disroot.org>  Wed, 20 Nov 2024 23:24:28 +0530
+
+rust-postcard (1.0.10-1) unstable; urgency=medium
+
+  * Package postcard 1.0.10 from crates.io using debcargo 2.6.0
+
+ -- Michael Tokarev <mjt@tls.msk.ru>  Sun, 03 Nov 2024 19:11:58 +0100

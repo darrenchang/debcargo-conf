@@ -1,3 +1,9 @@
+rust-time-core (0.1.8-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Sun, 18 Feb 2024 06:03:00 +0000
+
 rust-time-core (0.1.2-1) unstable; urgency=medium
 
   * Team upload.

@@ -1,0 +1,12 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 0f913c2..668d30f 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -11,7 +11,6 @@
+
+ [package]
+ edition = "2024"
+-rust-version = "1.87.0"
+ name = "wit-bindgen-rust"
+ version = "0.54.0"
+

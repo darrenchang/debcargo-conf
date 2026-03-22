@@ -1,3 +1,2 @@
-skip-doctests.diff
-relax-anstream.diff
-skip-broken-test.diff
+01-disable-optional-dep.diff
+02-disable-optional-dep.diff

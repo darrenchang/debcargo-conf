@@ -1,0 +1,14 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 63ae36d..e56c097 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -34,6 +34,6 @@ std = []
+ name = "malloc_size_of"
+ path = "src/lib.rs"
+
+-[dependencies.void]
+-version = "1.0.2"
+-optional = true
++#[dependencies.void]
++#version = "1.0.2"
++#optional = true

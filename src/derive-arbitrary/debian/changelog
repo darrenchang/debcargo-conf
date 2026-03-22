@@ -1,3 +1,9 @@
+rust-derive-arbitrary (1.4.2-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Sat, 11 Jan 2025 02:20:44 +0000
+
 rust-derive-arbitrary (1.4.1-1) unstable; urgency=medium
 
   * Team upload.

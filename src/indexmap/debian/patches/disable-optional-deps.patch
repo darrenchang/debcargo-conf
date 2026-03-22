@@ -1,11 +1,20 @@
 --- a/Cargo.toml
 +++ b/Cargo.toml
-@@ -92 +92 @@
+@@ -96,7 +96,7 @@ version = "1.0"
+ optional = true
+ default-features = false
+
 -[dependencies.borsh]
 +[disabled.dependencies.borsh]
-@@ -105 +105 @@
+ version = "1.2"
+ optional = true
+ default-features = false
+@@ -109,7 +109,7 @@ default-features = false
+ version = "0.16.1"
+ default-features = false
+
 -[dependencies.quickcheck]
 +[disabled.dependencies.quickcheck]
-@@ -114 +114 @@
--[dependencies.rustc-rayon]
-+[disabled.dependencies.rustc-rayon]
+ version = "1.0"
+ optional = true
+ default-features = false

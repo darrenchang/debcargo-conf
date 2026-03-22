@@ -1,3 +1,9 @@
+rust-value-bag-serde1 (1.12.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Sun, 05 May 2024 23:54:10 +0000
+
 rust-value-bag-serde1 (1.9.0-1) unstable; urgency=medium
 
   * Team upload.

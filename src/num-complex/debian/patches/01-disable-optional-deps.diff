@@ -1,0 +1,45 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index bb9792a..aab87c4 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -41,12 +41,9 @@ features = [
+     "bytemuck",
+     "std",
+     "serde",
+-    "rkyv/size_64",
+-    "bytecheck",
+-    "rand",
+ ]
+
+-[dependencies.bytecheck]
++[disabled.dependencies.bytecheck]
+ version = "0.6"
+ optional = true
+ default-features = false
+@@ -60,12 +57,12 @@ version = "0.2.18"
+ features = ["i128"]
+ default-features = false
+
+-[dependencies.rand]
++[disabled.dependencies.rand]
+ version = "0.8"
+ optional = true
+ default-features = false
+
+-[dependencies.rkyv]
++[disabled.dependencies.rkyv]
+ version = "0.7"
+ optional = true
+ default-features = false
+@@ -76,11 +73,8 @@ optional = true
+ default-features = false
+
+ [features]
+-bytecheck = ["dep:bytecheck"]
+ bytemuck = ["dep:bytemuck"]
+ default = ["std"]
+ libm = ["num-traits/libm"]
+-rand = ["dep:rand"]
+-rkyv = ["dep:rkyv"]
+ serde = ["dep:serde"]
+ std = ["num-traits/std"]

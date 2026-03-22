@@ -1,6 +1,0 @@
-Index: openssl/Cargo.toml
-===================================================================
---- openssl.orig/Cargo.toml
-+++ openssl/Cargo.toml
-@@ -60,1 +60,0 @@
--unstable_boringssl = ["ffi/unstable_boringssl"]

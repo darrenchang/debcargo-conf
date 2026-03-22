@@ -1,3 +1,8 @@
+rust-js-sys (0.3.91-1~bpo13+pve1) proxmox-rust; urgency=medium
+  * Upgrade verseion
+
+ -- Darren <darrenchang951@gmail.com>  Tue, 17 Mar 2026 15:38:38 +0800
+
 rust-js-sys (0.3.76-1~bpo13+pve1) proxmox-rust; urgency=medium
 
   * Rebuild for Debian Trixie / Proxmox

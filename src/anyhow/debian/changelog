@@ -1,3 +1,9 @@
+rust-anyhow (1.0.102-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Mon, 10 Feb 2025 21:31:17 +0100
+
 rust-anyhow (1.0.95-1) unstable; urgency=medium
 
   * Team upload.

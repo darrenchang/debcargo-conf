@@ -1,3 +1,0 @@
-remove-non-linux-deps.diff
-relax-dep.diff
-ownedfd-io-safety-traits-for-mio-1.patch

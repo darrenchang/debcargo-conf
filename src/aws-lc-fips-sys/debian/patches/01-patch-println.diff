@@ -1,0 +1,12 @@
+diff --git a/builder/main.rs b/builder/main.rs
+index 51a9bc1..644f0a4 100644
+--- a/builder/main.rs
++++ b/builder/main.rs
+@@ -817,6 +817,7 @@ fn main() {
+     initialize();
+     prepare_cargo_cfg();
+
++    println!("dh-cargo:deb-built-using=aws_lc_fips_0_13_13_crypto=1={}", env::var("CARGO_MANIFEST_DIR").unwrap());
+     let manifest_dir = current_dir();
+     let manifest_dir = dunce::canonicalize(Path::new(&manifest_dir)).unwrap();
+     let prefix_str = prefix_string();

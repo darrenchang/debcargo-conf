@@ -1,3 +1,9 @@
+rust-terminal-size (0.4.4-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Thu, 02 Jan 2025 10:50:12 +0000
+
 rust-terminal-size (0.4.1-2) unstable; urgency=medium
 
   * Team upload.

@@ -1,3 +1,9 @@
+rust-serde-with-macros (3.18.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Sat, 15 Mar 2025 13:35:49 +0000
+
 rust-serde-with-macros (3.12.0-1) unstable; urgency=medium
 
   * Team upload.

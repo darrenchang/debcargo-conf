@@ -1,3 +1,9 @@
+rust-pest-meta (2.8.6-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Thu, 05 Oct 2023 15:19:47 +0000
+
 rust-pest-meta (2.7.4-1) unstable; urgency=medium
 
   * Team upload.

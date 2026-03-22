@@ -1,6 +1,0 @@
---- a/src/format_description/well_known/iso8601/adt_hack.rs
-+++ b/src/format_description/well_known/iso8601/adt_hack.rs
-@@ -165,2 +165,3 @@
-     use super::*;
-+    extern crate std;
- 

@@ -1,3 +1,9 @@
+rust-rand (0.9.2-1) experimental; urgency=medium
+
+  * Team upload.
+
+ -- Matthias Geiger <werdahias@debian.org>  Thu, 08 May 2025 19:53:40 +0200
+
 rust-rand (0.9.1-1) experimental; urgency=medium
 
   * Team upload.

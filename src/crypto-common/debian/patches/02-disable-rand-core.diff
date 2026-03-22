@@ -1,0 +1,28 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 3352c2b..ada9784 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -39,10 +39,10 @@ repository = "https://github.com/RustCrypto/traits"
+ all-features = true
+
+ [features]
+-getrandom = [
+-    "rand_core",
+-]
+-rand_core = ["dep:rand_core"]
++getrandom = [
++    "rand_core",
++]
++rand_core = ["dep:rand_core"]
+ zeroize = ["hybrid-array/zeroize"]
+
+ [lib]
+@@ -58,7 +58,7 @@ optional = true
+ version = "0.4.7"
+
+ [dependencies.rand_core]
+-version = "0.10"
++version = "0.9"
+ optional = true
+
+ [lints.clippy]

@@ -1,3 +1,9 @@
+rust-memoffset (0.9.1-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Mon, 08 Jul 2024 04:18:54 +0000
+
 rust-memoffset (0.8.0-1) unstable; urgency=medium
 
   * Team upload.

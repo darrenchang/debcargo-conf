@@ -1,0 +1,11 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 8a7ff09..aed5149 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -8,5 +8,5 @@ description = "A typesafe store for many value types."
+ repository = "https://github.com/reem/rust-typemap"
+
+ [dependencies]
+-unsafe-any = "*"
++unsafe-any = "0.4"
+

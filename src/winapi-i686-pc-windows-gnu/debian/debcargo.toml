@@ -1,1 +1,2 @@
 overlay = "."
+whitelist = ["lib/*"]

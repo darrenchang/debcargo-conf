@@ -3,7 +3,11 @@ include /usr/share/rustc/architecture.mk
 %:
 	dh $@ --buildsystem cargo
 
+# f16/f128 support triggers "cannot call through upstream monomorphizations" errors
+override_dh_auto_build:
+	dh_auto_build -- --features no-f16-f128
+
 # Upstream at this version requires nightly features :(
 override_dh_auto_test:
 	export RUSTC_BOOTSTRAP=1; \
-	dh_auto_test
+	dh_auto_test -- --features no-f16-f128

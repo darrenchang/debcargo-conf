@@ -1,3 +1,2 @@
-upgrade-rkyv-0.8.patch
 relax-test-ln.patch
-enable-rkyv-default-features-for-tests.patch
+01-disable-optional-deps.diff

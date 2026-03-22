@@ -1,3 +1,9 @@
+rust-clap-lex (1.1.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Fri, 27 Dec 2024 12:15:00 +0000
+
 rust-clap-lex (0.7.4-1) unstable; urgency=medium
 
   * Team upload.

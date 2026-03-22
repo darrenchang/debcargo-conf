@@ -1,0 +1,28 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index bdb6ed6..bc35d7a 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -41,7 +41,7 @@ repository = "https://github.com/sunng87/handlebars-rust"
+ features = [
+     "dir_source",
+     "script_helper",
+-    "rust-embed",
++#    "rust-embed",
+ ]
+ rustdoc-args = [
+     "--cfg",
+@@ -183,10 +183,10 @@ features = [
+ ]
+ optional = true
+
+-[dependencies.rust-embed]
+-version = "8.0.0"
+-features = ["include-exclude"]
+-optional = true
++#[dependencies.rust-embed]
++#version = "8.0.0"
++#features = ["include-exclude"]
++#optional = true
+
+ [dependencies.serde]
+ version = "1.0.0"

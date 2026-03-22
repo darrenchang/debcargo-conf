@@ -1,0 +1,7 @@
+overlay = "."
+uploaders = ["Darren Chang <darrenchang951@gmail.com>"]
+collapse_features = true
+whitelist = ["wrappers/target.c"]
+
+[packages.lib]
+test_is_broken = true

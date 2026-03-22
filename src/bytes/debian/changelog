@@ -1,3 +1,9 @@
+rust-bytes (1.10.1-1) unstable; urgency=medium
+
+  * Package bytes 1.10.1 from crates.io using debcargo 2.8.2
+
+ -- kpcyrd <git@rxv.cc>  Sun, 08 Dec 2024 17:09:48 +0100
+
 rust-bytes (1.9.0-1) unstable; urgency=medium
 
   * Package bytes 1.9.0 from crates.io using debcargo 2.7.5

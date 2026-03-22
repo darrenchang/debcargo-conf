@@ -1,0 +1,21 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index d80cf48..5e13b8f 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -88,7 +88,6 @@ exactly = 1
+ alloc = []
+ debug = [
+     "std",
+-    "dep:anstream",
+     "dep:anstyle",
+ ]
+ default = ["std"]
+@@ -100,7 +99,7 @@ unsafe = []
+ name = "toml_parser"
+ path = "src/lib.rs"
+
+-[dependencies.anstream]
++[disabled.dependencies.anstream]
+ version = "0.6.20"
+ optional = true
+
