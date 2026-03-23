@@ -1,3 +1,9 @@
+rust-zeroize (1.8.2-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Blair Noctis <n@sail.ng>  Wed, 28 Aug 2024 23:19:41 +0000
+
 rust-zeroize (1.8.1-1) unstable; urgency=medium
 
   * Team upload.

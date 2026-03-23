@@ -1,0 +1,39 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index c5295e7..482e9eb 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -57,7 +57,7 @@ tag-name = "v{{version}}"
+ [features]
+ cargo = []
+ color = ["dep:anstream"]
+-debug = ["dep:backtrace"]
++debug = []
+ default = [
+     "std",
+     "color",
+@@ -94,7 +94,6 @@ unstable-v5 = ["deprecated"]
+ usage = []
+ wrap_help = [
+     "help",
+-    "dep:terminal_size",
+ ]
+
+ [lib]
+@@ -109,7 +108,7 @@ optional = true
+ [dependencies.anstyle]
+ version = "1.0.13"
+
+-[dependencies.backtrace]
++[disabled.dependencies.backtrace]
+ version = "0.3.76"
+ optional = true
+
+@@ -120,7 +119,7 @@ version = "1.0.0"
+ version = "0.11.1"
+ optional = true
+
+-[dependencies.terminal_size]
++[disabled.dependencies.terminal_size]
+ version = "0.4.3"
+ optional = true
+
