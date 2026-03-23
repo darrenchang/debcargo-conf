@@ -1,3 +1,9 @@
+rust-anstyle (1.0.14-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Sat, 17 Aug 2024 03:53:00 +0000
+
 rust-anstyle (1.0.8-1) unstable; urgency=medium
 
   * Team upload.

@@ -1,0 +1,22 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 7a521f8..c08158e 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -36,7 +36,7 @@ license = "MIT OR Apache-2.0"
+ repository = "https://github.com/rayon-rs/rayon"
+ 
+ [features]
+-web_spin_lock = ["dep:wasm_sync"]
++web_spin_lock = []
+ 
+ [lib]
+ name = "rayon_core"
+@@ -76,7 +76,7 @@ version = "0.8.1"
+ [dependencies.crossbeam-utils]
+ version = "0.8.0"
+ 
+-[dependencies.wasm_sync]
++[disabled.dependencies.wasm_sync]
+ version = "0.1.0"
+ optional = true
+ 

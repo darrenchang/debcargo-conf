@@ -1,0 +1,29 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 277c68e..0abb0b3 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -39,10 +39,7 @@ license = "MIT OR Apache-2.0"
+ repository = "https://github.com/rayon-rs/rayon"
+ 
+ [features]
+-web_spin_lock = [
+-    "dep:wasm_sync",
+-    "rayon-core/web_spin_lock",
+-]
++web_spin_lock = ["rayon-core/web_spin_lock"]
+ 
+ [lib]
+ name = "rayon"
+@@ -116,10 +113,10 @@ path = "tests/str.rs"
+ version = "1"
+ default-features = false
+ 
+-[dependencies.rayon-core]
++[dependencies.rayon-core]
+ version = "1.13.0"
+ 
+-[dependencies.wasm_sync]
++[disabled.dependencies.wasm_sync]
+ version = "0.1.0"
+ optional = true
+ 

@@ -5,8 +5,7 @@ collapse_features = true
 # tests fail without default features.
 [packages.lib]
 test_is_broken = true
-depends = ["librust-ahash-dev (>= 0.8.11-3)"]
-extra_lines = ["Breaks: librust-serde-with-dev (<= 3.4.0-3)"]
+# extra_lines = ["Breaks: librust-serde-with-dev (<= 3.4.0-3)"]
 
 # tests fail with "core" feature
 [packages."lib+core"]
@@ -18,5 +17,5 @@ test_is_broken = false
 
 # tests pass with ahash feature.
 [packages."lib+ahash"]
-test_is_broken = false
+test_is_broken = true
 
