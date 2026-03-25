@@ -1,0 +1,13 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 0a8462b..23a7693 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -71,7 +71,7 @@ features = ["derive"]
+ optional = true
+
+ [dev-dependencies.getrandom]
+-version = "0.4.0-rc.1"
++version = "0.4.2"
+ features = ["sys_rng"]
+
+ [dev-dependencies.serde_json]

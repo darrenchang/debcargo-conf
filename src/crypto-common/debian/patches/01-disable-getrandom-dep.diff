@@ -1,0 +1,21 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 3352c2b..aa7b719 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -41,7 +41,6 @@ all-features = true
+ [features]
+ getrandom = [
+     "rand_core",
+-    "dep:getrandom",
+ ]
+ rand_core = ["dep:rand_core"]
+ zeroize = ["hybrid-array/zeroize"]
+@@ -50,7 +49,7 @@ zeroize = ["hybrid-array/zeroize"]
+ name = "crypto_common"
+ path = "src/lib.rs"
+
+-[dependencies.getrandom]
++[disabled.dependencies.getrandom]
+ version = "0.4"
+ features = ["sys_rng"]
+ optional = true

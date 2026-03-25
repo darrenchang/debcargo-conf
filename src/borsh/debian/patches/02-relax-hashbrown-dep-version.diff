@@ -1,0 +1,13 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index f095edd..5d2185e 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -103,7 +103,7 @@ optional = true
+ default-features = false
+
+ [dependencies.hashbrown]
+-version = ">=0.11,<0.16.0"
++version = ">=0.11"
+ optional = true
+
+ [dependencies.indexmap]

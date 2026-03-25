@@ -1,3 +1,1 @@
-skip-doctests.diff
-relax-anstream.diff
-skip-broken-test.diff
+disable-wincon.diff

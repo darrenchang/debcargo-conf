@@ -1,3 +1,9 @@
+rust-proc-macro-crate (3.5.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Sun, 08 Sep 2024 06:56:02 +0000
+
 rust-proc-macro-crate (3.2.0-1) unstable; urgency=medium
 
   * Team upload.

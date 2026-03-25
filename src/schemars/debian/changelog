@@ -1,3 +1,9 @@
+rust-schemars (1.2.1-1) unstable; urgency=medium
+
+  * Package schemars 1.2.1 from crates.io using debcargo 2.8.2
+
+ -- Alexander Kjäll <alexander.kjall@gmail.com>  Mon, 21 Oct 2024 17:37:26 +0200
+
 rust-schemars (0.8.21-1) unstable; urgency=medium
 
   * Package schemars 0.8.21 from crates.io using debcargo 2.7.1
