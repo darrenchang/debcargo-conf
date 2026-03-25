@@ -1,0 +1,28 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 919c012..13b6823 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -40,14 +40,12 @@ all-features = true
+ [features]
+ alloc = []
+ default = [
+-    "random",
+     "xxhash32",
+     "xxhash64",
+     "xxhash3_64",
+     "xxhash3_128",
+     "std",
+ ]
+-random = ["dep:rand"]
+ serialize = ["dep:serde"]
+ std = ["alloc"]
+ xxhash32 = []
+@@ -59,7 +57,7 @@ xxhash64 = []
+ name = "twox_hash"
+ path = "src/lib.rs"
+
+-[dependencies.rand]
++[disabled.dependencies.rand]
+ version = "0.9.0"
+ features = ["thread_rng"]
+ optional = true
