@@ -1,3 +1,9 @@
+rust-libz-sys (1.1.25-1) unstable; urgency=medium
+
+  * Package libz-sys 1.1.25 from crates.io using debcargo 2.8.2
+
+ -- Fabian Grünbichler <debian@fabian.gruenbichler.email>  Sun, 13 Oct 2024 16:43:30 +0200
+
 rust-libz-sys (1.1.20-1) unstable; urgency=medium
 
   * Package libz-sys 1.1.20 from crates.io using debcargo 2.7.1

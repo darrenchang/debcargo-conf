@@ -1,3 +1,9 @@
+rust-addr2line (0.26.0-2) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Wed, 25 Dec 2024 17:44:21 +0000
+
 rust-addr2line (0.25.1-2) unstable; urgency=medium
 
   * Team upload.

@@ -1,0 +1,24 @@
+overlay = "."
+uploaders = ["Darren Chang <darrenchang951@gmail.com>"]
+collapse_features = true
+whitelist = [
+  "adler32.c",
+  "adler32_simd.c",
+  "compress.c",
+  "crc32.c",
+  "crc32_simd.c",
+  "deflate.c",
+  "gzclose.c",
+  "gzlib.c",
+  "gzread.c",
+  "gzwrite.c",
+  "inffast.c",
+  "inffast_chunk.c",
+  "inflate.c",
+  "inftrees.c",
+  "trees.c",
+  "uncompr.c",
+  "zutil.c",
+]
+[packages.lib]
+test_is_broken = true

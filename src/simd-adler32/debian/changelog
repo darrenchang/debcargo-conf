@@ -1,3 +1,9 @@
+rust-simd-adler32 (0.3.8-1) unstable; urgency=medium
+
+  * Package simd-adler32 0.3.8 from crates.io using debcargo 2.8.2
+
+ -- Blair Noctis <n@sail.ng>  Wed, 26 Jun 2024 19:39:36 -0400
+
 rust-simd-adler32 (0.3.7-1) unstable; urgency=medium
 
   * Package simd-adler32 0.3.7 from crates.io using debcargo 2.6.1

@@ -1,3 +1,9 @@
+rust-xdg (3.0.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Wed, 26 Jul 2023 07:29:54 +0000
+
 rust-xdg (2.5.2-3) unstable; urgency=medium
 
   * Team upload.

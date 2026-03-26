@@ -1,3 +1,9 @@
+rust-adler2 (2.0.1-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Tue, 20 Oct 2020 18:59:51 -0400
+
 rust-adler32 (1.2.0-1) unstable; urgency=medium
 
   * Team upload.

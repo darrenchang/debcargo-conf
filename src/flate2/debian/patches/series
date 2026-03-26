@@ -1,5 +1,1 @@
-disable-cloudflare-zlib.patch
-disable-zlib-ng.patch
-#eliminate-any-zlib.patch
-disable-libz-rs-sys.patch
-relax-deps.patch
+01-upgrade-minz-oxide-dep.diff
