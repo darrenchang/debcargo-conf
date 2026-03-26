@@ -1,0 +1,27 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 2c4beaa..8c123e4 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -41,7 +41,6 @@ repository = "https://github.com/bitshifter/glam-rs"
+ status = "actively-developed"
+
+ [features]
+-bytecheck = ["rkyv/bytecheck"]
+ core-simd = ["bytemuck?/nightly_portable_simd"]
+ cuda = []
+ debug-glam-assert = []
+@@ -255,12 +254,12 @@ version = "0.5.8"
+ optional = true
+ default-features = false
+
+-[dependencies.rand]
++[disabled.dependencies.rand]
+ version = "0.9"
+ optional = true
+ default-features = false
+
+-[dependencies.rkyv]
++[disabled.dependencies.rkyv]
+ version = "0.8"
+ optional = true
+ default-features = false

@@ -1,0 +1,11 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 92864a6..d675995 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -39,5 +39,5 @@ version = "1"
+ version = "1"
+
+ [dependencies.syn]
+-version = "1"
++version = "2"
+ features = ["full"

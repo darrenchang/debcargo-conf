@@ -1,1 +1,2 @@
 skip-mpmc-contention.diff
+relax-rustc-version.diff

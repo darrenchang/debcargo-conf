@@ -1,3 +1,9 @@
+rust-home (0.5.12-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Thu, 03 Oct 2024 13:31:00 +0000
+
 rust-home (0.5.9-1) unstable; urgency=medium
 
   * Team upload.

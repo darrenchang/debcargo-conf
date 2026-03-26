@@ -1,0 +1,104 @@
+Source: rust-postcard
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-cobs-0.5-dev <!nocheck>,
+ librust-serde-1+derive-dev (>= 1.0.100) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Michael Tokarev <mjt@tls.msk.ru>
+Standards-Version: 4.7.3
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/postcard]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/postcard
+Homepage: https://github.com/jamesmunns/postcard
+X-Cargo-Crate: postcard
+X-Cargo-Crate-Version: 1.1.3
+
+Package: librust-postcard-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-cobs-0.5-dev,
+ librust-crc-3+default-dev (>= 3.0.1),
+ librust-defmt-1+default-dev,
+ librust-embedded-io-0.7+alloc-dev,
+ librust-embedded-io-0.7+default-dev,
+ librust-nalgebra-0.33-dev,
+ librust-postcard-derive-0.2+default-dev,
+ librust-serde-1+alloc-dev (>= 1.0.100),
+ librust-serde-1+derive-dev (>= 1.0.100),
+ librust-serde-1+std-dev (>= 1.0.100)
+Provides:
+ librust-postcard+alloc-dev (= ${binary:Version}),
+ librust-postcard+core-num-saturating-dev (= ${binary:Version}),
+ librust-postcard+crc-dev (= ${binary:Version}),
+ librust-postcard+default-dev (= ${binary:Version}),
+ librust-postcard+defmt-dev (= ${binary:Version}),
+ librust-postcard+embedded-io-dev (= ${binary:Version}),
+ librust-postcard+embedded-io-04-dev (= ${binary:Version}),
+ librust-postcard+embedded-io-06-dev (= ${binary:Version}),
+ librust-postcard+experimental-derive-dev (= ${binary:Version}),
+ librust-postcard+nalgebra-v0-33-dev (= ${binary:Version}),
+ librust-postcard+nalgebra-v0-33-dev (= ${binary:Version}),
+ librust-postcard+paste-dev (= ${binary:Version}),
+ librust-postcard+postcard-derive-dev (= ${binary:Version}),
+ librust-postcard+use-crc-dev (= ${binary:Version}),
+ librust-postcard+use-defmt-dev (= ${binary:Version}),
+ librust-postcard+use-std-dev (= ${binary:Version}),
+ librust-postcard-1-dev (= ${binary:Version}),
+ librust-postcard-1+alloc-dev (= ${binary:Version}),
+ librust-postcard-1+core-num-saturating-dev (= ${binary:Version}),
+ librust-postcard-1+crc-dev (= ${binary:Version}),
+ librust-postcard-1+default-dev (= ${binary:Version}),
+ librust-postcard-1+defmt-dev (= ${binary:Version}),
+ librust-postcard-1+embedded-io-dev (= ${binary:Version}),
+ librust-postcard-1+embedded-io-04-dev (= ${binary:Version}),
+ librust-postcard-1+embedded-io-06-dev (= ${binary:Version}),
+ librust-postcard-1+experimental-derive-dev (= ${binary:Version}),
+ librust-postcard-1+nalgebra-v0-33-dev (= ${binary:Version}),
+ librust-postcard-1+nalgebra-v0-33-dev (= ${binary:Version}),
+ librust-postcard-1+paste-dev (= ${binary:Version}),
+ librust-postcard-1+postcard-derive-dev (= ${binary:Version}),
+ librust-postcard-1+use-crc-dev (= ${binary:Version}),
+ librust-postcard-1+use-defmt-dev (= ${binary:Version}),
+ librust-postcard-1+use-std-dev (= ${binary:Version}),
+ librust-postcard-1.1-dev (= ${binary:Version}),
+ librust-postcard-1.1+alloc-dev (= ${binary:Version}),
+ librust-postcard-1.1+core-num-saturating-dev (= ${binary:Version}),
+ librust-postcard-1.1+crc-dev (= ${binary:Version}),
+ librust-postcard-1.1+default-dev (= ${binary:Version}),
+ librust-postcard-1.1+defmt-dev (= ${binary:Version}),
+ librust-postcard-1.1+embedded-io-dev (= ${binary:Version}),
+ librust-postcard-1.1+embedded-io-04-dev (= ${binary:Version}),
+ librust-postcard-1.1+embedded-io-06-dev (= ${binary:Version}),
+ librust-postcard-1.1+experimental-derive-dev (= ${binary:Version}),
+ librust-postcard-1.1+nalgebra-v0-33-dev (= ${binary:Version}),
+ librust-postcard-1.1+nalgebra-v0-33-dev (= ${binary:Version}),
+ librust-postcard-1.1+paste-dev (= ${binary:Version}),
+ librust-postcard-1.1+postcard-derive-dev (= ${binary:Version}),
+ librust-postcard-1.1+use-crc-dev (= ${binary:Version}),
+ librust-postcard-1.1+use-defmt-dev (= ${binary:Version}),
+ librust-postcard-1.1+use-std-dev (= ${binary:Version}),
+ librust-postcard-1.1.3-dev (= ${binary:Version}),
+ librust-postcard-1.1.3+alloc-dev (= ${binary:Version}),
+ librust-postcard-1.1.3+core-num-saturating-dev (= ${binary:Version}),
+ librust-postcard-1.1.3+crc-dev (= ${binary:Version}),
+ librust-postcard-1.1.3+default-dev (= ${binary:Version}),
+ librust-postcard-1.1.3+defmt-dev (= ${binary:Version}),
+ librust-postcard-1.1.3+embedded-io-dev (= ${binary:Version}),
+ librust-postcard-1.1.3+embedded-io-04-dev (= ${binary:Version}),
+ librust-postcard-1.1.3+embedded-io-06-dev (= ${binary:Version}),
+ librust-postcard-1.1.3+experimental-derive-dev (= ${binary:Version}),
+ librust-postcard-1.1.3+nalgebra-v0-33-dev (= ${binary:Version}),
+ librust-postcard-1.1.3+nalgebra-v0-33-dev (= ${binary:Version}),
+ librust-postcard-1.1.3+paste-dev (= ${binary:Version}),
+ librust-postcard-1.1.3+postcard-derive-dev (= ${binary:Version}),
+ librust-postcard-1.1.3+use-crc-dev (= ${binary:Version}),
+ librust-postcard-1.1.3+use-defmt-dev (= ${binary:Version}),
+ librust-postcard-1.1.3+use-std-dev (= ${binary:Version})
+Description: No_std + serde compatible message library for Rust - Rust source code
+ Source code for Debianized Rust crate "postcard"

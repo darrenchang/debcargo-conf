@@ -1,0 +1,45 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index ce23f66..3e690e0 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -29,20 +29,20 @@ features = ["external_doc"]
+ [profile.release]
+ panic = "abort"
+
+-[dependencies.chrono]
++[disabled.dependencies.chrono]
+ version = "0.4"
+ optional = true
+
+-[dependencies.glam]
++[disabled.dependencies.glam]
+ version = ">= 0.15, <= 0.25"
+ optional = true
+
+-[dependencies.indexmap_v1]
++[disabled.dependencies.indexmap_v1]
+ version = "1"
+ optional = true
+ package = "indexmap"
+
+-[dependencies.indexmap_v2]
++[disabled.dependencies.indexmap_v2]
+ version = "2"
+ optional = true
+ package = "indexmap"
+@@ -63,7 +63,7 @@ optional = true
+ version = "= 0.8.7"
+ optional = true
+
+-[dependencies.uuid]
++[disabled.dependencies.uuid]
+ version = "1"
+ optional = true
+ default-features = false
+@@ -80,6 +80,3 @@ version = "3"
+ [features]
+ default = ["speedy-derive"]
+ external_doc = []
+-indexmap = ["indexmap_v1"]
+-indexmap_v1 = ["dep:indexmap_v1"]
+-indexmap_v2 = ["dep:indexmap_v2"]

@@ -1,3 +1,9 @@
+rust-crc (3.4.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Emmanuel Arias <eamanu@debian.org>  Wed, 02 Oct 2024 18:33:25 -0300
+
 rust-crc (3.2.1-1) unstable; urgency=medium
 
   * Team upload.

@@ -1,3 +1,9 @@
+rust-dissimilar (1.0.11-1) unstable; urgency=medium
+
+  * Package dissimilar 1.0.11 from crates.io using debcargo 2.8.2
+
+ -- Wolfgang Silbermayr <wolfgang@silbermayr.at>  Fri, 03 Sep 2021 21:54:28 +0200
+
 rust-dissimilar (1.0.2-1) unstable; urgency=medium
 
   * Package dissimilar 1.0.2 from crates.io using debcargo 2.4.4-alpha.0

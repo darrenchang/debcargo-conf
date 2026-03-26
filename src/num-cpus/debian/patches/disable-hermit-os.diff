@@ -1,12 +1,12 @@
-Index: num-cpus/Cargo.toml
-===================================================================
---- num-cpus.orig/Cargo.toml
-+++ num-cpus/Cargo.toml
-@@ -28,5 +28,5 @@ repository = "https://github.com/seanmon
+diff --git a/Cargo.toml b/Cargo.toml
+index d9758d0..feaba74 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -42,5 +42,5 @@ path = "examples/values.rs"
  [target."cfg(not(windows))".dependencies.libc]
  version = "0.2.26"
- 
--[target."cfg(target_os = \"hermit\")".dependencies.hermit-abi]
--version = "0.3.0"
-+#[target."cfg(target_os = \"hermit\")".dependencies.hermit-abi]
-+#version = "0.3.0"
+
+-[target.'cfg(target_os = "hermit")'.dependencies.hermit-abi]
+-version = "0.5.0"
++#[target.'cfg(target_os = "hermit")'.dependencies.hermit-abi]
++#version = "0.5.0"

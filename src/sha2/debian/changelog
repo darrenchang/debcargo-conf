@@ -1,3 +1,9 @@
+rust-sha2 (0.11.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Fri, 24 Nov 2023 13:24:16 +0000
+
 rust-sha2 (0.10.8-1) unstable; urgency=medium
 
   * Team upload.

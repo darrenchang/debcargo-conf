@@ -1,5 +1,2 @@
-disable-unavailable-deps.patch
-no-benches.patch
-disable-slow-tests.patch
-ignore-trybuild-tests.patch
-disable-rkyv.patch
+01-relax-rustc-dep.diff
+02-disable-optional-deps.diff

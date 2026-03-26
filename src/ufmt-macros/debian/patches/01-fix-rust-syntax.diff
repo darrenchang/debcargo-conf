@@ -1,0 +1,31 @@
+diff --git a/src/lib.rs b/src/lib.rs
+index dafc6c1..fa26b71 100644
+--- a/src/lib.rs
++++ b/src/lib.rs
+@@ -340,7 +340,7 @@ fn mk_ident(i: usize) -> Ident {
+ }
+
+ // `}}` -> `}`
+-fn unescape(mut literal: &str, span: Span) -> parse::Result<Cow<str>> {
++fn unescape(mut literal: &str, span: Span) -> parse::Result<Cow<'_, str>> {
+     if literal.contains('}') {
+         let mut buf = String::new();
+
+@@ -374,7 +374,7 @@ fn unescape(mut literal: &str, span: Span) -> parse::Result<Cow<str>> {
+     }
+ }
+
+-fn parse(mut literal: &str, span: Span) -> parse::Result<Vec<Piece>> {
++fn parse(mut literal: &str, span: Span) -> parse::Result<Vec<Piece<'_>>> {
+     let mut pieces = vec![];
+
+     let mut buf = String::new();
+@@ -476,7 +476,7 @@ fn split_number(src: &str) -> (&str, usize) {
+ }
+
+ /// parses the stuff after a `{:` into a [Piece] and the trailing `&str` (what comes after the `}`)
+-fn parse_colon(format: &str, span: Span) -> parse::Result<(Piece, &str)> {
++fn parse_colon(format: &str, span: Span) -> parse::Result<(Piece<'_>, &str)> {
+     let (format, prefix) = if let Some(tail) = format.strip_prefix('#') {
+         (tail, true)
+     } else {

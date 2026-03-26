@@ -1,3 +1,0 @@
-remove-rustc-dep-of-std.diff
-remove-rustc-test.diff
-disable-bin.diff

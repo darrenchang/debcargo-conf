@@ -1,3 +1,9 @@
+rust-nalgebra-macros (0.3.0-1) unstable; urgency=medium
+
+  * Package nalgebra-macros 0.3.0 from crates.io using debcargo 2.8.2
+
+ -- Matthias Geiger <werdahias@riseup.net>  Fri, 28 Jun 2024 16:49:13 +0200
+
 rust-nalgebra-macros (0.2.2-1) unstable; urgency=medium
 
   * Package nalgebra-macros 0.2.2 from crates.io using debcargo 2.6.1
