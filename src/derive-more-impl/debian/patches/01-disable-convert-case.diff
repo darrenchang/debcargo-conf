@@ -1,0 +1,33 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 44d622d..8010dac 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -45,7 +45,7 @@ name = "derive_more_impl"
+ path = "src/lib.rs"
+ proc-macro = true
+
+-[dependencies.convert_case]
++[disabled.dependencies.convert_case]
+ version = "0.6"
+ optional = true
+
+@@ -121,7 +121,7 @@ index = []
+ index_mut = []
+ into = ["syn/extra-traits"]
+ into_iterator = []
+-is_variant = ["dep:convert_case"]
++is_variant = []
+ mul = ["syn/extra-traits"]
+ mul_assign = ["syn/extra-traits"]
+ not = ["syn/extra-traits"]
+@@ -129,8 +129,8 @@ sum = []
+ testing-helpers = ["dep:rustc_version"]
+ try_from = []
+ try_into = ["syn/extra-traits"]
+-try_unwrap = ["dep:convert_case"]
+-unwrap = ["dep:convert_case"]
++try_unwrap = []
++unwrap = []
+
+ [badges.github]
+ repository = "JelteF/derive_more"

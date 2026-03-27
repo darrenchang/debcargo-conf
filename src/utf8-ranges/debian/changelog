@@ -1,3 +1,9 @@
+rust-utf8-ranges (1.0.5-1) unstable; urgency=medium
+
+  * Package utf8-ranges 1.0.5 from crates.io using debcargo 2.8.2
+
+ -- Wolfgang Silbermayr <wolfgang@silbermayr.at>  Fri, 16 Aug 2019 05:59:28 +0200
+
 rust-utf8-ranges (1.0.4-1) unstable; urgency=medium
 
   * Package utf8-ranges 1.0.4 from crates.io using debcargo 2.4.0

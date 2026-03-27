@@ -1,3 +1,9 @@
+rust-parity-scale-codec (3.7.5-1) unstable; urgency=medium
+
+  * Package parity-scale-codec 3.7.5 from crates.io using debcargo 2.8.2
+
+ -- Alexander Kjäll <alexander.kjall@gmail.com>  Thu, 31 Aug 2023 10:32:06 +0200
+
 rust-parity-scale-codec (3.6.4-1) unstable; urgency=medium
 
   * Package parity-scale-codec 3.6.4 from crates.io using debcargo 2.6.0

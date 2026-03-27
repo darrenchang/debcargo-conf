@@ -1,3 +1,1 @@
-disable-konst.patch
-update-arrayvec.patch
-update-fastrand.patch
+01-disable-konst.diff

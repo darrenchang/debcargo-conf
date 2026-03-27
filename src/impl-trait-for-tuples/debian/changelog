@@ -1,3 +1,9 @@
+rust-impl-trait-for-tuples (0.2.3-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Thu, 12 Sep 2024 16:08:54 +0000
+
 rust-impl-trait-for-tuples (0.2.2-2) unstable; urgency=medium
 
   * Team upload.

@@ -1,3 +1,9 @@
+rust-vcpkg (0.2.15-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Peter Michael Green <plugwash@debian.org>  Sat, 18 Apr 2020 11:32:14 +0000
+
 rust-vcpkg (0.2.8-1) unstable; urgency=medium
 
   * Team upload.

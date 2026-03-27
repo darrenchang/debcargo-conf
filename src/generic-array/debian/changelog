@@ -1,3 +1,9 @@
+rust-generic-array (1.3.5-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Blair Noctis <n@sail.ng>  Sat, 05 Aug 2023 18:07:49 +0300
+
 rust-generic-array (0.14.7-1) unstable; urgency=medium
 
   * Team upload.
