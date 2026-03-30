@@ -1,1 +1,2 @@
 01-disable-getrandom-dep.diff
+02-disable-rand-core.diff

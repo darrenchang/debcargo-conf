@@ -1,8 +1,15 @@
 diff --git a/Cargo.toml b/Cargo.toml
-index b079127..0969a67 100644
+index b079127..55e6a7a 100644
 --- a/Cargo.toml
 +++ b/Cargo.toml
-@@ -65,21 +65,6 @@ convert-bytemuck = [
+@@ -59,27 +59,27 @@ status = "actively-developed"
+
+ [features]
+ alloc = []
+-arbitrary = ["quickcheck"]
++#arbitrary = ["quickcheck"]
+ compare = ["matrixcompare-core"]
+ convert-bytemuck = [
      "bytemuck",
      "num-complex/bytemuck",
  ]
@@ -21,32 +28,49 @@ index b079127..0969a67 100644
 -convert-glam027 = ["glam027"]
 -convert-glam028 = ["glam028"]
 -convert-glam029 = ["glam029"]
++#convert-glam014 = ["glam014"]
++#convert-glam015 = ["glam015"]
++#convert-glam016 = ["glam016"]
++#convert-glam017 = ["glam017"]
++#convert-glam018 = ["glam018"]
++#convert-glam019 = ["glam019"]
++#convert-glam020 = ["glam020"]
++#convert-glam021 = ["glam021"]
++#convert-glam022 = ["glam022"]
++#convert-glam023 = ["glam023"]
++#convert-glam024 = ["glam024"]
++#convert-glam025 = ["glam025"]
++#convert-glam027 = ["glam027"]
++#convert-glam028 = ["glam028"]
++#convert-glam029 = ["glam029"]
  convert-glam030 = ["glam030"]
  convert-mint = ["mint"]
  debug = [
-@@ -133,21 +118,6 @@ std = [
-     "num-rational/std",
-     "approx/std",
-     "simba/std",
--    "glam014?/std",
--    "glam015?/std",
--    "glam016?/std",
--    "glam017?/std",
--    "glam018?/std",
--    "glam019?/std",
--    "glam020?/std",
--    "glam021?/std",
--    "glam022?/std",
--    "glam023?/std",
--    "glam024?/std",
--    "glam025?/std",
--    "glam027?/std",
--    "glam028?/std",
--    "glam029?/std",
-     "glam030?/std",
- ]
+@@ -97,7 +97,7 @@ io = [
+ libm = ["simba/libm"]
+ libm-force = ["simba/libm_force"]
+ macros = ["nalgebra-macros"]
+-proptest-support = ["proptest"]
++#proptest-support = ["proptest"]
+ rand = [
+     "rand-no-std",
+     "rand-package/std",
+@@ -234,10 +234,10 @@ path = "benches/lib.rs"
+ harness = false
+ required-features = ["rand"]
 
-@@ -255,96 +225,6 @@ optional = true
+-[dependencies.alga]
+-version = "0.9"
+-optional = true
+-default-features = false
++#[dependencies.alga]
++#version = "0.9"
++#optional = true
++#default-features = false
+
+ [dependencies.approx]
+ version = "0.5"
+@@ -255,95 +255,95 @@ optional = true
  version = "0.12"
  optional = true
 
@@ -139,44 +163,134 @@ index b079127..0969a67 100644
 -optional = true
 -default-features = false
 -package = "glam"
--
++#[dependencies.glam014]
++#version = "0.14"
++#optional = true
++#default-features = false
++#package = "glam"
++#
++#[dependencies.glam015]
++#version = "0.15"
++#optional = true
++#default-features = false
++#package = "glam"
++#
++#[dependencies.glam016]
++#version = "0.16"
++#optional = true
++#default-features = false
++#package = "glam"
++#
++#[dependencies.glam017]
++#version = "0.17"
++#optional = true
++#default-features = false
++#package = "glam"
++#
++#[dependencies.glam018]
++#version = "0.18"
++#optional = true
++#default-features = false
++#package = "glam"
++#
++#[dependencies.glam019]
++#version = "0.19"
++#optional = true
++#default-features = false
++#package = "glam"
++#
++#[dependencies.glam020]
++#version = "0.20"
++#optional = true
++#default-features = false
++#package = "glam"
++#
++#[dependencies.glam021]
++#version = "0.21"
++#optional = true
++#default-features = false
++#package = "glam"
++#
++#[dependencies.glam022]
++#version = "0.22"
++#optional = true
++#default-features = false
++#package = "glam"
++#
++#[dependencies.glam023]
++#version = "0.23"
++#optional = true
++#default-features = false
++#package = "glam"
++#
++#[dependencies.glam024]
++#version = "0.24"
++#optional = true
++#default-features = false
++#package = "glam"
++#
++#[dependencies.glam025]
++#version = "0.25"
++#optional = true
++#default-features = false
++#package = "glam"
++#
++#[dependencies.glam027]
++#version = "0.27"
++#optional = true
++#default-features = false
++#package = "glam"
++#
++#[dependencies.glam028]
++#version = "0.28"
++#optional = true
++#default-features = false
++#package = "glam"
++#
++#[dependencies.glam029]
++#version = "0.29"
++#optional = true
++#default-features = false
++#package = "glam"
+
  [dependencies.glam030]
  version = "0.30"
+@@ -387,15 +387,15 @@ optional = true
+ version = "2"
  optional = true
-diff --git a/src/third_party/glam/mod.rs b/src/third_party/glam/mod.rs
-index 8bc98b2..bfda25b 100644
---- a/src/third_party/glam/mod.rs
-+++ b/src/third_party/glam/mod.rs
-@@ -1,32 +1,2 @@
--#[cfg(feature = "glam014")]
--mod v014;
--#[cfg(feature = "glam015")]
--mod v015;
--#[cfg(feature = "glam016")]
--mod v016;
--#[cfg(feature = "glam017")]
--mod v017;
--#[cfg(feature = "glam018")]
--mod v018;
--#[cfg(feature = "glam019")]
--mod v019;
--#[cfg(feature = "glam020")]
--mod v020;
--#[cfg(feature = "glam021")]
--mod v021;
--#[cfg(feature = "glam022")]
--mod v022;
--#[cfg(feature = "glam023")]
--mod v023;
--#[cfg(feature = "glam024")]
--mod v024;
--#[cfg(feature = "glam025")]
--mod v025;
--#[cfg(feature = "glam027")]
--mod v027;
--#[cfg(feature = "glam028")]
--mod v028;
--#[cfg(feature = "glam029")]
--mod v029;
- #[cfg(feature = "glam030")]
- mod v030;
+
+-[dependencies.proptest]
+-version = "1"
+-features = ["std"]
+-optional = true
+-default-features = false
++#[dependencies.proptest]
++#version = "1"
++#features = ["std"]
++#optional = true
++#default-features = false
+
+-[dependencies.quickcheck]
+-version = "1"
+-optional = true
++#[dependencies.quickcheck]
++#version = "1"
++#optional = true
+
+ [dependencies.rand-package]
+ version = "0.9"
+@@ -412,10 +412,10 @@ default-features = false
+ version = "1.6"
+ optional = true
+
+-[dependencies.rkyv]
+-version = "0.7.41"
+-optional = true
+-default-features = false
++#[dependencies.rkyv]
++#version = "0.7.41"
++#optional = true
++#default-features = false
+
+ [dependencies.serde]
+ version = "1.0"

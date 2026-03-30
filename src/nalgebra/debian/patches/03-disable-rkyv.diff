@@ -1,0 +1,21 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 55e6a7a..5220f8c 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -106,16 +106,6 @@ rand = [
+     "rand_distr",
+ ]
+ rand-no-std = ["rand-package"]
+-rkyv-safe-deser = [
+-    "rkyv-serialize",
+-    "rkyv/validation",
+-]
+-rkyv-serialize = [
+-    "rkyv-serialize-no-std",
+-    "rkyv/std",
+-    "rkyv/validation",
+-]
+-rkyv-serialize-no-std = ["rkyv/size_32"]
+ serde-serialize = [
+     "serde-serialize-no-std",
+     "serde/std",

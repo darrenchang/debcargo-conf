@@ -1,0 +1,13 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index bcf61f1..ce7f2a8 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -156,7 +156,7 @@ path = "benches/mod.rs"
+ harness = false
+
+ [dependencies.bitflags]
+-version = "2.4.0"
++version = "2.11.0"
+ default-features = false
+
+ [dependencies.core]

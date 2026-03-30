@@ -1,0 +1,35 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index b85fdf6..9d8ddae 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -47,10 +47,6 @@ pre-build = [
+
+ [features]
+ std = []
+-wasm_js = [
+-    "dep:wasm-bindgen",
+-    "dep:js-sys",
+-]
+
+ [lib]
+ name = "getrandom"
+@@ -71,19 +67,9 @@ version = "1"
+ version = "0.2.154"
+ default-features = false
+
+-[target.'cfg(all(target_arch = "wasm32", any(target_os = "unknown", target_os = "none")))'.dependencies.wasm-bindgen]
+-version = "0.2.98"
+-optional = true
+-default-features = false
+-
+ [target.'cfg(all(target_arch = "wasm32", any(target_os = "unknown", target_os = "none")))'.dev-dependencies.wasm-bindgen-test]
+ version = "0.3"
+
+-[target.'cfg(all(target_arch = "wasm32", any(target_os = "unknown", target_os = "none"), target_feature = "atomics"))'.dependencies.js-sys]
+-version = "0.3.77"
+-optional = true
+-default-features = false
+-
+ [target.'cfg(all(target_arch = "wasm32", target_os = "wasi", target_env = "p2"))'.dependencies.wasip2]
+ version = "1"
+ default-features = false

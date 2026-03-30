@@ -1,4 +1,4 @@
-rust-getrandom (0.4.2-1+pmx1) proxmox-rust; urgency=medium
+rust-getrandom (0.3.4-1+pmx1) proxmox-rust; urgency=medium
 
   * enable js feature again
 
