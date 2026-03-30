@@ -1,2 +1,3 @@
 01-relax-rustc-dep.diff
 02-disable-optional-deps.diff
+03-disable-quickcheck-alga.diff

@@ -1,0 +1,13 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index ec6eca7..8b6d630 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -91,7 +91,7 @@ path = "benches/bench_main.rs"
+ harness = false
+
+ [dependencies.anes]
+-version = "0.1.4"
++version = "0.2"
+
+ [dependencies.cast]
+ version = "0.3"

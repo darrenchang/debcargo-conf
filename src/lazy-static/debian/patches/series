@@ -1,2 +1,1 @@
-disable-compile-fail-tests.patch
-remove-spin-once-dependency.diff
+01-upgrade-spin.diff

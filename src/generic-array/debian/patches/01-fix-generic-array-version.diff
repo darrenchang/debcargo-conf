@@ -1,0 +1,21 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index bc5f3df..c2db328 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -62,7 +62,6 @@ all-features = true
+
+ [features]
+ alloc = []
+-compat-0_14 = ["dep:generic_array-0_14"]
+ internals = []
+ serde = ["dep:serde_core"]
+
+@@ -80,7 +79,7 @@ version = "0.10"
+ optional = true
+ default-features = false
+
+-[dependencies.generic_array-0_14]
++[disabled.dependencies.generic_array-0_14]
+ version = "0.14"
+ optional = true
+ default-features = false

@@ -1,0 +1,14 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index b8cc7b9..0204898 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -51,9 +51,6 @@ features = ["require-cas"]
+ optional = true
+ default-features = false
+
+-[dev-dependencies.criterion]
+-version = "0.4"
+-
+ [features]
+ barrier = ["mutex"]
+ default = [

@@ -1,0 +1,30 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 0137442..ed239f0 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -59,7 +59,6 @@ status = "actively-developed"
+
+ [features]
+ alloc = []
+-arbitrary = ["quickcheck"]
+ compare = ["matrixcompare-core"]
+ convert-bytemuck = [
+     "bytemuck",
+@@ -234,7 +233,7 @@ path = "benches/lib.rs"
+ harness = false
+ required-features = ["rand"]
+
+-[dependencies.alga]
++[disabled.dependencies.alga]
+ version = "0.9"
+ optional = true
+ default-features = false
+@@ -393,7 +392,7 @@ features = ["std"]
+ optional = true
+ default-features = false
+
+-[dependencies.quickcheck]
++[disabled.dependencies.quickcheck]
+ version = "1"
+ optional = true
+

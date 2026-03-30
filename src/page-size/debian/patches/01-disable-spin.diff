@@ -1,0 +1,18 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index a960ed3..546a633 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -27,12 +27,11 @@ categories = ["os"]
+ license = "MIT/Apache-2.0"
+ repository = "https://github.com/Elzair/page_size_rs"
+
+-[dependencies.spin]
++[disabled.dependencies.spin]
+ version = "0.9.8"
+ optional = true
+
+ [features]
+-no_std = ["spin"]
+
+ [target."cfg(unix)".dependencies.libc]
+ version = "^0.2"

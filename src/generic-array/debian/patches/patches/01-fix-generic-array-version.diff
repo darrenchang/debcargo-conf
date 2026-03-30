@@ -1,0 +1,13 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index bc5f3df..b4d28df 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -81,7 +81,7 @@ optional = true
+ default-features = false
+
+ [dependencies.generic_array-0_14]
+-version = "0.14"
++version = "0.14.9"
+ optional = true
+ default-features = false
+ package = "generic-array"

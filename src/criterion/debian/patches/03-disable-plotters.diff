@@ -1,0 +1,25 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index ec6eca7..ff46774 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -61,11 +61,9 @@ cargo_bench_support = []
+ csv_output = ["dep:csv"]
+ default = [
+     "rayon",
+-    "plotters",
+     "cargo_bench_support",
+ ]
+ html_reports = []
+-plotters = ["dep:plotters"]
+ rayon = ["dep:rayon"]
+ real_blackbox = []
+ stable = [
+@@ -134,7 +132,7 @@ version = "11.1"
+ [dependencies.page_size]
+ version = "0.6"
+
+-[dependencies.plotters]
++[disabled.dependencies.plotters]
+ version = "^0.3.2"
+ features = [
+     "svg_backend",

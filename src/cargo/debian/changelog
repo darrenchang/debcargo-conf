@@ -1,3 +1,9 @@
+rust-cargo (0.95.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Fabian Grünbichler <debian@fabian.gruenbichler.email>  Mon, 17 Mar 2025 06:59:52 +0100
+
 rust-cargo (0.86.0-2) unstable; urgency=medium
 
   * Team upload.

@@ -1,0 +1,36 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index c8f77b5..8fca3c7 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -80,17 +80,17 @@ features = ["libm"]
+ optional = true
+ default-features = false
+
+-[dependencies.rand]
++[disabled.dependencies.rand]
+ version = "0.8.5"
+ optional = true
+ default-features = false
+
+-[dependencies.rand_distr]
++[disabled.dependencies.rand_distr]
+ version = "0.4.3"
+ optional = true
+ default-features = false
+
+-[dependencies.rkyv]
++[disabled.dependencies.rkyv]
+ version = "0.7"
+ optional = true
+
+@@ -124,10 +124,6 @@ version = "0.8.5"
+ alloc = []
+ arbitrary = ["dep:arbitrary"]
+ default = ["std"]
+-rand_distr = [
+-    "dep:rand",
+-    "dep:rand_distr",
+-]
+ std = ["alloc"]
+ use-intrinsics = []
+

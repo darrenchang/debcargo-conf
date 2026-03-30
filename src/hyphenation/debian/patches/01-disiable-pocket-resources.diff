@@ -1,0 +1,22 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 72d2200..7b4f4a8 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -60,7 +60,7 @@ version = "0.4.6"
+ [build-dependencies.hyphenation_commons]
+ version = "0.8.4"
+
+-[build-dependencies.pocket-resources]
++[disabled.build-dependencies.pocket-resources]
+ version = "0.3.2"
+ optional = true
+
+@@ -73,8 +73,6 @@ optional = true
+
+ [features]
+ build_dictionaries = []
+-embed_all = ["pocket-resources"]
+-embed_en-us = ["pocket-resources"]
+ nfc = ["unicode-normalization"]
+ nfd = ["unicode-normalization"]
+ nfkc = ["unicode-normalization"]
