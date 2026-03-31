@@ -1,0 +1,31 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index d824eb2..1579bd9 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -61,7 +61,7 @@ datagen = [
+     "zerovec/databake",
+     "icu_collections/databake",
+     "icu_locale_core/databake",
+-    "zerotrie/databake",
++    "zerotrie/databake",
+     "icu_provider/export",
+ ]
+ default = ["compiled_data"]
+@@ -71,7 +71,7 @@ serde = [
+     "zerovec/serde",
+     "icu_collections/serde",
+     "icu_provider/serde",
+-    "zerotrie/serde",
++    "zerotrie/serde",
+ ]
+ unicode_bidi = ["dep:unicode-bidi"]
+
+@@ -114,7 +114,7 @@ version = "0.3.11"
+ optional = true
+ default-features = false
+
+-[dependencies.zerotrie]
++[dependencies.zerotrie]
+ version = "0.2.0"
+ features = [
+     "yoke",

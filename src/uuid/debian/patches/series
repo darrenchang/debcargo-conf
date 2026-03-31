@@ -1,5 +1,1 @@
-relax-dep.diff
-rustcrypto-sha1.patch
-disable-getrandom.diff
-disable-macro-diagnostics.patch
-disable-borsh.patch
+02-disable-optional-dep.diff

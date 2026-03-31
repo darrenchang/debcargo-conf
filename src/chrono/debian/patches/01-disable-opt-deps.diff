@@ -1,0 +1,155 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 754812a..e4143cd 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -42,9 +42,9 @@ repository = "https://github.com/chronotope/chrono"
+ [package.metadata.docs.rs]
+ features = [
+     "arbitrary",
+-    "rkyv",
++#    "rkyv",
+     "serde",
+-    "unstable-locales",
++#    "unstable-locales",
+ ]
+ rustdoc-args = [
+     "--cfg",
+@@ -57,49 +57,49 @@ features = ["serde"]
+ [features]
+ __internal_bench = []
+ alloc = []
+-clock = [
+-    "winapi",
+-    "iana-time-zone",
+-    "now",
+-]
++#clock = [
++#    "winapi",
++#    "iana-time-zone",
++#    "now",
++#]
+ core-error = []
+ default = [
+-    "clock",
++#    "clock",
+     "std",
+     "oldtime",
+-    "wasmbind",
++#    "wasmbind",
+ ]
+ defmt = [
+     "dep:defmt",
+-    "pure-rust-locales?/defmt",
++#    "pure-rust-locales?/defmt",
+ ]
+ libc = []
+ now = ["std"]
+ oldtime = []
+-rkyv = [
+-    "dep:rkyv",
+-    "rkyv/size_32",
+-]
+-rkyv-16 = [
+-    "dep:rkyv",
+-    "rkyv?/size_16",
+-]
+-rkyv-32 = [
+-    "dep:rkyv",
+-    "rkyv?/size_32",
+-]
+-rkyv-64 = [
+-    "dep:rkyv",
+-    "rkyv?/size_64",
+-]
+-rkyv-validation = ["rkyv?/validation"]
++#rkyv = [
++#    "dep:rkyv",
++#    "rkyv/size_32",
++#]
++#rkyv-16 = [
++#    "dep:rkyv",
++#    "rkyv?/size_16",
++#]
++#rkyv-32 = [
++#    "dep:rkyv",
++#    "rkyv?/size_32",
++#]
++#rkyv-64 = [
++#    "dep:rkyv",
++#    "rkyv?/size_64",
++#]
++#rkyv-validation = ["rkyv?/validation"]
+ std = ["alloc"]
+-unstable-locales = ["pure-rust-locales"]
+-wasmbind = [
+-    "wasm-bindgen",
+-    "js-sys",
+-]
+-winapi = ["windows-link"]
++#unstable-locales = ["pure-rust-locales"]
++#wasmbind = [
++#    "wasm-bindgen",
++#    "js-sys",
++#]
++#winapi = ["windows-link"]
+
+ [lib]
+ name = "chrono"
+@@ -130,14 +130,14 @@ optional = true
+ version = "0.2"
+ default-features = false
+
+-[dependencies.pure-rust-locales]
+-version = "0.8.2"
+-optional = true
++#[dependencies.pure-rust-locales]
++#version = "0.8.2"
++#optional = true
+
+-[dependencies.rkyv]
+-version = "0.7.43"
+-optional = true
+-default-features = false
++#[dependencies.rkyv]
++#version = "0.7.43"
++#optional = true
++#default-features = false
+
+ [dependencies.serde]
+ version = "1.0.99"
+@@ -160,22 +160,22 @@ version = "1.6.1"
+ [dev-dependencies.windows-bindgen]
+ version = "0.66"
+
+-[target.'cfg(all(target_arch = "wasm32", not(any(target_os = "emscripten", target_os = "wasi"))))'.dependencies.js-sys]
+-version = "0.3"
+-optional = true
++#[target.'cfg(all(target_arch = "wasm32", not(any(target_os = "emscripten", target_os = "wasi"))))'.dependencies.js-sys]
++#version = "0.3"
++#optional = true
+
+-[target.'cfg(all(target_arch = "wasm32", not(any(target_os = "emscripten", target_os = "wasi"))))'.dependencies.wasm-bindgen]
+-version = "0.2"
+-optional = true
++#[target.'cfg(all(target_arch = "wasm32", not(any(target_os = "emscripten", target_os = "wasi"))))'.dependencies.wasm-bindgen]
++#version = "0.2"
++#optional = true
+
+ [target.'cfg(all(target_arch = "wasm32", not(any(target_os = "emscripten", target_os = "wasi"))))'.dev-dependencies.wasm-bindgen-test]
+ version = "0.3"
+
+-[target."cfg(unix)".dependencies.iana-time-zone]
+-version = "0.1.45"
+-features = ["fallback"]
+-optional = true
++#[target."cfg(unix)".dependencies.iana-time-zone]
++#version = "0.1.45"
++#features = ["fallback"]
++#optional = true
+
+-[target."cfg(windows)".dependencies.windows-link]
+-version = "0.2"
+-optional = true
++#[target."cfg(windows)".dependencies.windows-link]
++#version = "0.2"
++#optional = true

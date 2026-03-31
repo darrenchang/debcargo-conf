@@ -1,5 +1,5 @@
-rust-wasm-metadata (0.244.0-1) unstable; urgency=medium
+rust-wasm-metadata (0.245.1-1) unstable; urgency=medium
 
-  * Package rust-wasm-metadata 0.244.0 from crates.io using debcargo
+  * Package rust-wasm-metadata 0.245.1 from crates.io using debcargo
 
  -- Darren <darrenchang951@gmail.com>  Thu, 19 Mar 2026 00:00:00 +0000

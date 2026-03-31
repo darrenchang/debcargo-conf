@@ -1,3 +1,9 @@
+rust-chrono (0.4.44-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- Blair Noctis <ncts@debian.org>  Mon, 20 Jan 2025 13:00:25 +0000
+
 rust-chrono (0.4.39-2) unstable; urgency=medium
 
   * Team upload.

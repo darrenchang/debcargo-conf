@@ -1,9 +1,0 @@
-Index: uuid/Cargo.toml
-===================================================================
---- uuid.orig/Cargo.toml
-+++ uuid/Cargo.toml
-@@ -171,4 +170,0 @@ fast-rng = [
--js = [
--    "dep:wasm-bindgen",
--    "getrandom?/js",
--]

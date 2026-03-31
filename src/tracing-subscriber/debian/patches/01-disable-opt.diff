@@ -1,0 +1,68 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 4378174..109ac9a 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -71,7 +71,7 @@ default = [
+ env-filter = [
+     "matchers",
+     "once_cell",
+-    "tracing",
++#    "tracing",
+     "std",
+     "thread_local",
+     "dep:regex-automata",
+@@ -85,7 +85,7 @@ json = [
+     "serde",
+     "serde_json",
+ ]
+-local-time = ["time/local-offset"]
++#local-time = ["time/local-offset"]
+ nu-ansi-term = ["dep:nu-ansi-term"]
+ regex = []
+ registry = [
+@@ -228,14 +228,14 @@ name = "fmt"
+ path = "benches/fmt.rs"
+ harness = false
+
+-[dependencies.chrono]
+-version = "0.4.26"
+-features = [
+-    "clock",
+-    "std",
+-]
+-optional = true
+-default-features = false
++#[dependencies.chrono]
++#version = "0.4.26"
++#features = [
++#    "clock",
++#    "std",
++#]
++#optional = true
++#default-features = false
+
+ [dependencies.matchers]
+ version = "0.2.0"
+@@ -279,15 +279,15 @@ optional = true
+ version = "1.1.4"
+ optional = true
+
+-[dependencies.time]
+-version = "0.3.2"
+-features = ["formatting"]
+-optional = true
++#[dependencies.time]
++#version = "0.3.2"
++#features = ["formatting"]
++#optional = true
+dependencies.tracing]
+-version = "0.1.43"
+-optional = true
+-default-features = false
++#[dependencies.tracing]
++#version = "0.1.43"
++#optional = true
++#default-features = false
+
+ [dependencies.tracing-core]
+ version = "0.1.35"

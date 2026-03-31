@@ -1,3 +1,9 @@
+rust-atomic (0.6.1-1) unstable; urgency=medium
+
+  * Team upload.
+
+ -- James McCoy <jamessan@debian.org>  Thu, 25 Jul 2024 17:16:40 -0400
+
 rust-atomic (0.6.0-1) unstable; urgency=medium
 
   * Team upload.

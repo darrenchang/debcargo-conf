@@ -1,9 +1,0 @@
-Index: tracing-subscriber/Cargo.toml
-===================================================================
---- tracing-subscriber.orig/Cargo.toml
-+++ tracing-subscriber/Cargo.toml
-@@ -78,3 +78,3 @@
- [dependencies.nu-ansi-term]
--version = "0.46.0"
-+version = "0"
- optional = true

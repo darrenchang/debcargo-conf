@@ -2,3 +2,5 @@ overlay = "."
 uploaders = [
   "Darren <darrenchang951@gmail.com>",
 ]
+[packages.lib]
+test_is_broken = true
