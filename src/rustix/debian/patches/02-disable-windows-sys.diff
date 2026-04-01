@@ -1,0 +1,23 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index bcf61f1..31a714d 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -240,12 +240,12 @@ version = "0.3.10"
+ default-features = false
+ package = "errno"
+
+-[target."cfg(windows)".dependencies.windows-sys]
+-version = ">=0.52, <0.62"
+-features = [
+-    "Win32_Foundation",
+-    "Win32_Networking_WinSock",
+-]
++#[target."cfg(windows)".dependencies.windows-sys]
++#version = ">=0.52, <0.62"
++#features = [
++#    "Win32_Foundation",
++#    "Win32_Networking_WinSock",
++#]
+
+ [target."cfg(windows)".dev-dependencies.once_cell]
+ version = "1.20.3"

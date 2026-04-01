@@ -7,7 +7,7 @@ index bcf61f1..ce7f2a8 100644
 
  [dependencies.bitflags]
 -version = "2.4.0"
-+version = "2.11.0"
++version = "2.8"
  default-features = false
 
  [dependencies.core]
