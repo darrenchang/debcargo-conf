@@ -1,0 +1,23 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 495c178..ab49fd2 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -36,7 +36,7 @@ repository = "https://github.com/rust-lang/rustc-hash"
+ default = ["std"]
+ nightly = []
+ rand = [
+-    "dep:rand",
++#    "dep:rand",
+     "std",
+ ]
+ std = []
+@@ -45,6 +45,6 @@ std = []
+ name = "rustc_hash"
+ path = "src/lib.rs"
+
+-[dependencies.rand]
+-version = "0.8"
+-optional = true
++#[dependencies.rand]
++#version = "0.8"
++#optional = true

@@ -1,0 +1,6 @@
+overlay = "."
+uploaders = ["Darren Chang <darrenchang951@gmail.com>"]
+collapse_features = true
+excludes = [
+  "third_party/*"
+]

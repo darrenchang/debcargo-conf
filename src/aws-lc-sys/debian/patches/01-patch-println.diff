@@ -1,0 +1,12 @@
+diff --git a/builder/main.rs b/builder/main.rs
+index 76dd44a..01ede35 100644
+--- a/builder/main.rs
++++ b/builder/main.rs
+@@ -746,6 +746,7 @@ fn handle_bindgen(_manifest_dir: &Path, _prefix: &Option<String>) -> bool {
+ fn main() {
+     initialize();
+     prepare_cargo_cfg();
++    println!("dh-cargo:deb-built-using=aws_lc_0_38_0_crypto=1={}", env::var("CARGO_MANIFEST_DIR").unwrap());
+
+     let manifest_dir = current_dir();
+     let manifest_dir = dunce::canonicalize(Path::new(&manifest_dir)).unwrap();

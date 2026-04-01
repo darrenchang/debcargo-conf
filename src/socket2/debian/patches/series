@@ -1,2 +1,1 @@
-disable-windows.patch
-suseconds_t-workaround.patch
+01-disable-windows-sys.diff

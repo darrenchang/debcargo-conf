@@ -1,0 +1,36 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index b26f28a..c6f01e1 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -68,7 +68,7 @@ search = "# Unreleased"
+ [features]
+ __cli = [
+     "dep:clap",
+-    "dep:clap_complete",
++#    "dep:clap_complete",
+ ]
+ __testing_only_extra_assertions = []
+ __testing_only_libclang_16 = []
+@@ -88,7 +88,7 @@ name = "bindgen"
+ path = "lib.rs"
+
+ [dependencies.annotate-snippets]
+-version = "0.11.4"
++version = "0.12"
+ optional = true
+
+ [dependencies.bitflags]
+@@ -106,9 +106,9 @@ version = "4"
+ features = ["derive"]
+ optional = true
+
+-[dependencies.clap_complete]
+-version = "4"
+-optional = true
++#[dependencies.clap_complete]
++#version = "4"
++#optional = true
+
+ [dependencies.itertools]
+ version = ">=0.10,<0.14"
+

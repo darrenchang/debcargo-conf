@@ -1,0 +1,13 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 896894b..92cc0f6 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -67,7 +67,7 @@ version = "0.9.112"
+ package = "openssl-sys"
+
+ [dependencies.foreign-types]
+-version = "0.3.1"
++version = "0.3"
+
+ [dependencies.libc]
+ version = "0.2"

@@ -1,0 +1,67 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index cbb578c..2852a92 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -64,7 +64,7 @@ client-legacy = [
+ client-pool = [
+     "client",
+     "dep:futures-util",
+-    "dep:tower-layer",
++#    "dep:tower-layer",
+ ]
+ client-proxy = [
+     "client",
+@@ -72,10 +72,10 @@ client-proxy = [
+     "dep:ipnet",
+     "dep:percent-encoding",
+ ]
+-client-proxy-system = [
+-    "dep:system-configuration",
+-    "dep:windows-registry",
+-]
++#client-proxy-system = [
++#    "dep:system-configuration",
++#    "dep:windows-registry",
++#]
+ default = []
+ full = [
+     "client",
+@@ -82,7 +82,7 @@ full = [
+     "client-legacy",
+     "client-pool",
+     "client-proxy",
+-    "client-proxy-system",
++#    "client-proxy-system",
+     "server",
+     "server-auto",
+     "server-graceful",
+@@ -201,9 +201,9 @@ version = "1"
+ optional = true
+ default-features = false
+
+-[dependencies.tower-layer]
+-version = "0.3"
+-optional = true
++#[dependencies.tower-layer]
++#version = "0.3"
++#optional = true
+
+ [dependencies.tower-service]
+ version = "0.3"
+@@ -250,10 +250,10 @@ version = "0.4"
+ [target.'cfg(any(target_os = "linux", target_os = "macos"))'.dev-dependencies.pnet_datalink]
+ version = "0.35.0"
+
+-[target.'cfg(target_os = "macos")'.dependencies.system-configuration]
+-version = "0.7"
+-optional = true
++#[target.'cfg(target_os = "macos")'.dependencies.system-configuration]
++#version = "0.7"
++#optional = true
+
+-[target."cfg(windows)".dependencies.windows-registry]
+-version = ">=0.3, <0.7"
+-optional = true
++#[target."cfg(windows)".dependencies.windows-registry]
++#version = ">=0.3, <0.7"
++#optional = true

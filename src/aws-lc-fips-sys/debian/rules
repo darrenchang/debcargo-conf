@@ -1,0 +1,8 @@
+#!/usr/bin/make -f
+# jitterentropy-base.c has a compile-time #error if built with any optimization
+# level other than -O0. Debian's CFLAGS include -O2, which gets appended after
+# the build script's -O0, causing -O2 to win. Disable jitter entropy since
+# Linux provides sufficient entropy via getrandom().
+export AWS_LC_SYS_NO_JITTER_ENTROPY = 1
+%:
+	dh $@ --buildsystem cargo

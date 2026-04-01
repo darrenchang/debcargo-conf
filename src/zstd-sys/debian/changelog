@@ -1,3 +1,9 @@
+rust-zstd-sys (2.0.16+zstd.1.5.7-2) unstable; urgency=medium
+
+  * Team upload.
+
+ -- NoisyCoil <noisycoil@tutanota.com>  Fri, 22 Nov 2024 02:01:42 +0000
+
 rust-zstd-sys (2.0.13-2) unstable; urgency=medium
 
   * Team upload.

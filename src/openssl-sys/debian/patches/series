@@ -1,4 +1,1 @@
-disable-vendor.patch
-disable-bssl.patch
-relax-bindgen.diff
-disable-aws-lc.patch
+01-disable-opt-deps.diff

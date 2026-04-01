@@ -1,7 +1,0 @@
---- a/Cargo.toml
-+++ b/Cargo.toml
-@@ -65,3 +65,3 @@
- 
--[[bench]]
-+[[disabled.bench]]
- name = "main"

@@ -55,7 +55,8 @@ index 4378174..109ac9a 100644
 +#version = "0.3.2"
 +#features = ["formatting"]
 +#optional = true
-dependencies.tracing]
+
+-[dependencies.tracing]
 -version = "0.1.43"
 -optional = true
 -default-features = false

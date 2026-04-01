@@ -1,3 +1,9 @@
+rust-zstd-safe (7.2.4-1) unstable; urgency=medium
+
+  * Package zstd-safe 7.2.4 from crates.io using debcargo 2.8.2
+
+ -- Blair Noctis <n@sail.ng>  Fri, 23 Aug 2024 19:26:12 +0000
+
 rust-zstd-safe (7.2.1-1) unstable; urgency=medium
 
   * Package zstd-safe 7.2.1 from crates.io using debcargo 2.6.1

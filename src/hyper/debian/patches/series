@@ -1,3 +1,0 @@
-disable-unstable-features.patch
-remove-spmc.patch
-fix-gated-tests.patch

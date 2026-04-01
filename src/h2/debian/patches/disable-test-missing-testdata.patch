@@ -1,5 +1,0 @@
---- a/src/hpack/test/fixture.rs
-+++ b/src/hpack/test/fixture.rs
-@@ -1 +1,2 @@
-+#![cfg(feature = "with-test-data")]
- use crate::hpack::{Decoder, Encoder, Header};

@@ -1,0 +1,12 @@
+overlay = "."
+uploaders = ["Darren Chang <darrenchang951@gmail.com>"]
+collapse_features = true
+whitelist = [
+  "aws-lc/generated-src/*",
+  "aws-lc/crypto/*",
+  "aws-lc/ssl/*",
+  "aws-lc/tests/*",
+  "aws-lc/third_party/*",
+  "aws-lc/util/*",
+  "rust_wrapper.c",
+]
