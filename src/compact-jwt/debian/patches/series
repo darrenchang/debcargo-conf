@@ -1,2 +1,2 @@
-update-base64.patch
-drop-hsm-features.patch
+01-disable-opt-deps.diff
+02-update-base64.patch
