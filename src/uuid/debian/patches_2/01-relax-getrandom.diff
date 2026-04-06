@@ -1,0 +1,13 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 5d64e89..d82c57e 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -231,7 +231,7 @@ optional = true
+ default-features = false
+
+ [target.'cfg(not(all(target_arch = "wasm32", any(target_os = "unknown", target_os = "none"))))'.dependencies.getrandom]
+-version = "0.4"
++version = "0.3"
+ optional = true
+
+ [target.'cfg(not(all(target_arch = "wasm32", any(target_os = "unknown", target_os = "none"))))'.dependencies.rand]
