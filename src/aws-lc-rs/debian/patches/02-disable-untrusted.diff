@@ -1,0 +1,39 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 0d27a03..7bf0906 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -75,8 +75,8 @@ bindgen = [
+ default = [
+     "aws-lc-sys",
+     "alloc",
+-    "ring-io",
+-    "ring-sig-verify",
++#    "ring-io",
++#    "ring-sig-verify",
+ ]
+ dev-tests-only = []
+ fips = ["dep:aws-lc-fips-sys"]
+@@ -82,8 +82,8 @@ dev-tests-only = []
+ fips = ["dep:aws-lc-fips-sys"]
+ non-fips = ["aws-lc-sys"]
+ prebuilt-nasm = ["aws-lc-sys?/prebuilt-nasm"]
+-ring-io = ["dep:untrusted"]
+-ring-sig-verify = ["dep:untrusted"]
++#ring-io = ["dep:untrusted"]
++#ring-sig-verify = ["dep:untrusted"]
+ test_logging = []
+ unstable = []
+
+@@ -108,9 +108,9 @@ version = "0.38.0"
+ optional = true
+ default-features = false
+
+-[dependencies.untrusted]
+-version = "0.7.1"
+-optional = true
++#[dependencies.untrusted]
++#version = "0.7.1"
++#optional = true
+
+ [dependencies.zeroize]
+ version = "1.8.1"

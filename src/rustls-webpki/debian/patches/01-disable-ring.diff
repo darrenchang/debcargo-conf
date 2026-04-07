@@ -1,0 +1,37 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 36b4785..8f01f21 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -73,7 +73,7 @@ rustdoc-args = [
+
+ [features]
+ alloc = [
+-    "ring?/alloc",
++#    "ring?/alloc",
+     "pki-types/alloc",
+ ]
+ aws-lc-rs = [
+@@ -86,7 +86,7 @@ aws-lc-rs-fips = [
+     "aws-lc-rs/fips",
+ ]
+ default = ["std"]
+-ring = ["dep:ring"]
++#ring = ["dep:ring"]
+ std = [
+     "alloc",
+     "pki-types/std",
+@@ -106,10 +106,10 @@ version = "1.11"
+ default-features = false
+ package = "rustls-pki-types"
+
+-[dependencies.ring]
+-version = "0.17"
+-optional = true
+-default-features = false
++#[dependencies.ring]
++#version = "0.17"
++#optional = true
++#default-features = false
+
+ [dependencies.untrusted]
+ version = "0.9"

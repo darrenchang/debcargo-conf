@@ -1,4 +1,8 @@
 overlay = "."
 uploaders = ["kpcyrd <git@rxv.cc>"]
-whitelist = ["crypto/**/*.c", "third_party/**/*.c"]
+whitelist = [
+  "crypto/*",
+  "third_party/*",
+  "pregenerated/*"
+]
 collapse_features = true

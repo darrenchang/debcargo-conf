@@ -1,6 +1,0 @@
-Index: ring/Cargo.toml
-===================================================================
---- ring.orig/Cargo.toml
-+++ ring/Cargo.toml
-@@ -210,1 +210,0 @@
--slow_tests = []

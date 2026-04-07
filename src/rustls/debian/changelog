@@ -1,3 +1,9 @@
+rust-rustls (0.23.28-1) unstable; urgency=medium
+
+  * Update.
+
+ -- Darren Chang <darrenchang951@gmail.com>  Wed, 25 Mar 2026 11:55:00 +0800
+
 rust-rustls (0.20.6-2) unstable; urgency=medium
 
   * Team upload.

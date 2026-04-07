@@ -4,5 +4,6 @@
 # the build script's -O0, causing -O2 to win. Disable jitter entropy since
 # Linux provides sufficient entropy via getrandom().
 export AWS_LC_SYS_NO_JITTER_ENTROPY = 1
+export AWS_LC_SYS_CFLAGS=-O0
 %:
 	dh $@ --buildsystem cargo
