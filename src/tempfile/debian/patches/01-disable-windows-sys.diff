@@ -1,0 +1,20 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index ac096d6..a87ef55 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -97,9 +97,9 @@ version = ">=0.3.0, <0.5"
+ optional = true
+ default-features = false
+
+-[target."cfg(windows)".dependencies.windows-sys]
+-version = ">=0.52, <0.62"
+-features = [
+-    "Win32_Storage_FileSystem",
+-    "Win32_Foundation",
+-]
++#[target."cfg(windows)".dependencies.windows-sys]
++#version = ">=0.52, <0.62"
++#features = [
++#    "Win32_Storage_FileSystem",
++#    "Win32_Foundation",
++#]

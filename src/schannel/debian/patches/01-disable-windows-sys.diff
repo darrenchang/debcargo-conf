@@ -1,0 +1,43 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 2648a54..729bfad 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -49,21 +49,21 @@ default-target = "x86_64-pc-windows-msvc"
+ name = "schannel"
+ path = "src/lib.rs"
+
+-[dependencies.windows-sys]
+-version = "0.61"
+-features = [
+-    "Win32_Foundation",
+-    "Win32_Security_Cryptography",
+-    "Win32_Security_Authentication_Identity",
+-    "Win32_Security_Credentials",
+-    "Win32_System_LibraryLoader",
+-    "Win32_System_Memory",
+-    "Win32_System_SystemInformation",
+-]
++#[dependencies.windows-sys]
++#version = "0.61"
++#features = [
++#    "Win32_Foundation",
++#    "Win32_Security_Cryptography",
++#    "Win32_Security_Authentication_Identity",
++#    "Win32_Security_Credentials",
++#    "Win32_System_LibraryLoader",
++#    "Win32_System_Memory",
++#    "Win32_System_SystemInformation",
++#]
+
+-[dev-dependencies.windows-sys]
+-version = "0.61"
+-features = [
+-    "Win32_System_SystemInformation",
+-    "Win32_System_Time",
+-]
++#[dev-dependencies.windows-sys]
++#version = "0.61"
++#features = [
++#    "Win32_System_SystemInformation",
++#    "Win32_System_Time",
++#]

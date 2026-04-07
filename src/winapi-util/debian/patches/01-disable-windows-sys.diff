@@ -1,0 +1,24 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index bda4bcb..da6d9ba 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -44,11 +44,11 @@ targets = ["x86_64-pc-windows-msvc"]
+ name = "winapi_util"
+ path = "src/lib.rs"
+
+-[target."cfg(windows)".dependencies.windows-sys]
+-version = ">=0.48.0, <=0.61.*"
+-features = [
+-    "Win32_Foundation",
+-    "Win32_Storage_FileSystem",
+-    "Win32_System_Console",
+-    "Win32_System_SystemInformation",
+-]
++#[target."cfg(windows)".dependencies.windows-sys]
++#version = ">=0.48.0, <=0.61.*"
++#features = [
++#    "Win32_Foundation",
++#    "Win32_Storage_FileSystem",
++#    "Win32_System_Console",
++#    "Win32_System_SystemInformation",
++#]
