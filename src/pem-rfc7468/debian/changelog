@@ -1,3 +1,9 @@
+rust-pem-rfc7468 (1.0.0-1) unstable; urgency=medium
+
+  * Package pem-rfc7468 1.0.0 from crates.io using debcargo 2.8.2
+
+ -- Emanuele Rocca <ema@debian.org>  Fri, 30 Jun 2023 16:13:46 +0200
+
 rust-pem-rfc7468 (0.7.0-1) unstable; urgency=medium
 
   * Package pem-rfc7468 0.7.0 from crates.io using debcargo 2.6.0

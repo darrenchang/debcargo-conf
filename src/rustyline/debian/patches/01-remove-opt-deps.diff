@@ -1,49 +1,169 @@
 diff --git a/Cargo.toml b/Cargo.toml
-index e082094..3863cbb 100644
+index 2b9a413..f3a3dc4 100644
 --- a/Cargo.toml
 +++ b/Cargo.toml
-@@ -38,7 +38,7 @@ features = [
+@@ -32,7 +32,7 @@ default-target = "x86_64-unknown-linux-gnu"
+ features = [
+     "custom-bindings",
      "derive",
-     "with-dirs",
+-    "with-dirs",
++#    "with-dirs",
      "with-file-history",
--    "with-fuzzy",
-+#    "with-fuzzy",
+     "with-fuzzy",
  ]
- all-features = false
- no-default-features = true
-@@ -62,7 +62,7 @@ default = [
- derive = ["rustyline-derive"]
- with-dirs = ["home"]
- with-file-history = []
--with-fuzzy = ["skim"]
-+#with-fuzzy = ["skim"]
- with-sqlite-history = ["rusqlite"]
-
- [lib]
-@@ -212,10 +212,10 @@ version = "0.4.3"
- optional = true
- default-features = false
-
--[target."cfg(unix)".dependencies.skim]
+@@ -79,23 +79,23 @@ required-features = ["custom-bindings"]
+ name = "read_password"
+ required-features = ["derive"]
+ 
+-[[example]]
+-name = "sqlite_history"
+-required-features = ["with-sqlite-history"]
++#[[example]]
++#name = "sqlite_history"
++#required-features = ["with-sqlite-history"]
+ 
+ [dependencies.bitflags]
+-version = "2.0"
++version = "2"
+ 
+ [dependencies.cfg-if]
+ version = "1.0"
+ 
+-[dependencies.fd-lock]
 -version = "4.0.0"
+-optional = true
++#[dependencies.fd-lock]
++#version = "4.0.0"
++#optional = true
+ 
+-[dependencies.home]
+-version = "0.5.4"
+-optional = true
++#[dependencies.home]
++#version = "0.5.4"
++#optional = true
+ 
+ [dependencies.libc]
+ version = "0.2"
+@@ -106,22 +106,22 @@ version = "0.4"
+ [dependencies.memchr]
+ version = "2.0"
+ 
+-[dependencies.radix_trie]
+-version = "0.2"
+-optional = true
++#[dependencies.radix_trie]
++#version = "0.2"
++#optional = true
+ 
+ [dependencies.regex]
+ version = "1.5.5"
+ optional = true
+ 
+-[dependencies.rusqlite]
+-version = "0.31.0"
+-features = [
+-    "bundled",
+-    "backup",
+-]
+-optional = true
+-default-features = false
++#[dependencies.rusqlite]
++#version = "0.31.0"
++#features = [
++#    "bundled",
++#    "backup",
++#]
++#optional = true
++#default-features = false
+ 
+ [dependencies.rustyline-derive]
+ version = "0.10.0"
+@@ -131,7 +131,7 @@ optional = true
+ version = "1.0"
+ 
+ [dependencies.unicode-width]
+-version = "0.1"
++version = "0.2"
+ 
+ [dev-dependencies.assert_matches]
+ version = "1.2"
+@@ -151,25 +151,25 @@ version = "3.1.0"
+ 
+ [features]
+ case_insensitive_history_search = ["regex"]
+-custom-bindings = ["radix_trie"]
++#custom-bindings = ["radix_trie"]
+ default = [
+-    "custom-bindings",
+-    "with-dirs",
+-    "with-file-history",
++#    "custom-bindings",
++#    "with-dirs",
++#    "with-file-history",
+ ]
+ derive = ["rustyline-derive"]
+-with-dirs = ["home"]
+-with-file-history = ["fd-lock"]
+-with-fuzzy = ["skim"]
+-with-sqlite-history = ["rusqlite"]
++#with-dirs = ["home"]
++#with-file-history = ["fd-lock"]
++#with-fuzzy = ["skim"]
++#with-sqlite-history = ["rusqlite"]
+ 
+-[target."cfg(unix)".dependencies.buffer-redux]
+-version = "1.0"
+-optional = true
+-default-features = false
++#[target."cfg(unix)".dependencies.buffer-redux]
++#version = "1.0"
++#optional = true
++#default-features = false
+ 
+ [target."cfg(unix)".dependencies.nix]
+-version = "0.28"
++version = "0.29"
+ features = [
+     "fs",
+     "ioctl",
+@@ -179,35 +179,35 @@ features = [
+ ]
+ default-features = false
+ 
+-[target."cfg(unix)".dependencies.signal-hook]
+-version = "0.3"
+-optional = true
+-default-features = false
++#[target."cfg(unix)".dependencies.signal-hook]
++#version = "0.3"
++#optional = true
++#default-features = false
+ 
+-[target."cfg(unix)".dependencies.skim]
+-version = "0.10"
 -optional = true
 -default-features = false
 +#[target."cfg(unix)".dependencies.skim]
-+#version = "4.0.0"
++#version = "0.10"
 +#optional = true
 +#default-features = false
-
- [target."cfg(unix)".dependencies.termios]
- version = "0.3.3"
-@@ -224,18 +224,18 @@ optional = true
+ 
+-[target."cfg(unix)".dependencies.termios]
+-version = "0.3.3"
+-optional = true
++#[target."cfg(unix)".dependencies.termios]
++#version = "0.3.3"
++#optional = true
+ 
  [target."cfg(unix)".dependencies.utf8parse]
  version = "0.2"
-
+ 
 -[target."cfg(windows)".dependencies.clipboard-win]
--version = "5.4"
+-version = "5.0"
 -
 -[target."cfg(windows)".dependencies.windows-sys]
--version = "0.61.2"
+-version = "0.52.0"
 -features = [
 -    "Win32_Foundation",
 -    "Win32_System_Console",
@@ -52,10 +172,10 @@ index e082094..3863cbb 100644
 -    "Win32_UI_Input_KeyboardAndMouse",
 -]
 +#[target."cfg(windows)".dependencies.clipboard-win]
-+#version = "5.4"
++#version = "5.0"
 +
 +#[target."cfg(windows)".dependencies.windows-sys]
-+#version = "0.61.2"
++#version = "0.52.0"
 +#features = [
 +#    "Win32_Foundation",
 +#    "Win32_System_Console",
@@ -63,6 +183,6 @@ index e082094..3863cbb 100644
 +#    "Win32_System_Threading",
 +#    "Win32_UI_Input_KeyboardAndMouse",
 +#]
-
- [lints.clippy]
- ref_option = "warn"
+ 
+ [badges.maintenance]
+ status = "actively-developed"

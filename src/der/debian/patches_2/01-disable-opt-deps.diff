@@ -1,0 +1,49 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 8d54a27..9e27967 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -68,7 +68,7 @@ bytes = [
+ derive = ["dep:der_derive"]
+ oid = ["dep:const-oid"]
+ pem = [
+-    "dep:pem-rfc7468",
++    "dep:pem-rfc7468",
+     "alloc",
+     "zeroize",
+ ]
+@@ -100,7 +100,7 @@ name = "set_of"
+ path = "tests/set_of.rs"
+ 
+ [dependencies.arbitrary]
+-version = "1.4"
++version = "1"
+ features = ["derive"]
+ optional = true
+ 
+@@ -117,19 +117,19 @@ optional = true
+ version = "0.8"
+ optional = true
+ 
+-[dependencies.flagset]
+-version = "0.4.7"
+-optional = true
++#[dependencies.flagset]
++#version = "0.4.7"
++#optional = true
+ 
+ [dependencies.heapless]
+ version = "0.9"
+ optional = true
+ default-features = false
+ 
+-[dependencies.pem-rfc7468]
+-version = "1"
+-features = ["alloc"]
+-optional = true
++[dependencies.pem-rfc7468]
++version = "1"
++features = ["alloc"]
++optional = true
+ 
+ [dependencies.time]
+ version = "0.3.4"
