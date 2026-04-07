@@ -56,7 +56,7 @@ index 236b7cd..f5e1e2c 100644
  native-tls = [
      "native-tls-no-default",
 -    "dep:der",
-+#    "dep:der",
++    "dep:der",
      "_tls",
 -    "native-tls-webpki-roots",
 +#    "native-tls-webpki-roots",
@@ -64,7 +64,7 @@ index 236b7cd..f5e1e2c 100644
  native-tls-no-default = [
      "dep:native-tls",
 -    "dep:der",
-+#    "dep:der",
++    "dep:der",
      "_tls",
  ]
 -native-tls-webpki-roots = ["dep:webpki-root-certs"]
@@ -142,14 +142,14 @@ index 236b7cd..f5e1e2c 100644
 +#optional = true
 +#default-features = false
 +
-+#[dependencies.der]
-+#version = "0.8.0"
-+#features = [
-+#    "pem",
-+#    "std",
-+#]
-+#optional = true
-+#default-features = false
++[dependencies.der]
++version = "0.8.0"
++features = [
++    "pem",
++    "std",
++]
++optional = true
++default-features = false
 +
 +#[dependencies.encoding_rs]
 +#version = "0.8.34"
