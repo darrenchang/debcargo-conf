@@ -1,0 +1,51 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index ed12419..0d2984e 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -80,8 +80,8 @@ default = ["log"]
+ net = []
+ os-ext = [
+     "os-poll",
+-    "windows-sys/Win32_System_Pipes",
+-    "windows-sys/Win32_Security",
++#    "windows-sys/Win32_System_Pipes",
++#    "windows-sys/Win32_Security",
+ ]
+ os-poll = []
+
+@@ -128,21 +128,21 @@ version = "0.9"
+ version = "0.2.183"
+
+ [target.'cfg(target_os = "wasi")'.dependencies.wasi]
+-version = "0.11.0"
++version = "0.14"
+
+-[target."cfg(windows)".dependencies.windows-sys]
+-version = "0.61"
+-features = [
+-    "Wdk_Foundation",
+-    "Wdk_Storage_FileSystem",
+-    "Wdk_System_IO",
+-    "Win32_Foundation",
+-    "Win32_Networking_WinSock",
+-    "Win32_Storage_FileSystem",
+-    "Win32_Security",
+-    "Win32_System_IO",
+-    "Win32_System_WindowsProgramming",
+-]
++#[target."cfg(windows)".dependencies.windows-sys]
++#version = "0.61"
++#features = [
++#    "Wdk_Foundation",
++#    "Wdk_Storage_FileSystem",
++#    "Wdk_System_IO",
++#    "Win32_Foundation",
++#    "Win32_Networking_WinSock",
++#    "Win32_Storage_FileSystem",
++#    "Win32_Security",
++#    "Win32_System_IO",
++#    "Win32_System_WindowsProgramming",
++#]
+
+ [lints.rust.unexpected_cfgs]
+ level = "warn"
