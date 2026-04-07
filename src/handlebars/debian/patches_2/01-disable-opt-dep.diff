@@ -33,9 +33,9 @@ index 54b890e..a587919 100644
 -[dependencies.walkdir]
 -version = "2.2.3"
 -optional = true
-+#[dependencies.walkdir]
-+#version = "2.2.3"
-+#optional = true
++[dependencies.walkdir]
++version = "2.5"
++optional = true
 
  [dev-dependencies.criterion]
  version = "0.5"
@@ -44,7 +44,7 @@ index 54b890e..a587919 100644
  [features]
  default = []
 -dir_source = ["walkdir"]
-+#dir_source = ["walkdir"]
++dir_source = ["walkdir"]
  no_logging = []
  script_helper = ["rhai"]
  string_helpers = ["heck"]
