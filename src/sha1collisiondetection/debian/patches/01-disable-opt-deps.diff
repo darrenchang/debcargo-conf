@@ -1,0 +1,118 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 34babc6..6e412b1 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -35,7 +35,7 @@ readme = "README.md"
+ keywords = [
+     "sha1",
+     "hash",
+-    "digest",
++#    "digest",
+     "collision",
+     "mitigation",
+ ]
+@@ -54,33 +54,33 @@ name = "sha1cdsum"
+ path = "src/main.rs"
+ required-features = [
+     "std",
+-    "clap",
++#    "clap",
+ ]
+
+-[dependencies.clap]
+-version = "4"
+-features = [
+-    "std",
+-    "derive",
+-    "help",
+-    "wrap_help",
+-]
+-optional = true
+-default-features = false
+-
+-[dependencies.clap_mangen]
+-version = "0.2"
+-optional = true
+-default-features = false
+-
+-[dependencies.const-oid]
+-version = "0.9"
+-optional = true
+-default-features = false
+-
+-[dependencies.digest]
+-version = "0.10"
+-optional = true
++#[dependencies.clap]
++#version = "4"
++#features = [
++#    "std",
++#    "derive",
++#    "help",
++#    "wrap_help",
++#]
++#optional = true
++#default-features = false
++
++#[dependencies.clap_mangen]
++#version = "0.2"
++#optional = true
++#default-features = false
++
++#[dependencies.const-oid]
++#version = "0.9"
++#optional = true
++#default-features = false
++
++#[dependencies.digest]
++#version = "0.10"
++#optional = true
+
+ [dependencies.generic-array]
+ version = ">= 0.12, < 2"
+@@ -94,28 +94,28 @@ version = "0.4"
+ [dev-dependencies.sha1]
+ version = "0.10"
+
+-[build-dependencies.clap]
+-version = "4"
+-features = [
+-    "derive",
+-    "std",
+-]
+-optional = true
+-default-features = false
++#[build-dependencies.clap]
++#version = "4"
++#features = [
++#    "derive",
++#    "std",
++#]
++#optional = true
++#default-features = false
+
+-[build-dependencies.clap_mangen]
+-version = "0.2"
+-optional = true
+-default-features = false
++#[build-dependencies.clap_mangen]
++#version = "0.2"
++#optional = true
++#default-features = false
+
+ [features]
+ default = [
+-    "std",
+-    "digest-trait",
++#    "std",
++#    "digest-trait",
+ ]
+-digest-trait = ["digest"]
+-oid = ["const-oid"]
+-std = ["digest?/std"]
++#digest-trait = ["digest"]
++#oid = ["const-oid"]
++#std = ["digest?/std"]
+
+ [badges.gitlab]
+ repository = "sequoia-pgp/sha1collisiondetection"

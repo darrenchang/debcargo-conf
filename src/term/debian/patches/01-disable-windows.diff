@@ -1,0 +1,26 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index bffee82..da91cbc 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -45,12 +45,12 @@ path = "src/lib.rs"
+ name = "terminfo"
+ path = "tests/terminfo.rs"
+
+-[target."cfg(windows)".dependencies.windows-sys]
+-version = ">=0.59, <0.62"
+-features = [
+-    "Win32_Storage",
+-    "Win32_Foundation",
+-    "Win32_System_Console",
+-    "Win32_Storage_FileSystem",
+-    "Win32_Security",
+-]
++#[target."cfg(windows)".dependencies.windows-sys]
++#version = ">=0.59, <0.62"
++#features = [
++#    "Win32_Storage",
++#    "Win32_Foundation",
++#    "Win32_System_Console",
++#    "Win32_Storage_FileSystem",
++#    "Win32_Security",
++#]

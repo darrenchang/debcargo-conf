@@ -1,0 +1,47 @@
+Source: rust-libbz2-rs-sys
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.82) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-libc-0.2+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Darren Chang <darrenchang951@gmail.com>
+Standards-Version: 4.7.3
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/libbz2-rs-sys]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/libbz2-rs-sys
+Homepage: https://github.com/trifectatechfoundation/libbzip2-rs
+X-Cargo-Crate: libbz2-rs-sys
+X-Cargo-Crate-Version: 0.1.3
+
+Package: librust-libbz2-rs-sys-0.1-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-libc-0.2+default-dev
+Provides:
+ librust-libbz2-rs-sys-0.1-dev (= ${binary:Version}),
+ librust-libbz2-rs-sys-0.1+--internal-fuzz-disable-checksum-dev (= ${binary:Version}),
+ librust-libbz2-rs-sys-0.1+c-allocator-dev (= ${binary:Version}),
+ librust-libbz2-rs-sys-0.1+custom-prefix-dev (= ${binary:Version}),
+ librust-libbz2-rs-sys-0.1+default-dev (= ${binary:Version}),
+ librust-libbz2-rs-sys-0.1+rust-allocator-dev (= ${binary:Version}),
+ librust-libbz2-rs-sys-0.1+semver-prefix-dev (= ${binary:Version}),
+ librust-libbz2-rs-sys-0.1+std-dev (= ${binary:Version}),
+ librust-libbz2-rs-sys-0.1+stdio-dev (= ${binary:Version}),
+ librust-libbz2-rs-sys-0.1+testing-prefix-dev (= ${binary:Version}),
+ librust-libbz2-rs-sys-0.1.3-dev (= ${binary:Version}),
+ librust-libbz2-rs-sys-0.1.3+--internal-fuzz-disable-checksum-dev (= ${binary:Version}),
+ librust-libbz2-rs-sys-0.1.3+c-allocator-dev (= ${binary:Version}),
+ librust-libbz2-rs-sys-0.1.3+custom-prefix-dev (= ${binary:Version}),
+ librust-libbz2-rs-sys-0.1.3+default-dev (= ${binary:Version}),
+ librust-libbz2-rs-sys-0.1.3+rust-allocator-dev (= ${binary:Version}),
+ librust-libbz2-rs-sys-0.1.3+semver-prefix-dev (= ${binary:Version}),
+ librust-libbz2-rs-sys-0.1.3+std-dev (= ${binary:Version}),
+ librust-libbz2-rs-sys-0.1.3+stdio-dev (= ${binary:Version}),
+ librust-libbz2-rs-sys-0.1.3+testing-prefix-dev (= ${binary:Version})
+Description: Drop-in compatible rust bzip2 implementation - Rust source code
+ Source code for Debianized Rust crate "libbz2-rs-sys"

@@ -1,13 +1,34 @@
 diff --git a/Cargo.toml b/Cargo.toml
-index c4ae49b..bdc0335 100644
+index 40d26bd..c4d5bc0 100644
 --- a/Cargo.toml
 +++ b/Cargo.toml
-@@ -505,7 +505,7 @@ features = [
- default-features = false
-
- [target.'cfg(all(target_arch = "wasm32", target_os = "unknown"))'.dependencies.getrandom]
--version = "0.2"
-+version = "0.2"
+@@ -78,7 +78,7 @@ crypto-cng = [
+     "dep:cipher",
+     "dep:eax",
+     "dep:winapi",
+-    "dep:win-crypto-ng",
++#    "dep:win-crypto-ng",
+     "dep:ed25519",
+     "dep:ed25519-dalek",
+     "dep:num-bigint-dig",
+@@ -508,13 +508,13 @@ default-features = false
+ version = "0.2"
  features = ["js"]
 
- [target."cfg(windows)".dependencies.win-crypto-ng]
+-[target."cfg(windows)".dependencies.win-crypto-ng]
+-version = "0.5.1"
+-features = [
+-    "rand",
+-    "block-cipher",
+-]
+-optional = true
++#[target."cfg(windows)".dependencies.win-crypto-ng]
++#version = "0.5.1"
++#features = [
++#    "rand",
++#    "block-cipher",
++#]
++#optional = true
+
+ [target."cfg(windows)".dependencies.winapi]
+ version = "0.3.8"

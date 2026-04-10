@@ -1,5 +1,5 @@
 rust-getrandom (0.2.17-1) unstable; urgency=medium
 
-  * update.
+  * Install getrandom 0.2 alongside other versions.
 
  -- darren chang <darrenchang951@gmail.com>  Wed, 25 Mar 2026 11:55:00 +0800

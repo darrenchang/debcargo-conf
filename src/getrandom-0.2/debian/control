@@ -1,0 +1,63 @@
+Source: rust-getrandom
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-cfg-if-1+default-dev <!nocheck>,
+ librust-libc-0.2-dev (>= 0.2.154) <!nocheck>,
+ librust-wasi-0.11-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Darren Chang <darrenchang951@gmail.com>
+Standards-Version: 4.7.3
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/getrandom]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/getrandom
+Homepage: https://github.com/rust-random/getrandom
+X-Cargo-Crate: getrandom
+X-Cargo-Crate-Version: 0.2.17
+
+Package: librust-getrandom-0.2-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-cfg-if-1+default-dev,
+ librust-compiler-builtins-0.1+default-dev,
+ librust-js-sys-0.3+default-dev,
+ librust-libc-0.2+rustc-dep-of-std-dev (>= 0.2.154),
+ librust-libc-0.2-dev (>= 0.2.154),
+ librust-rustc-std-workspace-core-1+default-dev,
+ librust-wasi-0.11+rustc-dep-of-std-dev,
+ librust-wasi-0.11-dev,
+ librust-wasm-bindgen-0.2-dev (>= 0.2.62)
+Provides:
+ librust-getrandom-0.2-dev (= ${binary:Version}),
+ librust-getrandom-0.2+compiler-builtins-dev (= ${binary:Version}),
+ librust-getrandom-0.2+core-dev (= ${binary:Version}),
+ librust-getrandom-0.2+custom-dev (= ${binary:Version}),
+ librust-getrandom-0.2+default-dev (= ${binary:Version}),
+ librust-getrandom-0.2+js-dev (= ${binary:Version}),
+ librust-getrandom-0.2+js-sys-dev (= ${binary:Version}),
+ librust-getrandom-0.2+linux-disable-fallback-dev (= ${binary:Version}),
+ librust-getrandom-0.2+rdrand-dev (= ${binary:Version}),
+ librust-getrandom-0.2+rustc-dep-of-std-dev (= ${binary:Version}),
+ librust-getrandom-0.2+std-dev (= ${binary:Version}),
+ librust-getrandom-0.2+test-in-browser-dev (= ${binary:Version}),
+ librust-getrandom-0.2+wasm-bindgen-dev (= ${binary:Version}),
+ librust-getrandom-0.2.17-dev (= ${binary:Version}),
+ librust-getrandom-0.2.17+compiler-builtins-dev (= ${binary:Version}),
+ librust-getrandom-0.2.17+core-dev (= ${binary:Version}),
+ librust-getrandom-0.2.17+custom-dev (= ${binary:Version}),
+ librust-getrandom-0.2.17+default-dev (= ${binary:Version}),
+ librust-getrandom-0.2.17+js-dev (= ${binary:Version}),
+ librust-getrandom-0.2.17+js-sys-dev (= ${binary:Version}),
+ librust-getrandom-0.2.17+linux-disable-fallback-dev (= ${binary:Version}),
+ librust-getrandom-0.2.17+rdrand-dev (= ${binary:Version}),
+ librust-getrandom-0.2.17+rustc-dep-of-std-dev (= ${binary:Version}),
+ librust-getrandom-0.2.17+std-dev (= ${binary:Version}),
+ librust-getrandom-0.2.17+test-in-browser-dev (= ${binary:Version}),
+ librust-getrandom-0.2.17+wasm-bindgen-dev (= ${binary:Version})
+Description: Small cross-platform library for retrieving random data from system source - Rust source code
+ Source code for Debianized Rust crate "getrandom"

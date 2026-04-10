@@ -1,0 +1,33 @@
+Source: rust-cpufeatures
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-libc-0.2+default-dev (>= 0.2.149) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Darren Chang <darrenchang951@gmail.com>
+Standards-Version: 4.7.3
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/cpufeatures]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/cpufeatures
+Homepage: https://github.com/RustCrypto/utils
+X-Cargo-Crate: cpufeatures
+X-Cargo-Crate-Version: 0.2.12
+
+# FIXME (packages."(name)".section) debcargo auto-generated summary for librust-cpufeatures-dev is very long, consider overriding
+
+Package: librust-cpufeatures-0.2-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-libc-0.2+default-dev (>= 0.2.149)
+Provides:
+ librust-cpufeatures-0.2-dev (= ${binary:Version}),
+ librust-cpufeatures-0.2+default-dev (= ${binary:Version}),
+ librust-cpufeatures-0.2.12-dev (= ${binary:Version}),
+ librust-cpufeatures-0.2.12+default-dev (= ${binary:Version})
+Description: Lightweight runtime CPU feature detection for aarch64, loongarch64, and x86/x86_64 targets,  with no_std support and support for mobile targets including Android and iOS - Rust source code
+ Source code for Debianized Rust crate "cpufeatures"
