@@ -1,3 +1,9 @@
+rust-sequoia-openpgp (2.2.0-1) unstable; urgency=medium
+
+  * update.
+
+ -- darren chang <darrenchang951@gmail.com>  Wed, 25 Mar 2026 11:55:00 +0800
+
 rust-sequoia-openpgp (2.0.0-2) unstable; urgency=medium
 
   * Team upload.

@@ -1,4 +1,1 @@
-fix-tests-no-default-features.diff
-fix-stack-overflow.diff
-relax-itertools.patch
-relax-deps.patch
+02-relax-itertools.diff

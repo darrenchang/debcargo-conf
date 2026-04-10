@@ -1,0 +1,13 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index c4ae49b..bdc0335 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -505,7 +505,7 @@ features = [
+ default-features = false
+
+ [target.'cfg(all(target_arch = "wasm32", target_os = "unknown"))'.dependencies.getrandom]
+-version = "0.2"
++version = "0.2"
+ features = ["js"]
+
+ [target."cfg(windows)".dependencies.win-crypto-ng]

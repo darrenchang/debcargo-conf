@@ -1,3 +1,9 @@
+rust-iana-time-zone (0.1.65-1) unstable; urgency=medium
+
+  * update.
+
+ -- darren chang <darrenchang951@gmail.com>  Wed, 25 Mar 2026 11:55:00 +0800
+
 rust-iana-time-zone (0.1.63-1) unstable; urgency=medium
 
   * Package iana-time-zone 0.1.63 from crates.io using debcargo 2.7.8

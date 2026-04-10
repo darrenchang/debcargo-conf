@@ -1,0 +1,12 @@
+diff --git a/build.rs b/build.rs
+index 7ef5d93..11ebb0e 100644
+--- a/build.rs
++++ b/build.rs
+@@ -11,6 +11,7 @@ fn main() {
+     println!("cargo:rerun-if-changed=src/lib.rs");
+     println!("cargo:rerun-if-changed=src/implementation.cc");
+     println!("cargo:rerun-if-changed=src/interface.h");
++    println!("dh-cargo:deb-built-using=tz_haiku=1={}", env::var("CARGO_MANIFEST_DIR").unwrap());
+
+     let target = env::var_os("TARGET").expect("cargo should set TARGET env var");
+     let target = target

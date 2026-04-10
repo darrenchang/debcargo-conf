@@ -1,3 +1,9 @@
+rust-libbz2-rs-sys (0.2.2-1) unstable; urgency=medium
+
+  * update.
+
+ -- darren chang <darrenchang951@gmail.com>  Wed, 25 Mar 2026 11:55:00 +0800
+
 rust-libbz2-rs-sys (0.1.3-1) unstable; urgency=medium
 
   * Package libbz2-rs-sys 0.1.3 from crates.io using debcargo 2.7.7

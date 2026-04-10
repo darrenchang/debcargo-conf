@@ -1,0 +1,69 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 754812a..359cdd3 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -42,7 +42,7 @@ repository = "https://github.com/chronotope/chrono"
+ [package.metadata.docs.rs]
+ features = [
+     "arbitrary",
+-    "rkyv",
++#    "rkyv",
+     "serde",
+     "unstable-locales",
+ ]
+@@ -76,23 +76,23 @@ defmt = [
+ libc = []
+ now = ["std"]
+ oldtime = []
+-rkyv = [
+-    "dep:rkyv",
+-    "rkyv/size_32",
+-]
+-rkyv-16 = [
+-    "dep:rkyv",
+-    "rkyv?/size_16",
+-]
+-rkyv-32 = [
+-    "dep:rkyv",
+-    "rkyv?/size_32",
+-]
+-rkyv-64 = [
+-    "dep:rkyv",
+-    "rkyv?/size_64",
+-]
+-rkyv-validation = ["rkyv?/validation"]
++#rkyv = [
++#    "dep:rkyv",
++#    "rkyv/size_32",
++#]
++#rkyv-16 = [
++#    "dep:rkyv",
++#    "rkyv?/size_16",
++#]
++#rkyv-32 = [
++#    "dep:rkyv",
++#    "rkyv?/size_32",
++#]
++#rkyv-64 = [
++#    "dep:rkyv",
++#    "rkyv?/size_64",
++#]
++#rkyv-validation = ["rkyv?/validation"]
+ std = ["alloc"]
+ unstable-locales = ["pure-rust-locales"]
+ wasmbind = [
+@@ -134,10 +134,10 @@ default-features = false
+ version = "0.8.2"
+ optional = true
+
+-[dependencies.rkyv]
+-version = "0.7.43"
+-optional = true
+-default-features = false
++#[dependencies.rkyv]
++#version = "0.7.43"
++#optional = true
++#default-features = false
+
+ [dependencies.serde]
+ version = "1.0.99"
