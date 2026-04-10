@@ -1,0 +1,60 @@
+Source: rust-digest
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-block-buffer-0.10+default-dev <!nocheck>,
+ librust-crypto-common-0.1+default-dev (>= 0.1.3) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Darren Chang <darrenchang951@gmail.com>
+Standards-Version: 4.7.3
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/digest]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/digest
+Homepage: https://github.com/RustCrypto/traits
+X-Cargo-Crate: digest
+X-Cargo-Crate-Version: 0.10.7
+
+Package: librust-digest-0.10-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-blobby-0.3+default-dev,
+ librust-block-buffer-0.10+default-dev,
+ librust-const-oid-0.9+default-dev,
+ librust-crypto-common-0.1+default-dev (>= 0.1.3),
+ librust-crypto-common-0.1+rand-core-dev (>= 0.1.3),
+ librust-crypto-common-0.1+std-dev (>= 0.1.3),
+ librust-subtle-2-dev (>= 2.4)
+Provides:
+ librust-digest-0.10-dev (= ${binary:Version}),
+ librust-digest-0.10+alloc-dev (= ${binary:Version}),
+ librust-digest-0.10+blobby-dev (= ${binary:Version}),
+ librust-digest-0.10+block-buffer-dev (= ${binary:Version}),
+ librust-digest-0.10+const-oid-dev (= ${binary:Version}),
+ librust-digest-0.10+core-api-dev (= ${binary:Version}),
+ librust-digest-0.10+default-dev (= ${binary:Version}),
+ librust-digest-0.10+dev-dev (= ${binary:Version}),
+ librust-digest-0.10+mac-dev (= ${binary:Version}),
+ librust-digest-0.10+oid-dev (= ${binary:Version}),
+ librust-digest-0.10+rand-core-dev (= ${binary:Version}),
+ librust-digest-0.10+std-dev (= ${binary:Version}),
+ librust-digest-0.10+subtle-dev (= ${binary:Version}),
+ librust-digest-0.10.7-dev (= ${binary:Version}),
+ librust-digest-0.10.7+alloc-dev (= ${binary:Version}),
+ librust-digest-0.10.7+blobby-dev (= ${binary:Version}),
+ librust-digest-0.10.7+block-buffer-dev (= ${binary:Version}),
+ librust-digest-0.10.7+const-oid-dev (= ${binary:Version}),
+ librust-digest-0.10.7+core-api-dev (= ${binary:Version}),
+ librust-digest-0.10.7+default-dev (= ${binary:Version}),
+ librust-digest-0.10.7+dev-dev (= ${binary:Version}),
+ librust-digest-0.10.7+mac-dev (= ${binary:Version}),
+ librust-digest-0.10.7+oid-dev (= ${binary:Version}),
+ librust-digest-0.10.7+rand-core-dev (= ${binary:Version}),
+ librust-digest-0.10.7+std-dev (= ${binary:Version}),
+ librust-digest-0.10.7+subtle-dev (= ${binary:Version})
+Description: Traits for cryptographic hash functions and message authentication codes - Rust source code
+ Source code for Debianized Rust crate "digest"

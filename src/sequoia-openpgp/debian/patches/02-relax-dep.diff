@@ -7,6 +7,6 @@ index c4ae49b..2c24740 100644
 
  [dependencies.sha1collisiondetection]
 -version = "0.3.1"
-+version = "0.3"
++version = "0.3.1"
  features = ["std"]
  default-features = false

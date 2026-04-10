@@ -1,0 +1,39 @@
+Source: rust-wasi
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.82.0) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-wasip2-1+default-dev (>= 1.0.1) <!nocheck>,
+ librust-wasip2-1-dev (>= 1.0.1) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Darren Chang <darrenchang951@gmail.com>
+Standards-Version: 4.7.3
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/wasi]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/wasi
+Homepage: https://github.com/bytecodealliance/wasi-rs
+X-Cargo-Crate: wasi
+X-Cargo-Crate-Version: 0.14.7
+
+Package: librust-wasi-0.11-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-wasip2-1+bitflags-dev (>= 1.0.1),
+ librust-wasip2-1+default-dev (>= 1.0.1),
+ librust-wasip2-1+std-dev (>= 1.0.1),
+ librust-wasip2-1-dev (>= 1.0.1)
+Provides:
+ librust-wasi-0.14-dev (= ${binary:Version}),
+ librust-wasi-0.14+bitflags-dev (= ${binary:Version}),
+ librust-wasi-0.14+default-dev (= ${binary:Version}),
+ librust-wasi-0.14+std-dev (= ${binary:Version}),
+ librust-wasi-0.14.7-dev (= ${binary:Version}),
+ librust-wasi-0.14.7+bitflags-dev (= ${binary:Version}),
+ librust-wasi-0.14.7+default-dev (= ${binary:Version}),
+ librust-wasi-0.14.7+std-dev (= ${binary:Version})
+Description: WASI API bindings for Rust - Rust source code
+ Source code for Debianized Rust crate "wasi"

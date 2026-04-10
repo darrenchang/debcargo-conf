@@ -1,0 +1,41 @@
+Source: rust-generic-array
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-typenum-1+default-dev (>= 1.12) <!nocheck>,
+ librust-version-check-0.9+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Darren Chang <darrenchang951@gmail.com>
+Standards-Version: 4.7.3
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/generic-array]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/generic-array
+Homepage: https://github.com/fizyk20/generic-array.git
+X-Cargo-Crate: generic-array
+X-Cargo-Crate-Version: 0.14.9
+
+Package: librust-generic-array-0.14-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-serde-1-dev,
+ librust-typenum-1+default-dev (>= 1.12),
+ librust-version-check-0.9+default-dev,
+ librust-zeroize-1-dev
+Provides:
+ librust-generic-array-0.14-dev (= ${binary:Version}),
+ librust-generic-array-0.14+default-dev (= ${binary:Version}),
+ librust-generic-array-0.14+more-lengths-dev (= ${binary:Version}),
+ librust-generic-array-0.14+serde-dev (= ${binary:Version}),
+ librust-generic-array-0.14+zeroize-dev (= ${binary:Version}),
+ librust-generic-array-0.14.9-dev (= ${binary:Version}),
+ librust-generic-array-0.14.9+default-dev (= ${binary:Version}),
+ librust-generic-array-0.14.9+more-lengths-dev (= ${binary:Version}),
+ librust-generic-array-0.14.9+serde-dev (= ${binary:Version}),
+ librust-generic-array-0.14.9+zeroize-dev (= ${binary:Version})
+Description: Generic types implementing functionality of arrays - Rust source code
+ Source code for Debianized Rust crate "generic-array"

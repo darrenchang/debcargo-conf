@@ -1,0 +1,31 @@
+Source: rust-block-buffer
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-generic-array-0.14+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Darren Chang <darrenchang951@gmail.com>
+Standards-Version: 4.7.3
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/block-buffer]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/block-buffer
+Homepage: https://github.com/RustCrypto/utils
+X-Cargo-Crate: block-buffer
+X-Cargo-Crate-Version: 0.10.4
+
+Package: librust-block-buffer-0.10-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-generic-array-0.14+default-dev
+Provides:
+ librust-block-buffer-0.10-dev (= ${binary:Version}),
+ librust-block-buffer-0.10+default-dev (= ${binary:Version}),
+ librust-block-buffer-0.10.4-dev (= ${binary:Version}),
+ librust-block-buffer-0.10.4+default-dev (= ${binary:Version})
+Description: Buffer type for block processing of data - Rust source code
+ Source code for Debianized Rust crate "block-buffer"
