@@ -1,0 +1,45 @@
+Source: rust-rand-chacha
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-ppv-lite86-0.2+simd-dev (>= 0.2.8) <!nocheck>,
+ librust-ppv-lite86-0.2+std-dev (>= 0.2.8) <!nocheck>,
+ librust-rand-core-0.6+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Darren Chang <darrenchang951@gmail.com>
+Standards-Version: 4.7.3
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/rand-chacha]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/rand-chacha
+Homepage: https://rust-random.github.io/book
+X-Cargo-Crate: rand_chacha
+X-Cargo-Crate-Version: 0.3.1
+
+Package: librust-rand-chacha-0.3-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-ppv-lite86-0.2+simd-dev (>= 0.2.8),
+ librust-ppv-lite86-0.2+std-dev (>= 0.2.8),
+ librust-rand-core-0.6+default-dev,
+ librust-serde-1+default-dev,
+ librust-serde-1+derive-dev
+Provides:
+ librust-rand-chacha-0.3-dev (= ${binary:Version}),
+ librust-rand-chacha-0.3+default-dev (= ${binary:Version}),
+ librust-rand-chacha-0.3+serde-dev (= ${binary:Version}),
+ librust-rand-chacha-0.3+serde1-dev (= ${binary:Version}),
+ librust-rand-chacha-0.3+simd-dev (= ${binary:Version}),
+ librust-rand-chacha-0.3+std-dev (= ${binary:Version}),
+ librust-rand-chacha-0.3.1-dev (= ${binary:Version}),
+ librust-rand-chacha-0.3.1+default-dev (= ${binary:Version}),
+ librust-rand-chacha-0.3.1+serde-dev (= ${binary:Version}),
+ librust-rand-chacha-0.3.1+serde1-dev (= ${binary:Version}),
+ librust-rand-chacha-0.3.1+simd-dev (= ${binary:Version}),
+ librust-rand-chacha-0.3.1+std-dev (= ${binary:Version})
+Description: ChaCha random number generator - Rust source code
+ Source code for Debianized Rust crate "rand_chacha"

@@ -1,0 +1,77 @@
+Source: rust-rand
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-libc-0.2-dev (>= 0.2.22) <!nocheck>,
+ librust-rand-chacha-0.3+std-dev <!nocheck>,
+ librust-rand-chacha-0.3-dev <!nocheck>,
+ librust-rand-core-0.6+alloc-dev <!nocheck>,
+ librust-rand-core-0.6+default-dev <!nocheck>,
+ librust-rand-core-0.6+getrandom-dev <!nocheck>,
+ librust-rand-core-0.6+std-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Darren Chang <darrenchang951@gmail.com>
+Standards-Version: 4.7.3
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/rand]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/rand
+Homepage: https://rust-random.github.io/book
+X-Cargo-Crate: rand
+X-Cargo-Crate-Version: 0.8.5
+
+Package: librust-rand-0.8-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-libc-0.2-dev (>= 0.2.22),
+ librust-log-0.4+default-dev (>= 0.4.4),
+ librust-packed-simd-2-0.3+default-dev (>= 0.3.7),
+ librust-packed-simd-2-0.3+into-bits-dev (>= 0.3.7),
+ librust-rand-chacha-0.3+std-dev,
+ librust-rand-chacha-0.3-dev,
+ librust-rand-core-0.6+alloc-dev,
+ librust-rand-core-0.6+default-dev,
+ librust-rand-core-0.6+getrandom-dev,
+ librust-rand-core-0.6+serde1-dev,
+ librust-rand-core-0.6+std-dev,
+ librust-serde-1+default-dev (>= 1.0.103),
+ librust-serde-1+derive-dev (>= 1.0.103)
+Provides:
+ librust-rand-0.8-dev (= ${binary:Version}),
+ librust-rand-0.8+alloc-dev (= ${binary:Version}),
+ librust-rand-0.8+default-dev (= ${binary:Version}),
+ librust-rand-0.8+getrandom-dev (= ${binary:Version}),
+ librust-rand-0.8+libc-dev (= ${binary:Version}),
+ librust-rand-0.8+log-dev (= ${binary:Version}),
+ librust-rand-0.8+min-const-gen-dev (= ${binary:Version}),
+ librust-rand-0.8+nightly-dev (= ${binary:Version}),
+ librust-rand-0.8+packed-simd-dev (= ${binary:Version}),
+ librust-rand-0.8+rand-chacha-dev (= ${binary:Version}),
+ librust-rand-0.8+serde-dev (= ${binary:Version}),
+ librust-rand-0.8+serde1-dev (= ${binary:Version}),
+ librust-rand-0.8+simd-support-dev (= ${binary:Version}),
+ librust-rand-0.8+small-rng-dev (= ${binary:Version}),
+ librust-rand-0.8+std-dev (= ${binary:Version}),
+ librust-rand-0.8+std-rng-dev (= ${binary:Version}),
+ librust-rand-0.8.5-dev (= ${binary:Version}),
+ librust-rand-0.8.5+alloc-dev (= ${binary:Version}),
+ librust-rand-0.8.5+default-dev (= ${binary:Version}),
+ librust-rand-0.8.5+getrandom-dev (= ${binary:Version}),
+ librust-rand-0.8.5+libc-dev (= ${binary:Version}),
+ librust-rand-0.8.5+log-dev (= ${binary:Version}),
+ librust-rand-0.8.5+min-const-gen-dev (= ${binary:Version}),
+ librust-rand-0.8.5+nightly-dev (= ${binary:Version}),
+ librust-rand-0.8.5+packed-simd-dev (= ${binary:Version}),
+ librust-rand-0.8.5+rand-chacha-dev (= ${binary:Version}),
+ librust-rand-0.8.5+serde-dev (= ${binary:Version}),
+ librust-rand-0.8.5+serde1-dev (= ${binary:Version}),
+ librust-rand-0.8.5+simd-support-dev (= ${binary:Version}),
+ librust-rand-0.8.5+small-rng-dev (= ${binary:Version}),
+ librust-rand-0.8.5+std-dev (= ${binary:Version}),
+ librust-rand-0.8.5+std-rng-dev (= ${binary:Version})
+Description: Random number generators and other randomness functionality - Rust source code
+ Source code for Debianized Rust crate "rand"

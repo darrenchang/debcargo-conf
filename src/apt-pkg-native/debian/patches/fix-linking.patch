@@ -1,7 +1,7 @@
-Index: apt-pkg-native/build.rs
-===================================================================
---- apt-pkg-native.orig/build.rs
-+++ apt-pkg-native/build.rs
+diff --git a/build.rs b/build.rs
+index ae7c75a..b4e9e33 100644
+--- a/build.rs
++++ b/build.rs
 @@ -1,5 +1,7 @@
  extern crate cc;
  
@@ -10,19 +10,11 @@ Index: apt-pkg-native/build.rs
  const SRC: &str = "apt-pkg-c/lib.cpp";
  
  fn main() {
-@@ -10,7 +12,7 @@ fn main() {
+@@ -4,6 +4,7 @@ const SRC: &str = "apt-pkg-c/lib.cpp";
+
+ fn main() {
+     println!("cargo:rerun-if-changed={SRC}");
++    println!("dh-cargo:deb-built-using=apt-pkg-c=1={}", env::var("CARGO_MANIFEST_DIR").unwrap());
+
      let mut build = cc::Build::new();
      build.file(SRC);
-     build.cpp(true);
--    build.flag("-std=gnu++11");
-+    build.flag("-std=gnu++17");
- 
-     #[cfg(feature = "ye-olde-apt")]
-     {
-@@ -17,5 +20,6 @@ fn main() {
- 
-     build.compile("libapt-pkg-c.a");
- 
-+    println!("dh-cargo:deb-built-using=apt-pkg-c=0={}", env::var("CARGO_MANIFEST_DIR").unwrap());
-     println!("cargo:rustc-link-lib=apt-pkg");
- }

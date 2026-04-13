@@ -1,11 +1,13 @@
-Index: sha2-asm/build.rs
-===================================================================
---- sha2-asm.orig/build.rs
-+++ sha2-asm/build.rs
-@@ -26,4 +26,6 @@ fn main() {
-             .compile("libsha512.a");
-     }
-     build256.flag("-c").file(sha256_path).compile("libsha256.a");
+diff --git a/build.rs b/build.rs
+index 9a3a30c..38cf301 100644
+--- a/build.rs
++++ b/build.rs
+@@ -1,6 +1,8 @@
+ use std::env;
+
+ fn main() {
 +    println!("dh-cargo:deb-built-using=sha256=0={}", env::var("CARGO_MANIFEST_DIR").unwrap());
 +    println!("dh-cargo:deb-built-using=sha512=0={}", env::var("CARGO_MANIFEST_DIR").unwrap());
- }
+     let target_arch = env::var("CARGO_CFG_TARGET_ARCH").unwrap_or_default();
+     let target_vendor = env::var("CARGO_CFG_TARGET_VENDOR").unwrap_or_default();
+

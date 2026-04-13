@@ -1,0 +1,65 @@
+Source: rust-der
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.65) <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Darren Chang <darrenchang951@gmail.com>
+Standards-Version: 4.7.3
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/der]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/der
+Homepage: https://github.com/RustCrypto/formats/tree/master/der
+X-Cargo-Crate: der
+X-Cargo-Crate-Version: 0.7.10
+
+# FIXME (packages."(name)".section) debcargo auto-generated summary for librust-der-dev is very long, consider overriding
+
+Package: librust-der-0.7-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-arbitrary-1+default-dev (>= 1.3),
+ librust-arbitrary-1+derive-dev (>= 1.3),
+ librust-bytes-1-dev,
+ librust-const-oid-0.9+arbitrary-dev (>= 0.9.2),
+ librust-const-oid-0.9+default-dev (>= 0.9.2),
+ librust-der-derive-0.7+default-dev (>= 0.7.2),
+ librust-flagset-0.4+default-dev (>= 0.4.3),
+ librust-pem-rfc7468-0.7+alloc-dev,
+ librust-pem-rfc7468-0.7+default-dev,
+ librust-time-0.3-dev (>= 0.3.4),
+ librust-zeroize-1+alloc-dev (>= 1.5),
+ librust-zeroize-1-dev (>= 1.5)
+Provides:
+ librust-der-0.7-dev (= ${binary:Version}),
+ librust-der-0.7+alloc-dev (= ${binary:Version}),
+ librust-der-0.7+arbitrary-dev (= ${binary:Version}),
+ librust-der-0.7+bytes-dev (= ${binary:Version}),
+ librust-der-0.7+default-dev (= ${binary:Version}),
+ librust-der-0.7+derive-dev (= ${binary:Version}),
+ librust-der-0.7+flagset-dev (= ${binary:Version}),
+ librust-der-0.7+oid-dev (= ${binary:Version}),
+ librust-der-0.7+pem-dev (= ${binary:Version}),
+ librust-der-0.7+real-dev (= ${binary:Version}),
+ librust-der-0.7+std-dev (= ${binary:Version}),
+ librust-der-0.7+time-dev (= ${binary:Version}),
+ librust-der-0.7+zeroize-dev (= ${binary:Version}),
+ librust-der-0.7.10-dev (= ${binary:Version}),
+ librust-der-0.7.10+alloc-dev (= ${binary:Version}),
+ librust-der-0.7.10+arbitrary-dev (= ${binary:Version}),
+ librust-der-0.7.10+bytes-dev (= ${binary:Version}),
+ librust-der-0.7.10+default-dev (= ${binary:Version}),
+ librust-der-0.7.10+derive-dev (= ${binary:Version}),
+ librust-der-0.7.10+flagset-dev (= ${binary:Version}),
+ librust-der-0.7.10+oid-dev (= ${binary:Version}),
+ librust-der-0.7.10+pem-dev (= ${binary:Version}),
+ librust-der-0.7.10+real-dev (= ${binary:Version}),
+ librust-der-0.7.10+std-dev (= ${binary:Version}),
+ librust-der-0.7.10+time-dev (= ${binary:Version}),
+ librust-der-0.7.10+zeroize-dev (= ${binary:Version})
+Description: Pure Rust embedded-friendly implementation of the Distinguished Encoding Rules (DER) for Abstract Syntax Notation One (ASN.1) as described in ITU X.690 with full support for heapless no_std targets - Rust source code
+ Source code for Debianized Rust crate "der"

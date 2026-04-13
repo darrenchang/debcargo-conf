@@ -1,3 +1,9 @@
+rust-flagset (0.4.7-1) unstable; urgency=medium
+
+  * update.
+
+ -- darren chang <darrenchang951@gmail.com>  Wed, 25 Mar 2026 11:55:00 +0800
+
 rust-flagset (0.4.3-1) unstable; urgency=medium
 
   * Package flagset 0.4.3 from crates.io using debcargo 2.6.0

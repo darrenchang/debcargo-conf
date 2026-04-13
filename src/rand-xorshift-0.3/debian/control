@@ -1,0 +1,36 @@
+Source: rust-rand-xorshift
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-rand-core-0.6+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Darren Chang <darrenchang951@gmail.com>
+Standards-Version: 4.7.3
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/rand-xorshift]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/rand-xorshift
+Homepage: https://rust-random.github.io/book
+X-Cargo-Crate: rand_xorshift
+X-Cargo-Crate-Version: 0.3.0
+
+Package: librust-rand-xorshift-0.3-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-rand-core-0.6+default-dev,
+ librust-serde-1+derive-dev (>= 1.0.118)
+Provides:
+ librust-rand-xorshift-0.3-dev (= ${binary:Version}),
+ librust-rand-xorshift-0.3+default-dev (= ${binary:Version}),
+ librust-rand-xorshift-0.3+serde-dev (= ${binary:Version}),
+ librust-rand-xorshift-0.3+serde1-dev (= ${binary:Version}),
+ librust-rand-xorshift-0.3.0-dev (= ${binary:Version}),
+ librust-rand-xorshift-0.3.0+default-dev (= ${binary:Version}),
+ librust-rand-xorshift-0.3.0+serde-dev (= ${binary:Version}),
+ librust-rand-xorshift-0.3.0+serde1-dev (= ${binary:Version})
+Description: Xorshift random number generator - Rust source code
+ Source code for Debianized Rust crate "rand_xorshift"
