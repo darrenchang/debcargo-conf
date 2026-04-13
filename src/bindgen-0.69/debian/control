@@ -1,0 +1,98 @@
+Source: rust-bindgen
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.60.0) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-bitflags-2+default-dev (>= 2.2.1) <!nocheck>,
+ librust-cexpr-0.6+default-dev <!nocheck>,
+ librust-clang-sys-1+clang-6-0-dev <!nocheck>,
+ librust-clang-sys-1+default-dev <!nocheck>,
+ librust-clang-sys-1+runtime-dev <!nocheck>,
+ librust-itertools-dev (<< 0.13) <!nocheck>,
+ librust-itertools-dev (>= 0.10) <!nocheck>,
+ librust-lazy-static-1+default-dev <!nocheck>,
+ librust-lazycell-1+default-dev <!nocheck>,
+ librust-log-0.4+default-dev <!nocheck>,
+ librust-prettyplease-0.2+default-dev (>= 0.2.7) <!nocheck>,
+ librust-prettyplease-0.2+verbatim-dev (>= 0.2.7) <!nocheck>,
+ librust-proc-macro2-1-dev <!nocheck>,
+ librust-quote-1-dev <!nocheck>,
+ librust-regex-1+std-dev (>= 1.5.1) <!nocheck>,
+ librust-regex-1+unicode-perl-dev (>= 1.5.1) <!nocheck>,
+ librust-rustc-hash-1+default-dev (>= 1.0.1) <!nocheck>,
+ librust-shlex-1+default-dev <!nocheck>,
+ librust-syn-2+default-dev <!nocheck>,
+ librust-syn-2+extra-traits-dev <!nocheck>,
+ librust-syn-2+full-dev <!nocheck>,
+ librust-syn-2+visit-mut-dev <!nocheck>,
+ librust-which-4-dev (>= 4.2.1) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Darren Chang <darrenchang951@gmail.com>
+Standards-Version: 4.7.3
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/bindgen]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/bindgen
+Homepage: https://rust-lang.github.io/rust-bindgen/
+X-Cargo-Crate: bindgen
+X-Cargo-Crate-Version: 0.69.5
+
+Package: librust-bindgen-0.69-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-annotate-snippets-0.9+color-dev (>= 0.9.1),
+ librust-annotate-snippets-0.9+default-dev (>= 0.9.1),
+ librust-bitflags-2+default-dev (>= 2.2.1),
+ librust-cexpr-0.6+default-dev,
+ librust-clang-sys-1+clang-6-0-dev,
+ librust-clang-sys-1+default-dev,
+ librust-clang-sys-1+runtime-dev,
+ librust-clang-sys-1+static-dev,
+ librust-itertools-dev (<< 0.13),
+ librust-itertools-dev (>= 0.10),
+ librust-lazy-static-1+default-dev,
+ librust-lazycell-1+default-dev,
+ librust-log-0.4+default-dev,
+ librust-prettyplease-0.2+default-dev (>= 0.2.7),
+ librust-prettyplease-0.2+verbatim-dev (>= 0.2.7),
+ librust-proc-macro2-1-dev,
+ librust-quote-1-dev,
+ librust-regex-1+std-dev (>= 1.5.1),
+ librust-regex-1+unicode-perl-dev (>= 1.5.1),
+ librust-rustc-hash-1+default-dev (>= 1.0.1),
+ librust-shlex-1+default-dev,
+ librust-syn-2+default-dev,
+ librust-syn-2+extra-traits-dev,
+ librust-syn-2+full-dev,
+ librust-syn-2+visit-mut-dev,
+ librust-which-4-dev (>= 4.2.1)
+Provides:
+ librust-bindgen-0.69-dev (= ${binary:Version}),
+ librust-bindgen-0.69+--cli-dev (= ${binary:Version}),
+ librust-bindgen-0.69+--testing-only-extra-assertions-dev (= ${binary:Version}),
+ librust-bindgen-0.69+--testing-only-libclang-16-dev (= ${binary:Version}),
+ librust-bindgen-0.69+--testing-only-libclang-9-dev (= ${binary:Version}),
+ librust-bindgen-0.69+default-dev (= ${binary:Version}),
+ librust-bindgen-0.69+experimental-dev (= ${binary:Version}),
+ librust-bindgen-0.69+logging-dev (= ${binary:Version}),
+ librust-bindgen-0.69+prettyplease-dev (= ${binary:Version}),
+ librust-bindgen-0.69+runtime-dev (= ${binary:Version}),
+ librust-bindgen-0.69+static-dev (= ${binary:Version}),
+ librust-bindgen-0.69+which-rustfmt-dev (= ${binary:Version}),
+ librust-bindgen-0.69.5-dev (= ${binary:Version}),
+ librust-bindgen-0.69.5+--cli-dev (= ${binary:Version}),
+ librust-bindgen-0.69.5+--testing-only-extra-assertions-dev (= ${binary:Version}),
+ librust-bindgen-0.69.5+--testing-only-libclang-16-dev (= ${binary:Version}),
+ librust-bindgen-0.69.5+--testing-only-libclang-9-dev (= ${binary:Version}),
+ librust-bindgen-0.69.5+default-dev (= ${binary:Version}),
+ librust-bindgen-0.69.5+experimental-dev (= ${binary:Version}),
+ librust-bindgen-0.69.5+logging-dev (= ${binary:Version}),
+ librust-bindgen-0.69.5+prettyplease-dev (= ${binary:Version}),
+ librust-bindgen-0.69.5+runtime-dev (= ${binary:Version}),
+ librust-bindgen-0.69.5+static-dev (= ${binary:Version}),
+ librust-bindgen-0.69.5+which-rustfmt-dev (= ${binary:Version})
+Description: Automatically generates Rust FFI bindings to C and C++ libraries - Rust source code
+ Source code for Debianized Rust crate "bindgen"
