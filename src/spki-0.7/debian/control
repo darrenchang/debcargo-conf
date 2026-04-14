@@ -1,0 +1,60 @@
+Source: rust-spki
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.65) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-der-0.7+default-dev (>= 0.7.2) <!nocheck>,
+ librust-der-0.7+oid-dev (>= 0.7.2) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Darren Chang <darrenchang951@gmail.com>
+Standards-Version: 4.7.3
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/spki]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/spki
+Homepage: https://github.com/RustCrypto/formats/tree/master/spki
+X-Cargo-Crate: spki
+X-Cargo-Crate-Version: 0.7.1
+
+# FIXME (packages."(name)".section) debcargo auto-generated summary for librust-spki-dev is very long, consider overriding
+
+Package: librust-spki-0.7-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-arbitrary-1+default-dev (>= 1.2),
+ librust-arbitrary-1+derive-dev (>= 1.2),
+ librust-base64ct-1+alloc-dev,
+ librust-base64ct-1-dev,
+ librust-der-0.7+alloc-dev (>= 0.7.2),
+ librust-der-0.7+arbitrary-dev (>= 0.7.2),
+ librust-der-0.7+default-dev (>= 0.7.2),
+ librust-der-0.7+oid-dev (>= 0.7.2),
+ librust-der-0.7+pem-dev (>= 0.7.2),
+ librust-der-0.7+std-dev (>= 0.7.2),
+ librust-sha2-0.10-dev
+Provides:
+ librust-spki-0.7-dev (= ${binary:Version}),
+ librust-spki-0.7+alloc-dev (= ${binary:Version}),
+ librust-spki-0.7+arbitrary-dev (= ${binary:Version}),
+ librust-spki-0.7+base64-dev (= ${binary:Version}),
+ librust-spki-0.7+default-dev (= ${binary:Version}),
+ librust-spki-0.7+fingerprint-dev (= ${binary:Version}),
+ librust-spki-0.7+pem-dev (= ${binary:Version}),
+ librust-spki-0.7+sha2-dev (= ${binary:Version}),
+ librust-spki-0.7+std-dev (= ${binary:Version}),
+ librust-spki-0.7.1-dev (= ${binary:Version}),
+ librust-spki-0.7.1+alloc-dev (= ${binary:Version}),
+ librust-spki-0.7.1+arbitrary-dev (= ${binary:Version}),
+ librust-spki-0.7.1+base64-dev (= ${binary:Version}),
+ librust-spki-0.7.1+default-dev (= ${binary:Version}),
+ librust-spki-0.7.1+fingerprint-dev (= ${binary:Version}),
+ librust-spki-0.7.1+pem-dev (= ${binary:Version}),
+ librust-spki-0.7.1+sha2-dev (= ${binary:Version}),
+ librust-spki-0.7.1+std-dev (= ${binary:Version})
+Description: X.509 Subject Public Key Info (RFC5280) describing public keys as well as their associated AlgorithmIdentifiers (i.e - Rust source code
+ OIDs)
+ .
+ Source code for Debianized Rust crate "spki"
