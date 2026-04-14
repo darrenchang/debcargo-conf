@@ -1,0 +1,44 @@
+Source: rust-nom
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.65.0) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-memchr-2+std-dev (>= 2.3) <!nocheck>,
+ librust-memchr-2-dev (>= 2.3) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Darren Chang <darrenchang951@gmail.com>
+Standards-Version: 4.7.3
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/nom]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/nom
+Homepage: https://github.com/rust-bakery/nom
+X-Cargo-Crate: nom
+X-Cargo-Crate-Version: 8.0.0
+
+Package: librust-nom-8.0-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-memchr-2+std-dev (>= 2.3),
+ librust-memchr-2-dev (>= 2.3)
+Provides:
+ librust-nom-8-dev (= ${binary:Version}),
+ librust-nom-8+alloc-dev (= ${binary:Version}),
+ librust-nom-8+default-dev (= ${binary:Version}),
+ librust-nom-8+docsrs-dev (= ${binary:Version}),
+ librust-nom-8+std-dev (= ${binary:Version}),
+ librust-nom-8.0-dev (= ${binary:Version}),
+ librust-nom-8.0+alloc-dev (= ${binary:Version}),
+ librust-nom-8.0+default-dev (= ${binary:Version}),
+ librust-nom-8.0+docsrs-dev (= ${binary:Version}),
+ librust-nom-8.0+std-dev (= ${binary:Version}),
+ librust-nom-8.0.0-dev (= ${binary:Version}),
+ librust-nom-8.0.0+alloc-dev (= ${binary:Version}),
+ librust-nom-8.0.0+default-dev (= ${binary:Version}),
+ librust-nom-8.0.0+docsrs-dev (= ${binary:Version}),
+ librust-nom-8.0.0+std-dev (= ${binary:Version})
+Description: Byte-oriented, zero-copy, parser combinators library - Rust source code
+ Source code for Debianized Rust crate "nom"

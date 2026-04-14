@@ -1,0 +1,35 @@
+Source: rust-async-channel
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.45) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-concurrent-queue-2+default-dev <!nocheck>,
+ librust-event-listener-2+default-dev (>= 2.4.0) <!nocheck>,
+ librust-futures-core-0.3+default-dev (>= 0.3.5) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Darren Chang <darrenchang951@gmail.com>
+Standards-Version: 4.7.3
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/async-channel]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/async-channel
+Homepage: https://github.com/smol-rs/async-channel
+X-Cargo-Crate: async-channel
+X-Cargo-Crate-Version: 1.9.0
+
+Package: librust-async-channel-1.9-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-concurrent-queue-2+default-dev,
+ librust-event-listener-2+default-dev (>= 2.4.0),
+ librust-futures-core-0.3+default-dev (>= 0.3.5)
+Provides:
+ librust-async-channel-1.9-dev (= ${binary:Version}),
+ librust-async-channel-1.9+default-dev (= ${binary:Version}),
+ librust-async-channel-1.9.0-dev (= ${binary:Version}),
+ librust-async-channel-1.9.0+default-dev (= ${binary:Version})
+Description: Async multi-producer multi-consumer channel - Rust source code
+ Source code for Debianized Rust crate "async-channel"

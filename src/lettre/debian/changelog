@@ -1,3 +1,9 @@
+rust-lettre (0.11.21-1) unstable; urgency=medium
+
+  * update.
+
+ -- darren chang <darrenchang951@gmail.com>  Wed, 25 Mar 2026 11:55:00 +0800
+
 rust-lettre (0.11.13-1~bpo13+1) trixie; urgency=medium
 
   * Build for Debian Trixie based Proxmox releases.
