@@ -18,7 +18,7 @@ Homepage: https://github.com/smol-rs/async-channel
 X-Cargo-Crate: async-channel
 X-Cargo-Crate-Version: 1.9.0
 
-Package: librust-async-channel-1.9-dev
+Package: librust-async-channel-1-dev
 Architecture: any
 Multi-Arch: same
 Depends:
@@ -27,6 +27,8 @@ Depends:
  librust-event-listener-2+default-dev (>= 2.4.0),
  librust-futures-core-0.3+default-dev (>= 0.3.5)
 Provides:
+ librust-async-channel-1-dev (= ${binary:Version}),
+ librust-async-channel-1+default-dev (= ${binary:Version}),
  librust-async-channel-1.9-dev (= ${binary:Version}),
  librust-async-channel-1.9+default-dev (= ${binary:Version}),
  librust-async-channel-1.9.0-dev (= ${binary:Version}),

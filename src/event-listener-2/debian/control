@@ -15,12 +15,14 @@ Homepage: https://github.com/smol-rs/event-listener
 X-Cargo-Crate: event-listener
 X-Cargo-Crate-Version: 2.5.3
 
-Package: librust-event-listener-2.5-dev
+Package: librust-event-listener-2-dev
 Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends}
 Provides:
+ librust-event-listener-2-dev (= ${binary:Version}),
+ librust-event-listener-2+default-dev (= ${binary:Version}),
  librust-event-listener-2.5-dev (= ${binary:Version}),
  librust-event-listener-2.5+default-dev (= ${binary:Version}),
  librust-event-listener-2.5.3-dev (= ${binary:Version}),
