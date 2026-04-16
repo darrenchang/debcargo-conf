@@ -1,0 +1,41 @@
+Source: rust-gloo-timers
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.64) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-js-sys-0.3+default-dev (>= 0.3.31) <!nocheck>,
+ librust-wasm-bindgen-0.2+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Sylvestre Ledru <sylvestre@debian.org>
+Standards-Version: 4.7.3
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/gloo-timers]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/gloo-timers
+Homepage: https://github.com/rustwasm/gloo
+X-Cargo-Crate: gloo-timers
+X-Cargo-Crate-Version: 0.3.0
+
+Package: librust-gloo-timers-0.3-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-futures-channel-0.3+default-dev,
+ librust-futures-core-0.3+default-dev,
+ librust-js-sys-0.3+default-dev (>= 0.3.31),
+ librust-wasm-bindgen-0.2+default-dev
+Provides:
+ librust-gloo-timers-0.3-dev (= ${binary:Version}),
+ librust-gloo-timers-0.3+default-dev (= ${binary:Version}),
+ librust-gloo-timers-0.3+futures-dev (= ${binary:Version}),
+ librust-gloo-timers-0.3+futures-channel-dev (= ${binary:Version}),
+ librust-gloo-timers-0.3+futures-core-dev (= ${binary:Version}),
+ librust-gloo-timers-0.3.0-dev (= ${binary:Version}),
+ librust-gloo-timers-0.3.0+default-dev (= ${binary:Version}),
+ librust-gloo-timers-0.3.0+futures-dev (= ${binary:Version}),
+ librust-gloo-timers-0.3.0+futures-channel-dev (= ${binary:Version}),
+ librust-gloo-timers-0.3.0+futures-core-dev (= ${binary:Version})
+Description: Convenience crate for working with JavaScript timers - Rust source code
+ Source code for Debianized Rust crate "gloo-timers"

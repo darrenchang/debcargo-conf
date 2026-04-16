@@ -1,3 +1,9 @@
+rust-num-iter (0.1.45-1) unstable; urgency=medium
+
+  * update.
+
+ -- darren chang <darrenchang951@gmail.com>  Wed, 25 Mar 2026 11:55:00 +0800
+
 rust-num-iter (0.1.42-1) unstable; urgency=medium
 
   * Package num-iter 0.1.42 from crates.io using debcargo 2.5.0
