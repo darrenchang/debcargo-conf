@@ -1,198 +1,110 @@
-Index: lettre/Cargo.toml
-===================================================================
---- lettre.orig/Cargo.toml
-+++ lettre/Cargo.toml
-@@ -60,18 +60,6 @@ repository = "lettre/lettre"
- status = "actively-developed"
- 
- [features]
--async-std1 = [
--    "dep:async-std",
--    "dep:async-trait",
--    "dep:futures-io",
--    "dep:futures-util",
--]
--async-std1-rustls-tls = [
--    "async-std1",
--    "rustls-tls",
--    "dep:futures-rustls",
--]
--boring-tls = ["dep:boring"]
+diff --git a/Cargo.toml b/Cargo.toml
+index d7cb779..a5d85f2 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -68,14 +68,14 @@ async-std1 = [
+ ]
+ async-std1-rustls = [
+     "async-std1",
+-    "rustls",
++#    "rustls",
+     "dep:futures-rustls",
+ ]
+ async-std1-rustls-tls = [
+     "async-std1-rustls",
+     "rustls-tls",
+ ]
+-aws-lc-rs = ["rustls?/aws-lc-rs"]
++#aws-lc-rs = ["rustls?/aws-lc-rs"]
+ boring-tls = ["dep:boring"]
  builder = [
      "dep:httpdate",
-     "dep:mime",
-@@ -86,12 +74,6 @@ default = [
-     "hostname",
-     "builder",
+@@ -108,18 +108,18 @@ file-transport-envelope = [
+     "file-transport",
  ]
--dkim = [
--    "dep:base64",
--    "dep:sha2",
--    "dep:rsa",
--    "dep:ed25519-dalek",
--]
- file-transport = [
-     "dep:uuid",
-     "tokio1_crate?/fs",
-@@ -104,16 +86,9 @@ file-transport-envelope = [
+ fips = [
+-    "aws-lc-rs",
+-    "rustls?/fips",
++#    "aws-lc-rs",
++#    "rustls?/fips",
  ]
  mime03 = ["dep:mime"]
  pool = ["dep:futures-util"]
--rustls-tls = [
--    "dep:webpki-roots",
--    "dep:rustls",
--    "dep:rustls-pemfile",
--    "dep:rustls-pki-types",
--]
+-ring = ["rustls?/ring"]
+-rustls = ["dep:rustls"]
+-rustls-no-provider = ["rustls"]
++#ring = ["rustls?/ring"]
++#rustls = ["dep:rustls"]
++#rustls-no-provider = ["rustls"]
+ rustls-tls = [
+-    "webpki-roots",
+-    "rustls",
+-    "ring",
++#    "webpki-roots",
++#    "rustls",
++#    "ring",
+ ]
  sendmail-transport = [
      "tokio1_crate?/process",
-     "tokio1_crate?/io-util",
--    "async-std?/unstable",
+@@ -153,15 +153,15 @@ tokio1-native-tls = [
  ]
- smtp-transport = [
-     "dep:base64",
-@@ -131,21 +106,11 @@ tokio1 = [
-     "dep:futures-io",
-     "dep:futures-util",
- ]
--tokio1-boring-tls = [
--    "tokio1",
--    "boring-tls",
--    "dep:tokio1_boring",
--]
- tokio1-native-tls = [
+ tokio1-rustls = [
      "tokio1",
-     "native-tls",
-     "dep:tokio1_native_tls_crate",
- ]
--tokio1-rustls-tls = [
--    "tokio1",
--    "rustls-tls",
+-    "rustls",
 -    "dep:tokio1_rustls",
--]
++#    "rustls",
++#    "dep:tokio1_rustls",
+ ]
+ tokio1-rustls-tls = [
+     "tokio1-rustls",
+     "rustls-tls",
+ ]
  web = ["dep:web-time"]
+-webpki-roots = ["dep:webpki-roots"]
++#webpki-roots = ["dep:webpki-roots"]
  
  [lib]
-@@ -153,26 +118,6 @@ name = "lettre"
- path = "src/lib.rs"
- 
- [[example]]
--name = "asyncstd1_smtp_starttls"
--path = "examples/asyncstd1_smtp_starttls.rs"
--required-features = [
--    "smtp-transport",
--    "async-std1",
--    "async-std1-rustls-tls",
--    "builder",
--]
--
--[[example]]
--name = "asyncstd1_smtp_tls"
--path = "examples/asyncstd1_smtp_tls.rs"
--required-features = [
--    "smtp-transport",
--    "async-std1",
--    "async-std1-rustls-tls",
--    "builder",
--]
--
--[[example]]
- name = "autoconfigure"
- path = "examples/autoconfigure.rs"
- required-features = [
-@@ -281,10 +226,6 @@ name = "transport_smtp"
- path = "benches/transport_smtp.rs"
- harness = false
- 
--[dependencies.async-std]
--version = "1.8"
--optional = true
--
- [dependencies.async-trait]
- version = "0.1"
- optional = true
-@@ -293,17 +234,9 @@ optional = true
- version = "0.22"
- optional = true
- 
--[dependencies.boring]
--version = "4"
--optional = true
--
- [dependencies.chumsky]
+ name = "lettre"
+@@ -381,23 +381,23 @@ optional = true
  version = "0.9"
- 
--[dependencies.ed25519-dalek]
--version = "2"
--optional = true
--
- [dependencies.email-encoding]
- version = "0.3"
- optional = true
-@@ -320,16 +253,6 @@ optional = true
- version = "0.3.7"
  optional = true
  
--[dependencies.futures-rustls]
--version = "0.26"
--features = [
--    "logging",
--    "tls12",
--    "ring",
--]
--optional = true
--default-features = false
--
- [dependencies.futures-util]
- version = "0.3.7"
- features = ["io"]
-@@ -367,33 +290,6 @@ optional = true
- version = "0.5"
- optional = true
- 
--[dependencies.rsa]
--version = "0.9"
--optional = true
--
 -[dependencies.rustls]
--version = "0.23.5"
+-version = "0.23.18"
 -features = [
--    "ring",
 -    "logging",
 -    "std",
 -    "tls12",
 -]
 -optional = true
 -default-features = false
--
++#[dependencies.rustls]
++#version = "0.23.18"
++#features = [
++#    "logging",
++#    "std",
++#    "tls12",
++#]
++#optional = true
++#default-features = false
+ 
 -[dependencies.rustls-native-certs]
 -version = "0.8"
 -optional = true
--
--[dependencies.rustls-pemfile]
--version = "2"
--optional = true
--
--[dependencies.rustls-pki-types]
--version = "1.7"
--optional = true
--
- [dependencies.serde]
- version = "1"
- features = ["derive"]
-@@ -412,11 +308,6 @@ optional = true
- version = "0.5.1"
- optional = true
++#[dependencies.rustls-native-certs]
++#version = "0.8"
++#optional = true
  
--[dependencies.tokio1_boring]
--version = "4"
+-[dependencies.rustls-platform-verifier]
+-version = "0.6.0"
 -optional = true
--package = "tokio-boring"
--
- [dependencies.tokio1_crate]
- version = "1"
- optional = true
-@@ -427,17 +318,6 @@ version = "0.3"
++#[dependencies.rustls-platform-verifier]
++#version = "0.6.0"
++#optional = true
+ 
+ [dependencies.serde]
+ version = "1.0.110"
+@@ -432,15 +432,15 @@ version = "0.3"
  optional = true
  package = "tokio-native-tls"
  
@@ -201,103 +113,32 @@ Index: lettre/Cargo.toml
 -features = [
 -    "logging",
 -    "tls12",
--    "ring",
 -]
 -optional = true
 -default-features = false
 -package = "tokio-rustls"
--
++#[dependencies.tokio1_rustls]
++#version = "0.26"
++#features = [
++#    "logging",
++#    "tls12",
++#]
++#optional = true
++#default-features = false
++#package = "tokio-rustls"
+ 
  [dependencies.tracing]
  version = "0.1.16"
- features = ["std"]
-@@ -457,14 +337,6 @@ optional = true
- version = "1.1.0"
+@@ -457,9 +457,9 @@ version = "1"
+ features = ["v4"]
  optional = true
  
 -[dependencies.webpki-roots]
--version = "0.26"
+-version = "1.0.0"
 -optional = true
--
--[dev-dependencies.async-std]
--version = "1.8"
--features = ["attributes"]
--
- [dev-dependencies.criterion]
- version = "0.5"
++#[dependencies.webpki-roots]
++#version = "1.0.0"
++#optional = true
  
-Index: lettre/examples/asyncstd1_smtp_starttls.rs
-===================================================================
---- lettre.orig/examples/asyncstd1_smtp_starttls.rs
-+++ /dev/null
-@@ -1,33 +0,0 @@
--use lettre::{
--    message::header::ContentType, transport::smtp::authentication::Credentials, AsyncSmtpTransport,
--    AsyncStd1Executor, AsyncTransport, Message,
--};
--
--#[async_std::main]
--async fn main() {
--    tracing_subscriber::fmt::init();
--
--    let email = Message::builder()
--        .from("NoBody <nobody@domain.tld>".parse().unwrap())
--        .reply_to("Yuin <yuin@domain.tld>".parse().unwrap())
--        .to("Hei <hei@domain.tld>".parse().unwrap())
--        .subject("Happy new async year")
--        .header(ContentType::TEXT_PLAIN)
--        .body(String::from("Be happy with async!"))
--        .unwrap();
--
--    let creds = Credentials::new("smtp_username".to_owned(), "smtp_password".to_owned());
--
--    // Open a remote connection to gmail using STARTTLS
--    let mailer: AsyncSmtpTransport<AsyncStd1Executor> =
--        AsyncSmtpTransport::<AsyncStd1Executor>::starttls_relay("smtp.gmail.com")
--            .unwrap()
--            .credentials(creds)
--            .build();
--
--    // Send the email
--    match mailer.send(email).await {
--        Ok(_) => println!("Email sent successfully!"),
--        Err(e) => panic!("Could not send email: {e:?}"),
--    }
--}
-Index: lettre/examples/asyncstd1_smtp_tls.rs
-===================================================================
---- lettre.orig/examples/asyncstd1_smtp_tls.rs
-+++ /dev/null
-@@ -1,33 +0,0 @@
--use lettre::{
--    message::header::ContentType, transport::smtp::authentication::Credentials, AsyncSmtpTransport,
--    AsyncStd1Executor, AsyncTransport, Message,
--};
--
--#[async_std::main]
--async fn main() {
--    tracing_subscriber::fmt::init();
--
--    let email = Message::builder()
--        .from("NoBody <nobody@domain.tld>".parse().unwrap())
--        .reply_to("Yuin <yuin@domain.tld>".parse().unwrap())
--        .to("Hei <hei@domain.tld>".parse().unwrap())
--        .subject("Happy new async year")
--        .header(ContentType::TEXT_PLAIN)
--        .body(String::from("Be happy with async!"))
--        .unwrap();
--
--    let creds = Credentials::new("smtp_username".to_owned(), "smtp_password".to_owned());
--
--    // Open a remote connection to gmail
--    let mailer: AsyncSmtpTransport<AsyncStd1Executor> =
--        AsyncSmtpTransport::<AsyncStd1Executor>::relay("smtp.gmail.com")
--            .unwrap()
--            .credentials(creds)
--            .build();
--
--    // Send the email
--    match mailer.send(email).await {
--        Ok(_) => println!("Email sent successfully!"),
--        Err(e) => panic!("Could not send email: {e:?}"),
--    }
--}
+ [dev-dependencies.async-std]
+ version = "1.8"

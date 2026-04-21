@@ -1,9 +1,8 @@
 Source: rust-foreign-types
 Section: rust
-Priority: optional
-Build-Depends: debhelper (>= 11),
- dh-cargo (>= 18),
- cargo:native <!nocheck>,
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
  rustc:native <!nocheck>,
  libstd-rust-dev <!nocheck>,
  librust-foreign-types-macros-0.2+default-dev <!nocheck>,
@@ -13,30 +12,27 @@ Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.ne
 Uploaders:
  Ximin Luo <infinity0@debian.org>,
  Fabio Rafael da Rosa <fdr@fabiodarosa.org>
-Standards-Version: 4.4.1
+Standards-Version: 4.7.3
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/foreign-types]
 Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/foreign-types
+Homepage: https://github.com/sfackler/foreign-types
+X-Cargo-Crate: foreign-types
+X-Cargo-Crate-Version: 0.5.0
 
-Package: librust-foreign-types-dev
+Package: librust-foreign-types-0.5-dev
 Architecture: any
 Multi-Arch: same
 Depends:
  ${misc:Depends},
  librust-foreign-types-macros-0.2+default-dev,
+ librust-foreign-types-macros-0.2+std-dev,
  librust-foreign-types-shared-0.3+default-dev
 Provides:
- librust-foreign-types-0-dev (= ${binary:Version}),
  librust-foreign-types-0.5-dev (= ${binary:Version}),
- librust-foreign-types-0.5.0-dev (= ${binary:Version}),
- librust-foreign-types+std-dev (= ${binary:Version}),
- librust-foreign-types+default-dev (= ${binary:Version}),
- librust-foreign-types-0+std-dev (= ${binary:Version}),
- librust-foreign-types-0+default-dev (= ${binary:Version}),
- librust-foreign-types-0.5+std-dev (= ${binary:Version}),
  librust-foreign-types-0.5+default-dev (= ${binary:Version}),
- librust-foreign-types-0.5.0+std-dev (= ${binary:Version}),
- librust-foreign-types-0.5.0+default-dev (= ${binary:Version})
+ librust-foreign-types-0.5+std-dev (= ${binary:Version}),
+ librust-foreign-types-0.5.0-dev (= ${binary:Version}),
+ librust-foreign-types-0.5.0+default-dev (= ${binary:Version}),
+ librust-foreign-types-0.5.0+std-dev (= ${binary:Version})
 Description: Framework for Rust wrappers over C APIs - Rust source code
- Rust crate foreign-types
- .
- Additionally, this package also provides "default" and "std" features.
+ Source code for Debianized Rust crate "foreign-types"

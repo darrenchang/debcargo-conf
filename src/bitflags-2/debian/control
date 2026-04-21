@@ -1,0 +1,50 @@
+Source: rust-bitflags
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.56.0) <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Darren Chang <darrenchang951@gmail.com>
+Standards-Version: 4.7.3
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/bitflags]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/bitflags
+Homepage: https://github.com/bitflags/bitflags
+X-Cargo-Crate: bitflags
+X-Cargo-Crate-Version: 2.9.0
+
+Package: librust-bitflags-2.9-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-arbitrary-1+default-dev,
+ librust-bytemuck-1+default-dev (>= 1.12),
+ librust-compiler-builtins-0.1+default-dev (>= 0.1.2),
+ librust-rustc-std-workspace-core-1+default-dev,
+ librust-serde-1-dev (>= 1.0.103)
+Provides:
+ librust-bitflags-2.9-dev (= ${binary:Version}),
+ librust-bitflags-2.9+arbitrary-dev (= ${binary:Version}),
+ librust-bitflags-2.9+bytemuck-dev (= ${binary:Version}),
+ librust-bitflags-2.9+compiler-builtins-dev (= ${binary:Version}),
+ librust-bitflags-2.9+core-dev (= ${binary:Version}),
+ librust-bitflags-2.9+default-dev (= ${binary:Version}),
+ librust-bitflags-2.9+example-generated-dev (= ${binary:Version}),
+ librust-bitflags-2.9+rustc-dep-of-std-dev (= ${binary:Version}),
+ librust-bitflags-2.9+serde-dev (= ${binary:Version}),
+ librust-bitflags-2.9+std-dev (= ${binary:Version}),
+ librust-bitflags-2.9.0-dev (= ${binary:Version}),
+ librust-bitflags-2.9.0+arbitrary-dev (= ${binary:Version}),
+ librust-bitflags-2.9.0+bytemuck-dev (= ${binary:Version}),
+ librust-bitflags-2.9.0+compiler-builtins-dev (= ${binary:Version}),
+ librust-bitflags-2.9.0+core-dev (= ${binary:Version}),
+ librust-bitflags-2.9.0+default-dev (= ${binary:Version}),
+ librust-bitflags-2.9.0+example-generated-dev (= ${binary:Version}),
+ librust-bitflags-2.9.0+rustc-dep-of-std-dev (= ${binary:Version}),
+ librust-bitflags-2.9.0+serde-dev (= ${binary:Version}),
+ librust-bitflags-2.9.0+std-dev (= ${binary:Version})
+Description: Macro to generate structures which behave like bitflags - Rust source code
+ Source code for Debianized Rust crate "bitflags"

@@ -1,0 +1,33 @@
+Source: rust-base64
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.48.0) <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Darren Chang <darrenchang951@gmail.com>
+Standards-Version: 4.7.3
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/base64]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/base64
+Homepage: https://github.com/marshallpierce/rust-base64
+X-Cargo-Crate: base64
+X-Cargo-Crate-Version: 0.21.7
+
+Package: librust-base64-0.21-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends}
+Provides:
+ librust-base64-0.21-dev (= ${binary:Version}),
+ librust-base64-0.21+alloc-dev (= ${binary:Version}),
+ librust-base64-0.21+default-dev (= ${binary:Version}),
+ librust-base64-0.21+std-dev (= ${binary:Version}),
+ librust-base64-0.21.7-dev (= ${binary:Version}),
+ librust-base64-0.21.7+alloc-dev (= ${binary:Version}),
+ librust-base64-0.21.7+default-dev (= ${binary:Version}),
+ librust-base64-0.21.7+std-dev (= ${binary:Version})
+Description: Encodes and decodes base64 as bytes or utf8 - Rust source code
+ Source code for Debianized Rust crate "base64"
