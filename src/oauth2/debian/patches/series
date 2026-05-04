@@ -1,1 +1,2 @@
-disable-ureq.patch
+disable-reqwest.diff
+disable-opt.diff
