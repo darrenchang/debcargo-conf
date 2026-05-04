@@ -1,0 +1,50 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 5c3f351..077d404 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -34,7 +34,7 @@ repository = "https://github.com/quinn-rs/quinn"
+ features = [
+     "rustls-aws-lc-rs",
+     "rustls-ring",
+-    "platform-verifier",
++    "platform-verifier",
+     "log",
+     "rustls-log",
+ ]
+@@ -57,8 +57,8 @@ default = [
+     "bloom",
+ ]
+ log = ["tracing/log"]
+-platform-verifier = ["dep:rustls-platform-verifier"]
+-qlog = ["dep:qlog"]
++platform-verifier = ["dep:rustls-platform-verifier"]
++#qlog = ["dep:qlog"]
+ ring = ["dep:ring"]
+ rustls = ["rustls-ring"]
+ rustls-aws-lc-rs = [
+@@ -101,9 +101,9 @@ optional = true
+ [dependencies.lru-slab]
+ version = "0.1.2"
+ 
+-[dependencies.qlog]
+-version = "0.15.2"
+-optional = true
++#[dependencies.qlog]
++#version = "0.15.2"
++#optional = true
+ 
+ [dependencies.rand]
+ version = "0.9"
+@@ -121,9 +121,9 @@ features = ["std"]
+ optional = true
+ default-features = false
+ 
+-[dependencies.rustls-platform-verifier]
+-version = "0.6"
+-optional = true
++[dependencies.rustls-platform-verifier]
++version = "0.6"
++optional = true
+ 
+ [dependencies.slab]
+ version = "0.4.6"

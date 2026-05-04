@@ -1,4 +1,2 @@
-relax-deps.patch
-fix-autopkgtest-on-i386.diff
-disable-aws-lc-rs.patch
-disable-wasm.patch
+disable-deps.diff
+02-upgrade-deps.diff

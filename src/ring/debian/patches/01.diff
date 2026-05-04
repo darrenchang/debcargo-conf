@@ -16,7 +16,7 @@ index f445e18..dbaf579 100644
 
  [dependencies.getrandom]
 -version = "0.2.10"
-+version = "0.3"
++version = "0.2.10"
 
  [dependencies.untrusted]
  version = "0.9"

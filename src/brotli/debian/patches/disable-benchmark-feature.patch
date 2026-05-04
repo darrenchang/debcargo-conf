@@ -1,5 +1,0 @@
---- a/Cargo.toml
-+++ b/Cargo.toml
-@@ -68 +68 @@
--benchmark = ["brotli-decompressor/benchmark"]
-+#benchmark = ["brotli-decompressor/benchmark"]

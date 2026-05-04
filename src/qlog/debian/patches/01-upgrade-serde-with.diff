@@ -1,0 +1,13 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 6ff0e1b..e6d00c4 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -46,7 +46,7 @@ version = "1"
+ features = ["preserve_order"]
+
+ [dependencies.serde_with]
+-version = "~3.17"
++version = "~3.18"
+ features = ["macros"]
+ default-features = false
+

@@ -1,0 +1,122 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 1baa4c1..78127e8 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -46,7 +46,7 @@ allowed_external_types = [
+ [package.metadata.docs.rs]
+ features = [
+     "read_buf",
+-    "ring",
++    "ring",
+ ]
+ rustdoc-args = [
+     "--cfg",
+@@ -61,11 +61,11 @@ aws_lc_rs = [
+     "aws-lc-rs/aws-lc-sys",
+     "aws-lc-rs/prebuilt-nasm",
+ ]
+-brotli = [
+-    "dep:brotli",
+-    "dep:brotli-decompressor",
+-    "std",
+-]
++brotli = [
++    "dep:brotli",
++    "dep:brotli-decompressor",
++    "std",
++]
+ custom-provider = []
+ default = [
+     "aws_lc_rs",
+@@ -85,17 +85,17 @@ read_buf = [
+     "rustversion",
+     "std",
+ ]
+-ring = [
+-    "dep:ring",
+-    "webpki/ring",
+-]
++ring = [
++    "dep:ring",
++    "webpki/ring",
++]
+ std = [
+     "webpki/std",
+     "pki-types/std",
+     "once_cell/std",
+ ]
+ tls12 = []
+-zlib = ["dep:zlib-rs"]
++#zlib = ["dep:zlib-rs"]
+ 
+ [lib]
+ name = "rustls"
+@@ -116,24 +116,24 @@ version = "1.12"
+ optional = true
+ default-features = false
+ 
+-[dependencies.brotli]
+-version = "8"
+-features = ["std"]
+-optional = true
+-default-features = false
+-
+-[dependencies.brotli-decompressor]
+-version = "5.0.0"
+-optional = true
+-
+-[dependencies.hashbrown]
+-version = "0.15"
+-features = [
+-    "default-hasher",
+-    "inline-more",
+-]
+-optional = true
+-default-features = false
++[dependencies.brotli]
++version = "8"
++features = ["std"]
++optional = true
++default-features = false
++
++[dependencies.brotli-decompressor]
++version = "5.0.0"
++optional = true
++
++#[dependencies.hashbrown]
++#version = "0.15"
++#features = [
++#    "default-hasher",
++#    "inline-more",
++#]
++#optional = true
++#default-features = false
+ 
+ [dependencies.log]
+ version = "0.4.8"
+@@ -152,9 +152,9 @@ version = "1.11"
+ features = ["alloc"]
+ package = "rustls-pki-types"
+ 
+-[dependencies.ring]
+-version = "0.17"
+-optional = true
++[dependencies.ring]
++version = "0.17"
++optional = true
+ 
+ [dependencies.subtle]
+ version = "2.5.0"
+@@ -169,9 +169,9 @@ package = "rustls-webpki"
+ [dependencies.zeroize]
+ version = "1.7"
+ 
+-[dependencies.zlib-rs]
+-version = "0.5"
+-optional = true
++#[dependencies.zlib-rs]
++#version = "0.5"
++#optional = true
+ 
+ [dev-dependencies.base64]
+ version = "0.22"

@@ -1,0 +1,13 @@
+diff --git a/build.rs b/build.rs
+index 9843ad8..c7a0705 100644
+--- a/build.rs
++++ b/build.rs
+@@ -266,6 +266,8 @@ const APPLE_ABI: &[&str] = &["ios", "macos", "tvos", "visionos", "watchos"];
+ const WINDOWS: &str = "windows";
+
+ fn main() {
++    println!("dh-cargo:deb-built-using=ring_core_0_17_14_=1={}", env::var("CARGO_MANIFEST_DIR").unwrap());
++    println!("dh-cargo:deb-built-using=ring_core_0_17_14__test=1={}", env::var("CARGO_MANIFEST_DIR").unwrap());
+     // Avoid assuming the working directory is the same is the $CARGO_MANIFEST_DIR so that toolchains
+     // which may assume other working directories can still build this code.
+     let c_root_dir = PathBuf::from(

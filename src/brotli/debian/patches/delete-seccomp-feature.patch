@@ -1,5 +1,0 @@
---- a/Cargo.toml
-+++ b/Cargo.toml
-@@ -74 +74 @@
--seccomp = ["brotli-decompressor/seccomp"]
-+#seccomp = ["brotli-decompressor/seccomp"]

@@ -1,0 +1,13 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 5c3f351..c1beb52 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -122,7 +122,7 @@ optional = true
+ default-features = false
+
+ [dependencies.rustls-platform-verifier]
+-version = "0.6"
++version = "0.7"
+ optional = true
+
+ [dependencies.slab]

@@ -1,8 +1,13 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index ece72f6..ccc4106 100644
 --- a/Cargo.toml
 +++ b/Cargo.toml
-@@ -44,3 +44,4 @@
+@@ -75,7 +75,7 @@ name = "brotli"
+ path = "src/lib.rs"
+
  [[bin]]
 -name = "brotli"
 +name = "brotli-rs"
-+path = "src/bin/brotli.rs"
+ path = "src/bin/brotli.rs"
  doc = false
+
