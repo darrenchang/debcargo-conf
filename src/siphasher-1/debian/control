@@ -15,7 +15,7 @@ Homepage: https://docs.rs/siphasher
 X-Cargo-Crate: siphasher
 X-Cargo-Crate-Version: 1.0.2
 
-Package: librust-siphasher-dev
+Package: librust-siphasher-1-dev
 Architecture: any
 Multi-Arch: same
 Depends:
@@ -26,12 +26,6 @@ Depends:
  librust-serde-1+std-dev,
  librust-serde-json-1+default-dev
 Provides:
- librust-siphasher+default-dev (= ${binary:Version}),
- librust-siphasher+serde-dev (= ${binary:Version}),
- librust-siphasher+serde-json-dev (= ${binary:Version}),
- librust-siphasher+serde-no-std-dev (= ${binary:Version}),
- librust-siphasher+serde-std-dev (= ${binary:Version}),
- librust-siphasher+std-dev (= ${binary:Version}),
  librust-siphasher-1-dev (= ${binary:Version}),
  librust-siphasher-1+default-dev (= ${binary:Version}),
  librust-siphasher-1+serde-dev (= ${binary:Version}),
