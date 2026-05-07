@@ -1,0 +1,13 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index b8cc7b9..4cbf019 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -52,7 +52,7 @@ optional = true
+ default-features = false
+
+ [dev-dependencies.criterion]
+-version = "0.4"
++version = "0.8.2"
+
+ [features]
+ barrier = ["mutex"]
