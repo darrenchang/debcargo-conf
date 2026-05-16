@@ -1,0 +1,37 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 904d3d3..efc6084 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -40,15 +40,15 @@ repository = "https://github.com/woboq/tr"
+
+ [package.metadata.docs.rs]
+ features = [
+-    "mo-translator",
+-    "po-translator",
++#    "mo-translator",
++#    "po-translator",
+     "gettext-rs",
+ ]
+
+ [features]
+ default = ["gettext-rs"]
+-mo-translator = ["dep:rspolib"]
+-po-translator = ["dep:rspolib"]
++#mo-translator = ["dep:rspolib"]
++#po-translator = ["dep:rspolib"]
+
+ [lib]
+ name = "tr"
+@@ -72,9 +72,9 @@ version = "0.7"
+ features = ["gettext-system"]
+ optional = true
+
+-[dependencies.rspolib]
+-version = "0.1.1"
+-optional = true
++#[dependencies.rspolib]
++#version = "0.1.1"
++#optional = true
+
+ [dev-dependencies.criterion]
+ version = "0.6"
