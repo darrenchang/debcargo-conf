@@ -1,3 +1,9 @@
+rust-encode-unicode (1.0.0-1) unstable; urgency=medium
+
+  * update.
+
+ -- darren chang <darrenchang951@gmail.com>  Wed, 25 Mar 2026 11:55:00 +0800
+
 rust-encode-unicode (0.3.6-1) unstable; urgency=medium
 
   * Package encode_unicode 0.3.6 from crates.io using debcargo 2.4.0

@@ -7,7 +7,7 @@ Index: prettytable-rs/Cargo.toml
  
  [dependencies.encode_unicode]
 -version = "1.0"
-+version = "0.3"
++version = "1.0"
  
  [dependencies.is-terminal]
  version = "0.4"
