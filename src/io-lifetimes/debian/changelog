@@ -1,3 +1,9 @@
+rust-io-lifetimes (1.0.11-1) unstable; urgency=medium
+
+  * update.
+
+ -- darren chang <darrenchang951@gmail.com>  Wed, 25 Mar 2026 11:55:00 +0800
+
 rust-io-lifetimes (2.0.3-1) unstable; urgency=medium
 
   * Team upload.
