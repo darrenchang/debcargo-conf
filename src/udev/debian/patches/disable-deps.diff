@@ -1,0 +1,59 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index fb25d11..53fe46e 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -56,34 +56,34 @@ version = "0.2"
+ [dependencies.libudev-sys]
+ version = "0.1.4"
+ 
+-[dependencies.mio06]
+-version = "^0.6.21"
+-optional = true
+-package = "mio"
++#[dependencies.mio06]
++#version = "^0.6.21"
++#optional = true
++#package = "mio"
+ 
+-[dependencies.mio07]
+-version = "0.7"
+-features = ["os-ext"]
+-optional = true
+-package = "mio"
++#[dependencies.mio07]
++#version = "0.7"
++#features = ["os-ext"]
++#optional = true
++#package = "mio"
+ 
+-[dependencies.mio08]
+-version = "0.8"
+-features = ["os-ext"]
+-optional = true
+-package = "mio"
++#[dependencies.mio08]
++#version = "0.8"
++#features = ["os-ext"]
++#optional = true
++#package = "mio"
+ 
+-[dependencies.mio10]
+-version = "1.0"
+-features = ["os-ext"]
+-optional = true
+-package = "mio"
++#[dependencies.mio10]
++#version = "1.0"
++#features = ["os-ext"]
++#optional = true
++#package = "mio"
+ 
+ [build-dependencies.pkg-config]
+ version = "0.3.3"
+ 
+ [features]
+ hwdb = []
+-mio = ["mio10"]
++#mio = ["mio10"]
+ send = []
+ sync = ["send"]

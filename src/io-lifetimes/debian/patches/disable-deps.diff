@@ -1,0 +1,109 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index ef92ff0..26ab335 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -35,65 +35,65 @@ categories = [
+ license = "Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT"
+ repository = "https://github.com/sunfishcode/io-lifetimes"
+ 
+-[dependencies.fs-err]
+-version = "2.6.0"
+-optional = true
++#[dependencies.fs-err]
++#version = "2.6.0"
++#optional = true
+ 
+ [features]
+ close = [
+     "libc",
+-    "hermit-abi",
+-    "windows-sys",
++#    "hermit-abi",
++#    "windows-sys",
+ ]
+ default = ["close"]
+ 
+-[target."cfg(not(target_os = \"wasi\"))".dependencies.async-std]
+-version = "1.12.0"
+-optional = true
++#[target."cfg(not(target_os = \"wasi\"))".dependencies.async-std]
++#version = "1.12.0"
++#optional = true
+ 
+ [target."cfg(not(target_os = \"wasi\"))".dependencies.mio]
+-version = "0.8.0"
++version = "1.2.0"
+ features = [
+     "net",
+     "os-ext",
+ ]
+ optional = true
+ 
+-[target."cfg(not(target_os = \"wasi\"))".dependencies.os_pipe]
+-version = "1.0.0"
+-features = ["io_safety"]
+-optional = true
++#[target."cfg(not(target_os = \"wasi\"))".dependencies.os_pipe]
++#version = "1.0.0"
++#features = ["io_safety"]
++#optional = true
+ 
+-[target."cfg(not(target_os = \"wasi\"))".dependencies.socket2]
+-version = "0.4.0"
+-optional = true
++#[target."cfg(not(target_os = \"wasi\"))".dependencies.socket2]
++#version = "0.4.0"
++#optional = true
+ 
+-[target."cfg(not(target_os = \"wasi\"))".dependencies.tokio]
+-version = "1.6.0"
+-features = [
+-    "io-std",
+-    "fs",
+-    "net",
+-    "process",
+-]
+-optional = true
++#[target."cfg(not(target_os = \"wasi\"))".dependencies.tokio]
++#version = "1.6.0"
++#features = [
++#    "io-std",
++#    "fs",
++#    "net",
++#    "process",
++#]
++#optional = true
+ 
+ [target."cfg(not(windows))".dependencies.libc]
+ version = "0.2.96"
+ optional = true
+ 
+-[target."cfg(target_os = \"hermit\")".dependencies.hermit-abi]
+-version = "0.3"
+-optional = true
++#[target."cfg(target_os = \"hermit\")".dependencies.hermit-abi]
++#version = "0.3"
++#optional = true
+ 
+-[target."cfg(windows)".dependencies.windows-sys]
+-version = "0.48.0"
+-features = [
+-    "Win32_Foundation",
+-    "Win32_Storage_FileSystem",
+-    "Win32_Networking_WinSock",
+-    "Win32_Security",
+-    "Win32_System_IO",
+-    "Win32_System_Threading",
+-]
+-optional = true
++#[target."cfg(windows)".dependencies.windows-sys]
++#version = "0.48.0"
++#features = [
++#    "Win32_Foundation",
++#    "Win32_Storage_FileSystem",
++#    "Win32_Networking_WinSock",
++#    "Win32_Security",
++#    "Win32_System_IO",
++#    "Win32_System_Threading",
++#]
++#optional = true
