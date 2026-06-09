@@ -1,0 +1,48 @@
+Source: rust-errno
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-errno-dragonfly-0.1+default-dev (>= 0.1.1) <!nocheck>,
+ librust-libc-0.2+default-dev <!nocheck>,
+ librust-winapi-0.3+default-dev <!nocheck>,
+ librust-winapi-0.3+errhandlingapi-dev <!nocheck>,
+ librust-winapi-0.3+minwindef-dev <!nocheck>,
+ librust-winapi-0.3+ntdef-dev <!nocheck>,
+ librust-winapi-0.3+winbase-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Darren Chang <darrenchang951@gmail.com>
+Standards-Version: 4.7.3
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/errno]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/errno
+Homepage: https://github.com/lambda-fairy/rust-errno
+X-Cargo-Crate: errno
+X-Cargo-Crate-Version: 0.2.8
+
+Package: librust-errno-0.2-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-errno-dragonfly-0.1+default-dev (>= 0.1.1),
+ librust-libc-0.2+default-dev,
+ librust-winapi-0.3+default-dev,
+ librust-winapi-0.3+errhandlingapi-dev,
+ librust-winapi-0.3+minwindef-dev,
+ librust-winapi-0.3+ntdef-dev,
+ librust-winapi-0.3+winbase-dev
+Provides:
+ librust-errno-0-dev (= ${binary:Version}),
+ librust-errno-0+default-dev (= ${binary:Version}),
+ librust-errno-0+std-dev (= ${binary:Version}),
+ librust-errno-0.2-dev (= ${binary:Version}),
+ librust-errno-0.2+default-dev (= ${binary:Version}),
+ librust-errno-0.2+std-dev (= ${binary:Version}),
+ librust-errno-0.2.8-dev (= ${binary:Version}),
+ librust-errno-0.2.8+default-dev (= ${binary:Version}),
+ librust-errno-0.2.8+std-dev (= ${binary:Version})
+Description: Cross-platform interface to the `errno` variable - Rust source code
+ Source code for Debianized Rust crate "errno"

@@ -1,0 +1,31 @@
+diff --git a/tools/compile-pmdk b/tools/compile-pmdk
+index f404cb4..9e2f2f4 100755
+--- a/tools/compile-pmdk
++++ b/tools/compile-pmdk
+@@ -223,7 +223,7 @@ compile_pmdk_platformSpecificPreparation()
+ 			ln -s /usr/local/bin/glibtool "$additionalPath"/libtool
+ 			ln -s /usr/local/bin/glibtoolize "$additionalPath"/libtoolize
+ 			
+-			muslIncludeFolderPath="$(brew --prefix musl-cross)"/libexec/x86_64-linux-musl/include
++			muslIncludeFolderPath="$(brew --prefix musl-cross)"/libexec/aarch64-linux-musl/include
+ 
+ 			if [ $numberOfMakeJobs -eq 0 ]; then
+ 				compile_pmdk_ensureRequiredBinariesArePresent sysctl
+@@ -232,7 +232,7 @@ compile_pmdk_platformSpecificPreparation()
+ 		;;
+ 
+ 		Linux)
+-			compile_pmdk_ensureRequiredBinariesArePresent make sed x86_64-linux-musl-gcc x86_64-linux-musl-ar rm mkdir rsync cat
++			compile_pmdk_ensureRequiredBinariesArePresent make sed aarch64-linux-musl-gcc aarch64-linux-musl-ar rm mkdir rsync cat
+ 			muslIncludeFolderPath='/usr/include'
+ 
+ 			if [ $numberOfMakeJobs -eq 0 ]; then
+@@ -398,7 +398,7 @@ compile_pmdk_finish()
+ 
+ compile_pmdk_main()
+ {
+-	local configureHost='x86_64-linux-musl'
++	local configureHost='aarch64-linux-musl'
+ 	local compilerPrefix="${configureHost}"-
+ 
+ 	compile_pmdk_parseCommandLine "$@"

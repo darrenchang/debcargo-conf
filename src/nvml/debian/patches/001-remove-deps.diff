@@ -1,0 +1,23 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index fc36055..5e224ea 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -38,8 +38,8 @@ version = "0.0.4"
+ [dependencies.quick-error]
+ version = "1.2.0"
+ 
+-[dependencies.rust-extra]
+-version = "0.0.10"
++#[dependencies.rust-extra]
++#version = "0.0.10"
+ 
+ [dependencies.serde]
+ version = "1.0"
+@@ -47,5 +47,5 @@ version = "1.0"
+ [dependencies.serde_derive]
+ version = "1.0"
+ 
+-[dependencies.syscall-alt]
+-version = "0.0.12"
++#[dependencies.syscall-alt]
++#version = "0.0.12"
