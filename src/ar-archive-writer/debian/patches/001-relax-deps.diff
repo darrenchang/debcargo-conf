@@ -1,0 +1,31 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index c9d0b39..65bd01b 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -11,7 +11,7 @@
+ 
+ [package]
+ edition = "2024"
+-rust-version = "1.88.0"
++rust-version = "1.85.0"
+ name = "ar_archive_writer"
+ version = "0.5.2"
+ build = false
+@@ -50,7 +50,7 @@ name = "round_trip"
+ path = "tests/round_trip.rs"
+ 
+ [dependencies.object]
+-version = "0.37.1"
++version = "0.38.1"
+ features = [
+     "std",
+     "read",
+@@ -61,7 +61,7 @@ default-features = false
+ version = "0.3.6"
+ 
+ [dev-dependencies.object]
+-version = "0.37.1"
++version = "0.38.1"
+ features = [
+     "write",
+     "xcoff",
