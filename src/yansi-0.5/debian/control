@@ -1,0 +1,31 @@
+Source: rust-yansi
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Darren Chang <darrenchang951@gmail.com>
+Standards-Version: 4.7.3
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/yansi]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/yansi
+Homepage: https://github.com/SergioBenitez/yansi
+X-Cargo-Crate: yansi
+X-Cargo-Crate-Version: 0.5.1
+
+Package: librust-yansi-0.5-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends}
+Provides:
+ librust-yansi-0-dev (= ${binary:Version}),
+ librust-yansi-0+default-dev (= ${binary:Version}),
+ librust-yansi-0.5-dev (= ${binary:Version}),
+ librust-yansi-0.5+default-dev (= ${binary:Version}),
+ librust-yansi-0.5.1-dev (= ${binary:Version}),
+ librust-yansi-0.5.1+default-dev (= ${binary:Version})
+Description: Dead simple ANSI terminal color painting library - Rust source code
+ Source code for Debianized Rust crate "yansi"
