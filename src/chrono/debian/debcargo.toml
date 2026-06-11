@@ -5,9 +5,6 @@ uploaders = [
 ]
 collapse_features = true
 
-[packages.lib]
-extra_lines = ["Breaks: librust-fundu-dev (<< 1.0.0-4~)"]
-
 [packages."lib+rkyv-validation"]
 # fails to build if none of the rkyv features are enabled.
 test_is_broken = true

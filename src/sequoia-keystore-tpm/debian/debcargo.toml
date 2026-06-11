@@ -5,5 +5,3 @@ uploaders = [
 ]
 collapse_features = true
 
-[packages.lib]
-extra_lines = ["Breaks: librust-sequoia-keystore-dev (<< 0.6)"]

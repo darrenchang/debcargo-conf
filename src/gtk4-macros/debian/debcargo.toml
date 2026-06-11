@@ -4,7 +4,6 @@ collapse_features = true
 
 [packages.lib]
 test_depends = ["xvfb", "xauth"]
-extra_lines = ["Breaks: librust-gtk4-dev (<= 0.6.6-4)"]
 
 [packages."lib+blueprint"]
 test_is_broken = true

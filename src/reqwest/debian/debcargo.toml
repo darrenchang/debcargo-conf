@@ -12,7 +12,6 @@ collapse_features = true
 test_is_broken = true
 
 [packages.lib]
-extra_lines = ["Breaks: librust-oauth2-dev (<= 4.3.0-1+b1)"]
 depends = ["librust-rustls-native-certs-dev (>= 0.6.3-4.1)"]
 test_architecture = ["!riscv64"]
 

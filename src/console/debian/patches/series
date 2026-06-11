@@ -1,5 +1,1 @@
-remove-benches.patch
-remove-examples.patch
-remove-windows.diff
-fix-tests-unicode-width-0.1.13.diff
-remove-break-dead-code.diff
+001-disable-windows.diff

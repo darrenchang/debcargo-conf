@@ -3,5 +3,3 @@ uploaders = ["Matthias Geiger <werdahias@riseup.net>"]
 collapse_features = true
 whitelist = ["tests/pod.c"]
 
-[packages.lib]
-extra_lines = ["Breaks: librust-pipewire-dev (<= 0.6.0-2)"]
