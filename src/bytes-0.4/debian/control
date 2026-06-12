@@ -1,0 +1,42 @@
+Source: rust-bytes
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-byteorder-1+default-dev (>= 1.1.0) <!nocheck>,
+ librust-iovec-0.1+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Darren Chang <darrenchang951@gmail.com>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/bytes]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/bytes
+Homepage: https://github.com/carllerche/bytes
+X-Cargo-Crate: bytes
+X-Cargo-Crate-Version: 0.4.12
+
+Package: librust-bytes-0.4-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-byteorder-1+default-dev (>= 1.1.0),
+ librust-byteorder-1+i128-dev (>= 1.1.0),
+ librust-either-1-dev (>= 1.5),
+ librust-iovec-0.1+default-dev,
+ librust-serde-1+default-dev
+Provides:
+ librust-bytes-0.4-dev (= ${binary:Version}),
+ librust-bytes-0.4+default-dev (= ${binary:Version}),
+ librust-bytes-0.4+either-dev (= ${binary:Version}),
+ librust-bytes-0.4+i128-dev (= ${binary:Version}),
+ librust-bytes-0.4+serde-dev (= ${binary:Version}),
+ librust-bytes-0.4.12-dev (= ${binary:Version}),
+ librust-bytes-0.4.12+default-dev (= ${binary:Version}),
+ librust-bytes-0.4.12+either-dev (= ${binary:Version}),
+ librust-bytes-0.4.12+i128-dev (= ${binary:Version}),
+ librust-bytes-0.4.12+serde-dev (= ${binary:Version})
+Description: Types and traits for working with bytes - Rust source code
+ Source code for Debianized Rust crate "bytes"

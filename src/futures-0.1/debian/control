@@ -1,0 +1,37 @@
+Source: rust-futures
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Darren Chang <darrenchang951@gmail.com>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/futures]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/futures
+Homepage: https://github.com/rust-lang-nursery/futures-rs
+X-Cargo-Crate: futures
+X-Cargo-Crate-Version: 0.1.31
+
+# FIXME (packages."(name)".section) debcargo auto-generated summary for librust-futures-dev is very long, consider overriding
+
+Package: librust-futures-0.1-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends}
+Provides:
+ librust-futures-0.1-dev (= ${binary:Version}),
+ librust-futures-0.1+default-dev (= ${binary:Version}),
+ librust-futures-0.1+nightly-dev (= ${binary:Version}),
+ librust-futures-0.1+use-std-dev (= ${binary:Version}),
+ librust-futures-0.1+with-deprecated-dev (= ${binary:Version}),
+ librust-futures-0.1.31-dev (= ${binary:Version}),
+ librust-futures-0.1.31+default-dev (= ${binary:Version}),
+ librust-futures-0.1.31+nightly-dev (= ${binary:Version}),
+ librust-futures-0.1.31+use-std-dev (= ${binary:Version}),
+ librust-futures-0.1.31+with-deprecated-dev (= ${binary:Version})
+Description: Futures and streams featuring zero allocations, composability, and iterator-like interfaces - Rust source code
+ Source code for Debianized Rust crate "futures"

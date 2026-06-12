@@ -1,0 +1,46 @@
+Source: rust-bzip2
+Section: rust
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-bzip2-sys-0.1+default-dev (>= 0.1.11) <!nocheck>,
+ librust-libc-0.2+default-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Darren Chang <darrenchang951@gmail.com>
+Standards-Version: 4.7.4
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/bzip2]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/bzip2
+Homepage: https://github.com/alexcrichton/bzip2-rs
+X-Cargo-Crate: bzip2
+X-Cargo-Crate-Version: 0.4.4
+
+# FIXME (packages."(name)".section) debcargo auto-generated summary for librust-bzip2-dev is very long, consider overriding
+
+Package: librust-bzip2-0.4-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-bzip2-sys-0.1+default-dev (>= 0.1.11),
+ librust-bzip2-sys-0.1+static-dev (>= 0.1.11),
+ librust-futures-0.1+default-dev,
+ librust-libc-0.2+default-dev,
+ librust-tokio-io-0.1+default-dev
+Provides:
+ librust-bzip2-0.4-dev (= ${binary:Version}),
+ librust-bzip2-0.4+default-dev (= ${binary:Version}),
+ librust-bzip2-0.4+futures-dev (= ${binary:Version}),
+ librust-bzip2-0.4+static-dev (= ${binary:Version}),
+ librust-bzip2-0.4+tokio-dev (= ${binary:Version}),
+ librust-bzip2-0.4+tokio-io-dev (= ${binary:Version}),
+ librust-bzip2-0.4.4-dev (= ${binary:Version}),
+ librust-bzip2-0.4.4+default-dev (= ${binary:Version}),
+ librust-bzip2-0.4.4+futures-dev (= ${binary:Version}),
+ librust-bzip2-0.4.4+static-dev (= ${binary:Version}),
+ librust-bzip2-0.4.4+tokio-dev (= ${binary:Version}),
+ librust-bzip2-0.4.4+tokio-io-dev (= ${binary:Version})
+Description: Bindings to libbzip2 for bzip2 compression and decompression exposed as Reader/Writer streams - Rust source code
+ Source code for Debianized Rust crate "bzip2"
