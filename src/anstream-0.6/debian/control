@@ -1,0 +1,52 @@
+Source: rust-anstream
+Section: rust
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.66.0) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-anstyle-1+default-dev <!nocheck>,
+ librust-anstyle-parse-0.2+default-dev <!nocheck>,
+ librust-anstyle-query-1+default-dev <!nocheck>,
+ librust-anstyle-wincon-3+default-dev (>= 3.0.5-~~) <!nocheck>,
+ librust-colorchoice-1+default-dev <!nocheck>,
+ librust-is-terminal-polyfill-1+default-dev (>= 1.48-~~) <!nocheck>,
+ librust-utf8parse-0.2+default-dev (>= 0.2.2-~~) <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Darren Chang <darrenchang951@gmail.com>
+Standards-Version: 4.7.0
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/anstream]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/anstream
+Homepage: https://github.com/rust-cli/anstyle.git
+X-Cargo-Crate: anstream
+Rules-Requires-Root: no
+
+# FIXME (packages."(name)".section) debcargo auto-generated summary for librust-anstream-dev is very long, consider overriding
+
+Package: librust-anstream-0.6-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-anstyle-1+default-dev,
+ librust-anstyle-parse-0.2+default-dev,
+ librust-anstyle-query-1+default-dev,
+ librust-anstyle-wincon-3+default-dev (>= 3.0.5-~~),
+ librust-colorchoice-1+default-dev,
+ librust-is-terminal-polyfill-1+default-dev (>= 1.48-~~),
+ librust-utf8parse-0.2+default-dev (>= 0.2.2-~~)
+Provides:
+ librust-anstream-0.6-dev (= ${binary:Version}),
+ librust-anstream-0.6+auto-dev (= ${binary:Version}),
+ librust-anstream-0.6+default-dev (= ${binary:Version}),
+ librust-anstream-0.6+test-dev (= ${binary:Version}),
+ librust-anstream-0.6+wincon-dev (= ${binary:Version}),
+ librust-anstream-0.6.21-dev (= ${binary:Version}),
+ librust-anstream-0.6.21+auto-dev (= ${binary:Version}),
+ librust-anstream-0.6.21+default-dev (= ${binary:Version}),
+ librust-anstream-0.6.21+test-dev (= ${binary:Version}),
+ librust-anstream-0.6.21+wincon-dev (= ${binary:Version})
+Description: IO stream adapters for writing colored text that will gracefully degrade according to your terminal's capabilities - Rust source code
+ Source code for Debianized Rust crate "anstream"

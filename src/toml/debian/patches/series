@@ -1,3 +1,1 @@
-remove-toml-test-harness.diff
-remove-toml-test-data.diff
-remove-snapbox.diff
+001-disable-anstream.diff

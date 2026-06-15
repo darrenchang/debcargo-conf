@@ -1,0 +1,26 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 84d0bb7..b1710d0 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -92,7 +92,7 @@ exactly = 1
+ debug = [
+     "std",
+     "toml_parser?/debug",
+-    "dep:anstream",
++#    "dep:anstream",
+     "dep:anstyle",
+ ]
+ default = [
+@@ -160,9 +160,9 @@ required-features = [
+     "serde",
+ ]
+ 
+-[dependencies.anstream]
+-version = "0.6.20"
+-optional = true
++#[dependencies.anstream]
++#version = "0.6.20"
++#optional = true
+ 
+ [dependencies.anstyle]
+ version = "1.0.11"
