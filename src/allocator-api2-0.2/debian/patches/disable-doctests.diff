@@ -1,0 +1,10 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -30,6 +30,7 @@ repository = "https://github.com/zakarumych/allocator-api2"
+ [lib]
+ name = "allocator_api2"
+ path = "src/lib.rs"
++doctest = false
+
+ [dependencies.serde]
+ version = "1.0"

@@ -1,0 +1,43 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 44dbc4c..b2c2f78 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -91,10 +91,10 @@ exactly = 1
+ alloc = []
+ debug = [
+     "std",
+-    "dep:anstream",
++#    "dep:anstream",
+     "dep:anstyle",
+     "dep:is_terminal_polyfill",
+-    "dep:terminal_size",
++#    "dep:terminal_size",
+ ]
+ default = ["std"]
+ simd = ["dep:memchr"]
+@@ -209,9 +209,9 @@ path = "examples/json/bench.rs"
+ harness = false
+ required-features = ["std"]
+ 
+-[dependencies.anstream]
+-version = "0.6.15"
+-optional = true
++#[dependencies.anstream]
++#version = "0.6.15"
++#optional = true
+ 
+ [dependencies.anstyle]
+ version = "1.0.8"
+@@ -226,9 +226,9 @@ version = "2.7"
+ optional = true
+ default-features = false
+ 
+-[dependencies.terminal_size]
+-version = "0.4.3"
+-optional = true
++#[dependencies.terminal_size]
++#version = "0.4.3"
++#optional = true
+ 
+ [dev-dependencies.annotate-snippets]
+ version = "0.11.4"

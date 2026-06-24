@@ -1,0 +1,49 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 6068c32..968e19e 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -92,11 +92,11 @@ search = "<!-- next-url -->"
+ 
+ [features]
+ default = [
+-    "parse",
++#    "parse",
+     "display",
+ ]
+ display = ["dep:toml_write"]
+-parse = ["dep:winnow"]
++#parse = ["dep:winnow"]
+ perf = ["dep:kstring"]
+ serde = [
+     "dep:serde",
+@@ -104,7 +104,7 @@ serde = [
+     "dep:serde_spanned",
+ ]
+ unbounded = []
+-unstable-debug = ["winnow?/debug"]
++#unstable-debug = ["winnow?/debug"]
+ 
+ [lib]
+ name = "toml_edit"
+@@ -115,7 +115,7 @@ name = "visit"
+ path = "examples/visit.rs"
+ test = true
+ required-features = [
+-    "parse",
++#    "parse",
+     "display",
+ ]
+ 
+@@ -144,9 +144,9 @@ version = "0.6.11"
+ version = "0.1.2"
+ optional = true
+ 
+-[dependencies.winnow]
+-version = "0.7.10"
+-optional = true
++#[dependencies.winnow]
++#version = "0.7.10"
++#optional = true
+ 
+ [dev-dependencies.proptest]
+ version = "1.5.0"

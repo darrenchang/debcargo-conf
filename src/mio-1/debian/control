@@ -1,0 +1,53 @@
+Source: rust-mio-1
+Section: rust
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.70) <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-libc-0.2+default-dev (>= 0.2.159-~~) <!nocheck>,
+ librust-log-0.4+default-dev (>= 0.4.8-~~) <!nocheck>,
+ librust-wasi-0.11+default-dev <!nocheck>,
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ kpcyrd <git@rxv.cc>
+Standards-Version: 4.7.0
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/mio-1]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/mio-1
+Homepage: https://github.com/tokio-rs/mio
+X-Cargo-Crate: mio
+Rules-Requires-Root: no
+
+Package: librust-mio-1-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-libc-0.2+default-dev (>= 0.2.159-~~),
+ librust-log-0.4+default-dev (>= 0.4.8-~~),
+ librust-wasi-0.11+default-dev,
+Provides:
+ librust-mio-1+default-dev (= ${binary:Version}),
+ librust-mio-1+log-dev (= ${binary:Version}),
+ librust-mio-1+net-dev (= ${binary:Version}),
+ librust-mio-1+os-ext-dev (= ${binary:Version}),
+ librust-mio-1+os-poll-dev (= ${binary:Version}),
+ librust-mio-1.0-dev (= ${binary:Version}),
+ librust-mio-1.0+default-dev (= ${binary:Version}),
+ librust-mio-1.0+log-dev (= ${binary:Version}),
+ librust-mio-1.0+net-dev (= ${binary:Version}),
+ librust-mio-1.0+os-ext-dev (= ${binary:Version}),
+ librust-mio-1.0+os-poll-dev (= ${binary:Version}),
+ librust-mio-1.0.4-dev (= ${binary:Version}),
+ librust-mio-1.0.4+default-dev (= ${binary:Version}),
+ librust-mio-1.0.4+log-dev (= ${binary:Version}),
+ librust-mio-1.0.4+net-dev (= ${binary:Version}),
+ librust-mio-1.0.4+os-ext-dev (= ${binary:Version}),
+ librust-mio-1.0.4+os-poll-dev (= ${binary:Version})
+Replaces:
+ librust-mio-dev (<< 1.0.5~)
+Breaks:
+ librust-mio-dev (<< 1.0.5~)
+Description: Lightweight non-blocking I/O - Rust source code
+ Source code for Debianized Rust crate "mio"

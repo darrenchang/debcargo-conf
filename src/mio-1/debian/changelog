@@ -1,4 +1,4 @@
-rust-wasi-0.11 (0.11.1+wasi-snapshot-preview1-1) unstable; urgency=medium
+rust-mio-1 (1.0.4-1) unstable; urgency=medium
 
   * update.
 
