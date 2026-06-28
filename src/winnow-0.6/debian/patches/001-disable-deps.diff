@@ -1,0 +1,43 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 7e52f64..1088f92 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -96,10 +96,10 @@ search = 'blob/v.+\..+\..+/CHANGELOG.md'
+ alloc = []
+ debug = [
+     "std",
+-    "dep:anstream",
++#    "dep:anstream",
+     "dep:anstyle",
+     "dep:is-terminal",
+-    "dep:terminal_size",
++#    "dep:terminal_size",
+ ]
+ default = ["std"]
+ simd = ["dep:memchr"]
+@@ -228,9 +228,9 @@ name = "number"
+ path = "benches/number.rs"
+ harness = false
+ 
+-[dependencies.anstream]
+-version = "0.3.2"
+-optional = true
++#[dependencies.anstream]
++#version = "0.3.2"
++#optional = true
+ 
+ [dependencies.anstyle]
+ version = "1.0.1"
+@@ -245,9 +245,9 @@ version = "2.5"
+ optional = true
+ default-features = false
+ 
+-[dependencies.terminal_size]
+-version = "0.4.0"
+-optional = true
++#[dependencies.terminal_size]
++#version = "0.4.0"
++#optional = true
+ 
+ [dev-dependencies.annotate-snippets]
+ version = "0.11.3"

@@ -2,13 +2,14 @@ diff --git a/Cargo.toml b/Cargo.toml
 index bb9792a..aab87c4 100644
 --- a/Cargo.toml
 +++ b/Cargo.toml
-@@ -41,12 +41,9 @@ features = [
+@@ -41,12 +41,10 @@ features = [
      "bytemuck",
      "std",
      "serde",
 -    "rkyv/size_64",
 -    "bytecheck",
 -    "rand",
++    "rand",
  ]
 
 -[dependencies.bytecheck]
@@ -21,7 +22,7 @@ index bb9792a..aab87c4 100644
  default-features = false
 
 -[dependencies.rand]
-+[disabled.dependencies.rand]
++[dependencies.rand]
  version = "0.8"
  optional = true
  default-features = false
@@ -31,7 +32,7 @@ index bb9792a..aab87c4 100644
  version = "0.7"
  optional = true
  default-features = false
-@@ -76,11 +73,8 @@ optional = true
+@@ -76,11 +73,9 @@ optional = true
  default-features = false
 
  [features]
@@ -40,6 +41,7 @@ index bb9792a..aab87c4 100644
  default = ["std"]
  libm = ["num-traits/libm"]
 -rand = ["dep:rand"]
++rand = ["dep:rand"]
 -rkyv = ["dep:rkyv"]
  serde = ["dep:serde"]
  std = ["num-traits/std"]
