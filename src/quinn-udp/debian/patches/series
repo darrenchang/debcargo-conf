@@ -1,2 +1,1 @@
-remove-win-dep.diff
-disable-bench.patch
+001-disable-deps.diff
