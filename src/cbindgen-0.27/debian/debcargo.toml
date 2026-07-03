@@ -1,0 +1,5 @@
+semver_suffix = true
+overlay = "."
+uploaders = ["Darren Chang <darrenchang951@gmail.com>"]
+collapse_features = true
+whitelist = ["tests/expectations/*"]
