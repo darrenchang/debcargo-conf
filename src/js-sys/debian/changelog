@@ -1,3 +1,8 @@
+rust-js-sys (0.3.95-1~bpo13+pve1) proxmox-rust; urgency=medium
+  * Upgrade verseion
+
+ -- Darren <darrenchang951@gmail.com>  Mon, 20 Jul 2026 15:38:38 +0800
+
 rust-js-sys (0.3.91-1~bpo13+pve1) proxmox-rust; urgency=medium
   * Upgrade verseion
 
