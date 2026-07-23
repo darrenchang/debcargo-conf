@@ -1,0 +1,42 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 75d78e2..bda62cf 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -32,7 +32,7 @@ keywords = [
+     "terminal",
+     "color",
+     "strip",
+-    "wincon",
++#    "wincon",
+ ]
+ categories = ["command-line-interface"]
+ license = "MIT OR Apache-2.0"
+@@ -87,9 +87,9 @@ search = "<!-- next-url -->"
+ name = "strip"
+ harness = false
+ 
+-[[bench]]
+-name = "wincon"
+-harness = false
++#[[bench]]
++#name = "wincon"
++#harness = false
+ 
+ [[bench]]
+ name = "stream"
+@@ -136,10 +136,10 @@ auto = [
+ ]
+ default = [
+     "auto",
+-    "wincon",
++#    "wincon",
+ ]
+-wincon = ["dep:anstyle-wincon"]
++#wincon = ["dep:anstyle-wincon"]
+ 
+-[target."cfg(windows)".dependencies.anstyle-wincon]
+-version = "1.0.1"
+-optional = true
++#[target."cfg(windows)".dependencies.anstyle-wincon]
++#version = "1.0.1"
++#optional = true

@@ -1,4 +1,4 @@
-semver_suffix = true
+semver_suffix = false
 overlay = "."
 uploaders = ["Darren Chang <darrenchang951@gmail.com>"]
 collapse_features = true

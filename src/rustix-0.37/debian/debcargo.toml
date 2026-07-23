@@ -2,3 +2,4 @@ semver_suffix = true
 overlay = "."
 uploaders = ["Darren Chang <darrenchang951@gmail.com>"]
 collapse_features = true
+whitelist = ["src/backend/linux_raw/arch/outline/debug/*", "src/backend/linux_raw/arch/outline/release/*"]

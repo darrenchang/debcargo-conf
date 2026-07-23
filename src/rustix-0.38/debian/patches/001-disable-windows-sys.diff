@@ -1,0 +1,36 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 0313317..6a19a2e 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -80,7 +80,7 @@ path = "benches/mod.rs"
+ harness = false
+ 
+ [dependencies.bitflags]
+-version = "2.4.0"
++version = "2.8.0"
+ default-features = false
+ 
+ [dependencies.compiler_builtins]
+@@ -267,14 +267,14 @@ version = "0.3.10"
+ default-features = false
+ package = "errno"
+ 
+-[target."cfg(windows)".dependencies.windows-sys]
+-version = ">=0.52, <=0.59"
+-features = [
+-    "Win32_Foundation",
+-    "Win32_Networking_WinSock",
+-    "Win32_NetworkManagement_IpHelper",
+-    "Win32_System_Threading",
+-]
++#[target."cfg(windows)".dependencies.windows-sys]
++#version = ">=0.52, <=0.59"
++#features = [
++#    "Win32_Foundation",
++#    "Win32_Networking_WinSock",
++#    "Win32_NetworkManagement_IpHelper",
++#    "Win32_System_Threading",
++#]
+ 
+ [lints.rust.unexpected_cfgs]
+ level = "warn"
