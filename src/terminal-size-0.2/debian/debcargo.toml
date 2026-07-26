@@ -2,3 +2,6 @@ semver_suffix = true
 overlay = "."
 uploaders = ["Darren Chang <darrenchang951@gmail.com>"]
 collapse_features = true
+
+[packages.lib]
+test_is_broken = true

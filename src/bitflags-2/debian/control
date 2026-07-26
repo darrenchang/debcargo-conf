@@ -1,0 +1,46 @@
+Source: rust-bitflags-2
+Section: rust
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+ dh-sequence-cargo
+Build-Depends-Arch: cargo:native <!nocheck>,
+ rustc:native (>= 1.56.0) <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Darren Chang <darrenchang951@gmail.com>
+Standards-Version: 4.7.0
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/bitflags]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/bitflags
+Homepage: https://github.com/bitflags/bitflags
+X-Cargo-Crate: bitflags
+X-Cargo-Crate-Version: 2.13.1
+Rules-Requires-Root: no
+
+Package: librust-bitflags-2.13-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-arbitrary-1+default-dev,
+ librust-bytemuck-1+default-dev (>= 1.12-~~),
+ librust-serde-core-1-dev (>= 1.0.228-~~)
+Provides:
+ librust-bitflags-2.13-dev (= ${binary:Version}),
+ librust-bitflags-2.13+arbitrary-dev (= ${binary:Version}),
+ librust-bitflags-2.13+bytemuck-dev (= ${binary:Version}),
+ librust-bitflags-2.13+default-dev (= ${binary:Version}),
+ librust-bitflags-2.13+example-generated-dev (= ${binary:Version}),
+ librust-bitflags-2.13+serde-dev (= ${binary:Version}),
+ librust-bitflags-2.13+serde-core-dev (= ${binary:Version}),
+ librust-bitflags-2.13+std-dev (= ${binary:Version}),
+ librust-bitflags-2.13.1-dev (= ${binary:Version}),
+ librust-bitflags-2.13.1+arbitrary-dev (= ${binary:Version}),
+ librust-bitflags-2.13.1+bytemuck-dev (= ${binary:Version}),
+ librust-bitflags-2.13.1+default-dev (= ${binary:Version}),
+ librust-bitflags-2.13.1+example-generated-dev (= ${binary:Version}),
+ librust-bitflags-2.13.1+serde-dev (= ${binary:Version}),
+ librust-bitflags-2.13.1+serde-core-dev (= ${binary:Version}),
+ librust-bitflags-2.13.1+std-dev (= ${binary:Version})
+Description: Macro to generate structures which behave like bitflags - Rust source code
+ Source code for Debianized Rust crate "bitflags"
