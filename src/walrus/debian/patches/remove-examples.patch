@@ -1,0 +1,21 @@
+--- walrus.orig/Cargo.toml
++++ walrus/Cargo.toml
+@@ -41,18 +41,6 @@
+ path = "src/lib.rs"
+ bench = false
+ 
+-[[example]]
+-name = "build-wasm-from-scratch"
+-path = "examples/build-wasm-from-scratch.rs"
+-
+-[[example]]
+-name = "parse"
+-path = "examples/parse.rs"
+-
+-[[example]]
+-name = "round-trip"
+-path = "examples/round-trip.rs"
+-
+ [[bench]]
+ name = "benches"
+ path = "benches/benches.rs"

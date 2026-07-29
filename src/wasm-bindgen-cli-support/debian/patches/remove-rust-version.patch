@@ -1,0 +1,10 @@
+--- wasm-bindgen-cli-support.orig/Cargo.toml
++++ wasm-bindgen-cli-support/Cargo.toml
+@@ -11,7 +11,6 @@
+ 
+ [package]
+ edition = "2021"
+-rust-version = "1.86"
+ name = "wasm-bindgen-cli-support"
+ version = "0.2.118"
+ authors = ["The wasm-bindgen Developers"]

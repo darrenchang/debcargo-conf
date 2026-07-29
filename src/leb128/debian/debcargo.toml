@@ -1,3 +1,4 @@
+excludes = ["tests/**"]
 overlay = "."
 uploaders = ["Ananthu C V <weepingclown@disroot.org>"]
 

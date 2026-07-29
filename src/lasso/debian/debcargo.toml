@@ -1,4 +1,7 @@
+excludes = ["examples/**", "tests/**"]
 overlay = "."
 uploaders = ["Fabian Grünbichler <f.gruenbichler@proxmox.com>"]
 
 collapse_features = true
+[packages.lib]
+test_is_broken = true

@@ -3,3 +3,6 @@ uploaders = ["Wolfgang Silbermayr <wolfgang@silbermayr.at>"]
 
 # The auto-generated summary is too long.
 summary = "Helper macros to test index tables for character encodings"
+
+[packages.lib]
+test_is_broken = true

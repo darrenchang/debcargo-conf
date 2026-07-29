@@ -1,0 +1,36 @@
+--- qrcode.orig/Cargo.toml
++++ qrcode/Cargo.toml
+@@ -30,33 +30,9 @@
+ [[bin]]
+ name = "qrencode"
+ 
+-[[example]]
+-name = "encode_image"
+-required-features = ["image"]
+-
+-[[example]]
+-name = "encode_string"
+-
+-[[example]]
+-name = "encode_svg"
+-required-features = ["svg"]
+-
+-[[example]]
+-name = "encode_pic"
+-required-features = ["pic"]
+-
+-[dependencies.image]
+-version = "0.25"
+-optional = true
+-default-features = false
+-
+-[dev-dependencies.image]
+-version = "0.25"
+-
+ [features]
+ bench = []
+ default = [
+-    "image",
+     "svg",
+     "pic",
+ ]

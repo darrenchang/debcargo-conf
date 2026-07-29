@@ -1,3 +1,4 @@
+excludes = ["src/bin/**"]
 overlay = "."
 uploaders = ["kpcyrd <git@rxv.cc>"]
 bin = false

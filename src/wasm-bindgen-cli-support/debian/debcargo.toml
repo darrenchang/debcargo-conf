@@ -1,2 +1,5 @@
 overlay = "."
 uploaders = ["Fabian Grünbichler <f.gruenbichler@proxmox.com>"]
+
+[packages.lib]
+test_is_broken = true

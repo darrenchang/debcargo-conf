@@ -1,3 +1,4 @@
+excludes = ["examples/**"]
 overlay = "."
 uploaders = ["Matthias Geiger <werdahias@debian.org>"]
 bin = false

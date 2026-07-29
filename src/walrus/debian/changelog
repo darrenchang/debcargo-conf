@@ -1,4 +1,4 @@
-rust-walrus (0.23.3-1~bpo13+pve1) proxmox-rust; urgency=medium
+rust-walrus (0.26.1-1) proxmox-rust; urgency=medium
 
   * Rebuild for Debian Trixie / Proxmox
 

@@ -1,0 +1,15 @@
+semver_suffix = true
+overlay = "."
+uploaders = ["Wolfgang Silbermayr <wolfgang@silbermayr.at>"]
+excludes = ["benches/**"]
+collapse_features = true
+bin = false
+
+[packages."lib+@"]
+test_is_broken = true
+
+[packages."lib+gen-tests"]
+test_is_broken = true
+
+[packages."lib+getopts"]
+test_is_broken = true

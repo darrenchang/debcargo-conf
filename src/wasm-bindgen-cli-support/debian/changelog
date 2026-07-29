@@ -1,4 +1,4 @@
-rust-wasm-bindgen-cli-support (0.2.99-1~bpo13+pve1) proxmox-rust; urgency=medium
+rust-wasm-bindgen-cli-support (0.2.118-1) proxmox-rust; urgency=medium
 
   * Rebuild for Debian Trixie / Proxmox
 

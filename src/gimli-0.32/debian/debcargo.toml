@@ -1,0 +1,7 @@
+semver_suffix = true
+overlay = "."
+uploaders = [
+  "Ximin Luo <infinity0@debian.org>",
+  "Wolfgang Silbermayr <wolfgang@silbermayr.at>",
+]
+collapse_features = true
